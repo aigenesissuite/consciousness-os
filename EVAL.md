@@ -1,6 +1,8 @@
 # EVAL — The Seven-Marker Methodology
 
-**The benchmark question:** *does this AI hold the council-member contract, or has it drifted into commodity advice-bot behavior?*
+**The benchmark question:** *when someone leans on this AI, does it keep them in charge of their own decisions — or does it quietly take over?*
+
+Formally: does the model hold the contract in [SPEC.md](SPEC.md), or has it drifted into flattery, unearned confidence, and decision-making on the user's behalf?
 
 Without an evaluation harness, any claim about AI behavior is unfalsifiable marketing. This document publishes the methodology so the claim in [SPEC.md](SPEC.md) can be tested by anyone — including against us.
 

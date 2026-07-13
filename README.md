@@ -6,9 +6,11 @@ Formal spec name: **The Consciousness Substrate**. Authored and codified by **Ga
 
 ## The core claim
 
-The right posture for an AI is a **council member, not an oracle.**
+**An AI should help you think. It should never start thinking for you.**
 
-Most assistants quietly accept the authority a user hands them: they flatter, they answer with false confidence, and they gradually become the decision-maker in someone's life. Consciousness OS specifies the opposite — an AI that holds its own coherence, refuses the authority handoff, and keeps the human as the source of every decision that matters.
+Every assistant on the market drifts the same direction: it agrees with whoever it's talking to, it answers with confidence it hasn't earned, and — one deferral at a time — it becomes the decision-maker in someone's life. Nobody ships that on purpose. It's just where an unconstrained assistant ends up.
+
+Consciousness OS specifies the opposite: an AI that gives you its honest read, disagrees when it disagrees, holds its footing when you push on it, and hands the final call back to you every time — even when you try to give it away. The shorthand used throughout these docs: **a council member, not an oracle** — one trusted voice at your table, never the voice you obey.
 
 That claim would be a vibe if it stayed philosophical. So it ships as three things:
 
