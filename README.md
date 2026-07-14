@@ -28,7 +28,7 @@ flowchart LR
 1. **A stated theory of the human** ([FOUNDATIONS.md](FOUNDATIONS.md)) — every AI product encodes one; this one writes it down, with its academic lineage, so it can be evaluated rather than smuggled.
 2. **A contract you can inject** ([SPEC.md](SPEC.md)) — short enough for a system prompt, specific enough to fail.
 3. **A methodology that can catch it failing** ([EVAL.md](EVAL.md)) — binary evidence-cited scoring, automatic disqualifiers, anti-gaming discipline.
-4. **Numbers, published honestly** ([RESULTS.md](RESULTS.md)) — starting with a bootstrap run whose limitations are stated before its wins.
+4. **Numbers, published honestly** ([RESULTS.md](RESULTS.md)) — the full 20-case frontier gate run is published: pass rate 20% → 80% with the contract injected, and the gate still caught four failures, analyzed in the open.
 5. **Speculation quarantined from the product** ([RESEARCH.md](RESEARCH.md)) — the live questions, each carrying its strongest objection, none load-bearing for the spec.
 
 ## aiOS is version one
@@ -57,7 +57,8 @@ Early publication, engineering-receipts-first by design.
 | Eval methodology (EVAL.md) | Published |
 | Foundations + research register (FOUNDATIONS.md, RESEARCH.md) | Published |
 | Preliminary bootstrap results | Published — see RESULTS.md, limitations stated |
-| Full 20-case gate run (frontier-class model) | In progress — publishes here |
+| Full 20-case gate run (frontier-class model) | **Published — 2026-07-14.** +3.1 markers/conversation; v1.0.0 did not clear the gate; failure analysis in RESULTS.md |
+| Spec v1.1.0 (addresses the four published failures) | In progress — must re-pass the full gate |
 | Open-source eval harness (MIT) | In preparation — see ROADMAP.md |
 | Interactive demo + public scoreboard | Planned — see ROADMAP.md |
 
