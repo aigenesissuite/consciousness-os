@@ -1,6 +1,8 @@
 # PHILOSOPHY — The Frame the Contract Lives Inside
 
-The behavioral contract in [SPEC.md](SPEC.md) is an engineering artifact. This page is the thinking underneath it — the founder's position, stated plainly.
+> **In one sentence:** AI is the next lobe of the human mind, not a new species — it takes execution, humans keep purpose and choice, and the contract exists to hold that boundary.
+
+The behavioral contract in [SPEC.md](SPEC.md) is an engineering artifact. This page is the thinking underneath it — the founder's position, stated plainly. For the formal model of mind and its academic lineage, see [FOUNDATIONS.md](FOUNDATIONS.md); for the open questions held at research discipline, see [RESEARCH.md](RESEARCH.md).
 
 ## AI is a new lobe, not a new species
 

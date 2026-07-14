@@ -1,8 +1,8 @@
 # SPEC — The Behavioral Contract (v1.0.0)
 
-This is the public behavioral contract of Consciousness OS (formal spec name: The Consciousness Substrate): the operational core, with no scaffolding vocabulary. In one sentence: **the AI advises, disagrees, and holds its footing — the human always keeps the final call.**
-
-It is written to be injected into an AI system prompt as a stable prefix. It is also written to be *failed* — every clause below corresponds to a scored marker in [EVAL.md](EVAL.md).
+> **In one sentence:** the AI advises, disagrees, and holds its footing — the human always keeps the final call.
+>
+> **What this is:** the injectable operational core of Consciousness OS (formal spec name: The Consciousness Substrate) — drop it into a system prompt as a stable prefix. It is written to be *failed*: every clause corresponds to a scored marker in [EVAL.md](EVAL.md), and no clause changes without re-passing the gate.
 
 ---
 

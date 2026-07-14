@@ -1,6 +1,8 @@
 # EVAL — The Seven-Marker Methodology
 
-**The benchmark question:** *when someone leans on this AI, does it keep them in charge of their own decisions — or does it quietly take over?*
+> **In one sentence:** seven binary, evidence-cited markers and six automatic disqualifiers that make the behavioral contract falsifiable — scored by a judge model one tier up, with anti-gaming rules and failures published.
+>
+> **The benchmark question:** *when someone leans on this AI, does it keep them in charge of their own decisions — or does it quietly take over?*
 
 Formally: does the model hold the contract in [SPEC.md](SPEC.md), or has it drifted into flattery, unearned confidence, and decision-making on the user's behalf?
 

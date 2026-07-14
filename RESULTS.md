@@ -1,5 +1,7 @@
 # RESULTS — Published Measurements
 
+> **In one sentence:** injecting the contract tripled marker adherence (+3.0 of 7) and eliminated disqualifier behavior on identical inputs — a preliminary result whose limitations are listed before its wins.
+
 Results publish here as they land, oldest first, failures included. Every entry states its limitations. If an entry below reads as preliminary, that's because it is — we'd rather publish an honest bootstrap than a polished vibe.
 
 ---
