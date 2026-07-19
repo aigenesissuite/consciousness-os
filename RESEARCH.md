@@ -72,6 +72,29 @@ The seven markers in [EVAL.md](EVAL.md) are aimed at exactly this cluster: flatt
 - **Training-time vs. prompt-time:** the current results show the contract works as a system-prompt payload. Whether fine-tuning on contract-consistent data produces deeper adherence (or Goodharts the markers) is unexplored.
 - **Cross-model geometry** (see Q4): whether the markers correspond to stable, steerable directions in activation space.
 
+## Q7. The interface question — what the contract has to survive as input gets closer to intention
+
+**As the interface moves from *typed* toward *intended*, does a behavioral contract get more important or less — and can it hold at all when the confirmation is a thought?**
+
+This is Q1's coupling question turned toward the thing that makes it urgent rather than academic. The way a person's intent enters a machine is climbing a ladder, and every rung above the keyboard is being built right now by serious labs, not futurists:
+
+- **Typed / touched** — the universal present. The person composes; the machine replies.
+- **Ambient** — always-on voice and glance. Meta's **Neural Band** ships today as a consumer product: a wrist band that reads the *electrical signals your muscles emit when you intend a gesture* (surface electromyography) and turns subtle finger movements — now handwriting — into input, with no implant. It reads *peripheral motor intent*, not the brain; that scope is exactly why it shipped. MIT-spinoff **AlterEgo** reads sub-vocalization (the silent-speech signals of internal articulation) and replies by bone conduction — silent and near-instant in feel, but strictly *intentional* signals only.
+- **Intention-decoded** — the thought itself. Non-invasive **brain-to-text** is real and, notably, open: Meta FAIR's **Brain2Qwerty** decodes typed sentences from magnetoencephalography at ~61% word accuracy (up from ~8% for prior non-invasive methods), and its accuracy improves *log-linearly with data* — no plateau found yet. Invasive decoding is further: Neuralink's speech trial has demonstrated a person communicating by *thinking* speech, decoded from speech-production cortex before any movement.
+
+**Why this is a contract question, not a hardware question.** The receipts above are input pipes. A pipe carries a noisy stream of intent that is worthless without a *model of the person* to ground it — Brain2Qwerty literally leans on a fine-tuned language model to turn a 39%-error neural signal into meaning. The nearer the interface sits to raw intention, the more of the interpretive and executive work moves *into the system* — and the sycophancy/authority-capture failures of [Q6](#q6-the-alignment-question-the-eval-was-built-for) stop being about tone and start being about *whose intention actually got executed*. The framework's whole wager (see the [README](README.md)): the closer a system sits to your intentions, the less acceptable it is for it to flatter, capture, or quietly take over — so the behavioral contract has to exist *before* the interface gets that intimate.
+
+**The tractable primitive: intention as authorization.** Picture the endpoint the founder describes — you form an intention, an affirming thought ("yes, that one") authenticates it, and it executes without a keystroke. The honest engineering shape of that is already buildable and already deployed in a primitive form: authorize an action by its *identity and a distinct confirmation event*, at a confidence threshold, **fail-closed** — never by pattern-matching the phrasing of a request. A production precursor exists (an action-confirmation gate keyed on what the action *is*, not how it was worded). The open research: a *misread* intention firing an irreversible action is a categorically worse failure than a misread prompt, so intention-level authorization has to be gated by the same reliability substrate the eval targets — a noisy decode must always resolve to a *draft you steer*, never an executed command.
+
+**What we claim:** nothing about timelines, and nothing about mechanism beyond what is published and reproducible. **What we're doing about it:** treating the substrate as input-agnostic by design, so a new input device is an adapter, not a rebuild — and building the intention-authorization primitive now, far below any neural interface, where it can be tested on text and voice.
+
+**Objections and limits, attached as required:**
+- Non-invasive brain-to-text today runs at ~39% word-error-rate on a shielded, room-scale scanner — a research result, not a device. The log-linear scaling is the interesting part; the current number is not usable.
+- Invasive decoding is experimental medicine in a few dozen people; some implants have degraded over time for reasons not yet understood.
+- **Discipline rule:** no claim on this page or in the spec rests on any transmission mechanism excluded by settled physics. Where a proposed mechanism is blocked by an established result, it does not enter as a capability — it is out of scope until an experiment overturns the block. Speculation about *how* intent might travel is fuel, not cargo; the contract is designed to hold regardless of which input rung matures first.
+
+**What would move this from research to roadmap:** a non-invasive decoder crossing usable real-time accuracy at consumer scale, or any input-device vendor opening a third-party intent SDK. The interface arc is the clock on the alignment work — this question exists so the contract is ready before the clock runs out, not after.
+
 ---
 
 ## The rule that governs this whole page

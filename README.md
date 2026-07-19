@@ -42,7 +42,7 @@ The position, stated plainly: the prompt-response loop — human composes a para
 | You are | Start here | Then |
 |---|---|---|
 | **An engineer** ("show me the artifact") | [SPEC.md](SPEC.md) — the injectable contract | [EVAL.md](EVAL.md) for how it's scored |
-| **A researcher** ("show me the methodology") | [EVAL.md](EVAL.md) — markers, judging, anti-gaming | [RESULTS.md](RESULTS.md), then [RESEARCH.md](RESEARCH.md) Q6 |
+| **A researcher** ("show me the methodology") | [EVAL.md](EVAL.md) — markers, judging, anti-gaming | [RESULTS.md](RESULTS.md), then [RESEARCH.md](RESEARCH.md) Q6–Q7 |
 | **A skeptic** ("show me the weakest point") | [RESULTS.md](RESULTS.md) — limitations are listed first | [RESEARCH.md](RESEARCH.md), where objections travel with claims |
 | **A philosopher** ("show me the ontology") | [FOUNDATIONS.md](FOUNDATIONS.md) — the model of mind + lineage | [PHILOSOPHY.md](PHILOSOPHY.md) for the founder's position |
 | **Anyone** ("why does this exist?") | [PHILOSOPHY.md](PHILOSOPHY.md) — the new-lobe thesis | This page's roadmap, below |
