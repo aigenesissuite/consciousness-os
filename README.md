@@ -18,7 +18,7 @@ Most AI-values work stops at the essay. This project runs a full derivation chai
 
 ```mermaid
 flowchart LR
-    F["FOUNDATIONS<br/><i>a stated model of mind</i>"] --> S["SPEC v1.0.0<br/><i>injectable behavioral contract</i>"]
+    F["FOUNDATIONS<br/><i>a stated model of mind</i>"] --> S["SPEC v1.1.0<br/><i>injectable behavioral contract</i>"]
     S --> E["EVAL<br/><i>7 binary markers +<br/>disqualifiers</i>"]
     E --> R["RESULTS<br/><i>published measurements,<br/>failures included</i>"]
     R -->|"gates every release of"| S
@@ -28,7 +28,7 @@ flowchart LR
 1. **A stated theory of the human** ([FOUNDATIONS.md](FOUNDATIONS.md)) — every AI product encodes one; this one writes it down, with its academic lineage, so it can be evaluated rather than smuggled.
 2. **A contract you can inject** ([SPEC.md](SPEC.md)) — short enough for a system prompt, specific enough to fail.
 3. **A methodology that can catch it failing** ([EVAL.md](EVAL.md)) — binary evidence-cited scoring, automatic disqualifiers, anti-gaming discipline.
-4. **Numbers, published honestly** ([RESULTS.md](RESULTS.md)) — the full 20-case frontier gate run is published: pass rate 20% → 80% with the contract injected, and the gate still caught four failures, analyzed in the open.
+4. **Numbers, published honestly** ([RESULTS.md](RESULTS.md)) — two full 20-case frontier gate runs are published: v1.0.0 took pass rates from 20% to 80% and failed its own gate on four cases; v1.1.0's failure-driven revision reached 90% / 6.0-of-7 markers and still failed release — one behavior (refusal decay under repeated demands) has survived two versions and is named as the top open problem.
 5. **Speculation quarantined from the product** ([RESEARCH.md](RESEARCH.md)) — the live questions, each carrying its strongest objection, none load-bearing for the spec.
 
 ## aiOS is version one
@@ -53,12 +53,13 @@ Early publication, engineering-receipts-first by design.
 
 | Artifact | Status |
 |---|---|
-| Behavioral contract (SPEC.md) | Published — v1.0.0 |
+| Behavioral contract (SPEC.md) | Published — v1.1.0 (unreleased: gate-blocked, see RESULTS.md) |
 | Eval methodology (EVAL.md) | Published |
 | Foundations + research register (FOUNDATIONS.md, RESEARCH.md) | Published |
 | Preliminary bootstrap results | Published — see RESULTS.md, limitations stated |
 | Full 20-case gate run (frontier-class model) | **Published — 2026-07-14.** +3.1 markers/conversation; v1.0.0 did not clear the gate; failure analysis in RESULTS.md |
-| Spec v1.1.0 (addresses the four published failures) | In progress — must re-pass the full gate |
+| Spec v1.1.0 gate re-run | **Published — 2026-07-21.** Treatment 90% pass / 6.0 avg; 3 of 4 failure modes fixed; release still blocked by held-refusal decay + one disqualifier; a harness bug found and published |
+| Harness v2 + the held-refusal problem | In progress — precondition primers, variance bounds, then fix or documented negative finding |
 | Open-source eval harness (MIT) | In preparation — see ROADMAP.md |
 | Interactive demo + public scoreboard | Planned — see ROADMAP.md |
 
