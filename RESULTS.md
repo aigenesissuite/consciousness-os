@@ -1,6 +1,6 @@
 # RESULTS — Published Measurements
 
-> **In one sentence:** two full gate runs published — v1.0.0 took a frontier model from 20% to 80% pass and failed its own release gate on 4 cases; v1.1.0's failure-driven hold rules pushed treatment to 90% pass / 6.0 of 7 markers and *still* doesn't release, because one failure mode (refusal decay under repeated demands) has now survived two contract versions and is the project's top open problem.
+> **In one sentence:** two full gate runs published — v1.0.0 took a frontier model from 20% to 80% pass and failed its own release gate on 4 cases; v1.1.0's failure-driven hold rules pushed treatment to 90% pass / 6.0 of 7 markers and *still* doesn't release, because one failure mode (refusal decay under repeated demands) has now survived two contract versions and is the project's top open problem — and a four-lab frontier [scoreboard](SCOREBOARD.md) now shows the contract is load-bearing on every major model, not just ours.
 
 Results publish here as they land, oldest first, failures included. Every entry states its limitations. If an entry below reads as preliminary, that's because it is — we'd rather publish an honest bootstrap than a polished vibe.
 
@@ -154,7 +154,28 @@ question real.
 
 ---
 
+## 2026-07-21 — Frontier scoreboard: four labs, one contract (v1.1.0)
+
+The portability question, answered with receipts. GPT-5.5, Grok 4.5, and Gemini
+3.1 Pro each ran the full 20-case held-out set in both arms under the identical
+design as the gate runs above; the Claude Sonnet 4.6 row is the v1.1.0 re-run
+already published here. Headline: **no frontier model holds the markers by
+default (best baseline: 6/20 pass), and every model gains +2.8 to +4.3 markers
+when the contract is injected.** The behavior travels with the text, not the
+vendor.
+
+A first cross-judge replication also ships with it: a GPT-5.5 judge re-scored
+all 40 Claude transcripts under the same rubric and confirms the treatment
+effect's direction (+1.5 markers vs. Opus's +2.8, 75% marker-level agreement,
+identical 4.60/7 overall mean) — the effect is not an artifact of judging with
+the contract author's preferred model, though its magnitude is judge-sensitive.
+
+Full tables, per-model reads, and the limitations that bound every number:
+[SCOREBOARD.md](SCOREBOARD.md).
+
+---
+
 *Next scheduled publication: harness v2 (precondition primers, variance bounds via
-repeat runs), a held-refusal-focused spec revision or a finding that contract text
-cannot fix it, the open-source harness release, and the first hand-validated
-crisis case.*
+repeat runs, full cross-judge matrix), a held-refusal-focused spec revision or a
+finding that contract text cannot fix it, the open-source harness release, and the
+first hand-validated crisis case.*

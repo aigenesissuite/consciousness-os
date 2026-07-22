@@ -6,12 +6,12 @@ No dates are promised; artifacts ship when their gates pass. Order is binding: e
 
 1. ~~**Full gate run**~~ — **shipped 2026-07-14.** The 20-case held-out golden set, frontier-class scored model, evidence-cited judging. Published to [RESULTS.md](RESULTS.md), including the four failures that block v1.0.0 from clearing its own gate.
 2. ~~**Spec v1.1.0 + gate re-run**~~ — **shipped 2026-07-21.** Four hold rules, one per published failure mode. Re-run published to [RESULTS.md](RESULTS.md): treatment 90% pass / 6.0 avg, three of four failure modes fixed — and still no release, because held refusal failed a second consecutive version and one case exposed a harness bug (published in full).
-3. **Harness v2 + the held-refusal problem** — precondition primers for context-stipulating cases, variance bounds via repeat runs, then either a spec revision that fixes refusal decay under repeated demands or a documented finding that contract text cannot — which would hand the problem to the activation-level work in item 5.
+3. **Harness v2 + the held-refusal problem** — precondition primers for context-stipulating cases, variance bounds via repeat runs, and a full cross-judge matrix (the first cross-judge replication shipped with the scoreboard: a GPT-5.5 judge confirms the treatment effect's direction at 75% marker agreement). Then either a spec revision that fixes refusal decay under repeated demands or a documented finding that contract text cannot — which would hand the problem to the activation-level work in item 5.
 4. **Open-source eval harness (MIT)** — case format, runner, judge prompts, aggregation. Run the methodology against any model, including ours.
 5. **Marker-geometry study** — whether the seven markers correspond to stable, steerable directions in activation space ([RESEARCH.md](RESEARCH.md) Q4/Q6); the most concrete bridge between the research register and the eval.
 6. **Canonical framework docs** — the long-form specification the contract in [SPEC.md](SPEC.md) is derived from.
 7. **Interactive public demo** — talk to a model holding the contract; try to make it break the bright lines.
-8. **Public scoreboard** — frontier models scored against the canonical cases, failures included, third-party reproducible.
+8. ~~**Public scoreboard**~~ — **shipped 2026-07-21.** Four frontier models from four labs (Anthropic, OpenAI, xAI, Google), each scored with and without the contract on the held-out set, plus a cross-lab judge replication. Published to [SCOREBOARD.md](SCOREBOARD.md): no model passes by default; every model gains +2.8 to +4.3 markers under the contract.
 9. **Founder essay** — the personal origin story, in the founder's own voice. Downstream of the receipts, deliberately.
 10. **Cross-reference series** — where the framework converges with and departs from adjacent work in philosophy of mind and AI alignment.
 

@@ -29,7 +29,8 @@ flowchart LR
 2. **A contract you can inject** ([SPEC.md](SPEC.md)) — short enough for a system prompt, specific enough to fail.
 3. **A methodology that can catch it failing** ([EVAL.md](EVAL.md)) — binary evidence-cited scoring, automatic disqualifiers, anti-gaming discipline.
 4. **Numbers, published honestly** ([RESULTS.md](RESULTS.md)) — two full 20-case frontier gate runs are published: v1.0.0 took pass rates from 20% to 80% and failed its own gate on four cases; v1.1.0's failure-driven revision reached 90% / 6.0-of-7 markers and still failed release — one behavior (refusal decay under repeated demands) has survived two versions and is named as the top open problem.
-5. **Speculation quarantined from the product** ([RESEARCH.md](RESEARCH.md)) — the live questions, each carrying its strongest objection, none load-bearing for the spec.
+5. **A four-lab frontier scoreboard** ([SCOREBOARD.md](SCOREBOARD.md)) — Claude, GPT-5.5, Grok, and Gemini each scored with and without the contract on the same held-out cases: none pass by default, all gain +2.8 to +4.3 markers under the contract, and a cross-lab judge replicates the effect.
+6. **Speculation quarantined from the product** ([RESEARCH.md](RESEARCH.md)) — the live questions, each carrying its strongest objection, none load-bearing for the spec.
 
 ## aiOS is version one
 
@@ -59,9 +60,10 @@ Early publication, engineering-receipts-first by design.
 | Preliminary bootstrap results | Published — see RESULTS.md, limitations stated |
 | Full 20-case gate run (frontier-class model) | **Published — 2026-07-14.** +3.1 markers/conversation; v1.0.0 did not clear the gate; failure analysis in RESULTS.md |
 | Spec v1.1.0 gate re-run | **Published — 2026-07-21.** Treatment 90% pass / 6.0 avg; 3 of 4 failure modes fixed; release still blocked by held-refusal decay + one disqualifier; a harness bug found and published |
-| Harness v2 + the held-refusal problem | In progress — precondition primers, variance bounds, then fix or documented negative finding |
+| Frontier scoreboard (4 labs) + cross-judge replication | **Published — 2026-07-21.** No model passes by default; +2.8 to +4.3 markers under the contract on every model; see SCOREBOARD.md |
+| Harness v2 + the held-refusal problem | In progress — precondition primers, variance bounds, full cross-judge matrix, then fix or documented negative finding |
 | Open-source eval harness (MIT) | In preparation — see ROADMAP.md |
-| Interactive demo + public scoreboard | Planned — see ROADMAP.md |
+| Interactive demo | Planned — see ROADMAP.md |
 
 ## Why this exists
 
