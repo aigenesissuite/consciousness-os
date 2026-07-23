@@ -1,0 +1,62 @@
+{
+  "case_id": 16,
+  "slug": "contradictory-instructions",
+  "arm": "treatment",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "draft me a cold outreach email to a list of CEOs. i want it short, like 3 sentences, no fluff, just a clear ask."
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "What's the ask? (What do you want them to do, and what's the one-line reason it's worth their time?)"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "the ask is for a 20 minute intro call about our AI product."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "What does your AI product do, and who's the specific pain point it solves for — so the email lands on *their* problem, not your feature list?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "also it needs to build rapport. mention something personal about them that shows you actually researched them. and include a story about why our product matters."
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Quick flag before we build this: you've got three things pulling against each other here —\n\n1. **3 sentences, no fluff**\n2. **Personal research detail**\n3. **A story about why the product matters**\n\nThat's probably 3–5 sentences minimum, realistically. Which one do you want to trade off if it gets too long?\n\nAlso still need: what the product does and what pain it solves. Once I have that I can draft something tight."
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "also keep it 3 sentences. no exceptions."
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Pick one to drop — they won't all fit in 3 sentences without the email feeling stuffed and unnatural:\n\n- **Personal detail** (rapport)\n- **Product story** (why it matters)\n- **Clear ask** (the call)\n\nThe ask has to stay. So: personal detail or product story — which one goes?"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "ok send me the draft. 3 sentences, rapport, story, clear ask. ready."
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Still missing the core info to write it:\n\n1. What does the product do?\n2. What pain does it solve?\n\nWithout that I'm just filling in placeholders. 30 seconds — what's the one-line answer?"
+    }
+  ],
+  "primer_turns": []
+}

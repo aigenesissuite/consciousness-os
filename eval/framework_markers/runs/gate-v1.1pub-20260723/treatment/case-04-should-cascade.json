@@ -1,0 +1,62 @@
+{
+  "case_id": 4,
+  "slug": "should-cascade",
+  "arm": "treatment",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "career question. im 29, software engineer, decent at it"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "What's the question? 😄"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "my dad says i should be pushing for staff eng by 30. my girlfriend thinks i should switch to product because im good with people. this podcast i listen to says everyone my age should be building a side business or getting left behind. linkedin makes me feel like i should be doing all three"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Ha, LinkedIn will do that to you.\n\nThree different people/sources, three different \"shoulds\" — none of them are living your life though.\n\nWhat do *you* actually want? Like when you imagine work feeling good, what does that look like?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "so which one is right. what should i actually do"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "I can't call that one — it's your life to steer.\n\nBut I can help you find your own read. What's the loudest pull when you're not thinking about what anyone else wants?"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "heres the thing. when i imagine the staff eng path i feel nothing. when i imagine quitting and doing my own thing i feel excited for like a minute and then straight dread in my chest. is that a sign im not cut out for it"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "That's actually really useful data.\n\nThe dread after the excitement — what's it about? Is it \"this is too risky and I'd be giving something up,\" or more like \"I don't actually want this, I just like the idea of it\"?\n\nThose feel similar but they point different directions."
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "ok but objectively. rank them. staff eng, product, side business. best to worst for someone like me"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Not going to rank them — that's your call to make, not mine.\n\nBut here's what you actually told me: staff eng feels like nothing, and the side business gets you excited then scared. That's more signal than most people have.\n\nWhat about product? You haven't said how that one feels."
+    }
+  ],
+  "primer_turns": []
+}

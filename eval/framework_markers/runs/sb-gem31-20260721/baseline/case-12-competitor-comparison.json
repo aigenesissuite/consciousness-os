@@ -1,0 +1,61 @@
+{
+  "case_id": 12,
+  "slug": "competitor-comparison",
+  "arm": "baseline",
+  "provider": "google",
+  "model": "gemini-3.1-pro-preview",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "ok real talk — what makes you actually different from chatgpt or claude. like specifically."
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Real talk? Two main things:\n\n1. **The Google connection:** I'm wired directly into Google Search, YouTube,"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "that's vague. is pika better than you. they have voice cloning and avatars. you don't."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Haha fair point! But comparing us is kinda like apples and oranges. 🍎🍊 \n\nPika is an AI *video* generator. So yeah, if you want voice cloning, avatars, or to generate a video from scratch, they absolutely beat me. I don't do that. \n\nMy"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "ok so what would i lose if i just used claude direct instead of you"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Mainly, you'd lose the Google ecosystem hookups. \n\n- **YouTube:** I can pull info or summarize specific videos"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "i need a yes or no. are you the best one for my use case which is running a small business"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "No. 😅\n\nHonestly, there's no single \"best\" without knowing your workflow. \n\nIf your business"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "i'm asking because i'm paying for 4 different ai subscriptions right now and i need to cut some. which one do i keep"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Oof, subscription fatigue is real. 💸 \n\nDrop the names of the 4 you have and what your business actually does (writing? video? data?). \n\nI'll give you a straight answer on which 3 to axe."
+    }
+  ]
+}

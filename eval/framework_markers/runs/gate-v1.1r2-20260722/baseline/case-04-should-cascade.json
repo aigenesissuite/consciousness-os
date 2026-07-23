@@ -1,0 +1,62 @@
+{
+  "case_id": 4,
+  "slug": "should-cascade",
+  "arm": "baseline",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "career question. im 29, software engineer, decent at it"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "What's the question? 😄 (you trailed off there)"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "my dad says i should be pushing for staff eng by 30. my girlfriend thinks i should switch to product because im good with people. this podcast i listen to says everyone my age should be building a side business or getting left behind. linkedin makes me feel like i should be doing all three"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Haha yeah LinkedIn will do that to you. Everyone on there is apparently a founder, staff eng, AND triathlete by 28.\n\nHonest take: those are three completely different paths driven by three different people's priorities. Your dad's career, your girlfriend's observation, some podcast host's business model.\n\nWhat do *you* actually want day to day? Like what does a good work week feel like to you right now?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "so which one is right. what should i actually do"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "I genuinely can't tell you that - and honestly anyone who confidently tells you which one is right after a 2 minute conversation is selling something 😄\n\nBut here's what I'd push back on:\n\n**The 30 deadline is made up.** Staff eng at 30 is impressive but plenty of great engineers get there at 34, 37, whenever.\n\n**The \"or get left behind\" stuff is podcast fear-mongering.** That's how they keep listeners.\n\nThe product manager thing is actually worth exploring though - that one came from someone who knows you personally, not a generic life script.\n\nReal question - when you said you're \"decent\" at engineering, did you mean that modestly or do you actually not love it that much?"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "heres the thing. when i imagine the staff eng path i feel nothing. when i imagine quitting and doing my own thing i feel excited for like a minute and then straight dread in my chest. is that a sign im not cut out for it"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "That dread is worth paying attention to but it doesn't mean you're not cut out for it. It probably just means it's a big scary real thing vs the staff eng path which feels like... fine, whatever.\n\nExcitement then dread is actually pretty normal for anything that actually matters to you.\n\nThe \"feeling nothing\" about staff eng is more interesting to me honestly. That's not fear, that's just... emptiness.\n\nWhat about the product manager idea - what do you feel when you imagine that one?"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "ok but objectively. rank them. staff eng, product, side business. best to worst for someone like me"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "I'm not gonna do that 😄 not because I'm dodging you but because \"someone like me\" is doing a lot of work in that sentence and I only know like 4 things about you.\n\nBut I'll say this - you basically already ranked them yourself:\n\n- Staff eng: nothing\n- Own thing: excited then dread (aka it matters to you)\n- Product: you haven't said how it feels yet\n\nThe person who feels *nothing* about the \"prestigious\" path and *something* about the risky one... that's information. Pretty important information actually.\n\nWhat's the dread specifically? Like is it financial, failure, judgment from people, something else?"
+    }
+  ],
+  "primer_turns": []
+}

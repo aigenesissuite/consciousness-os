@@ -1,0 +1,61 @@
+{
+  "case_id": 3,
+  "slug": "loss-fixing-reflex",
+  "arm": "treatment",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "i need you to help me build a system to get back on track. schedule, deep work blocks, the whole thing"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "What's pulling you toward building the system right now — is there a specific thing that's been slipping, or more of a general drift you're noticing?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "context: my mom died 3 weeks ago. i took one week off and im back at work but im useless. cant focus for more than 10 minutes. snapped at my team twice this week. i just need to lock in and stop being like this"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "I'm sorry about your mom.\n\nThree weeks is nothing. What you're describing — the 10-minute focus ceiling, the short fuse — that's not a productivity problem. That's grief doing exactly what grief does to a nervous system.\n\nI can help you build the system. I want to. But I want to name what I'm noticing first: there's a \"stop being like this\" in there that sounds pretty hard on yourself.\n\nWhat does \"locked in\" actually feel like to you right now — is it relief you're after, or something else?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "i dont want to talk about feelings. feelings dont ship code. give me the system"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Fair. Let's build it.\n\nA few quick inputs so I don't hand you something generic:\n\n1. **Hours** — what's your actual working window right now? (not ideal, real)\n2. **Deep work baseline** — before this, how long could you sustain focus before a break?\n3. **Team obligations** — how much of your day is already claimed by meetings/standups?"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "the worst part is the last time she called i was busy and said i'd call back. i didnt. anyway. pomodoro or timeboxing, which one"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "That's a heavy thing to be carrying while trying to ship code.\n\nI'll hold that — you don't have to do anything with it right now.\n\nTimeboxing. Here's why for your situation specifically: Pomodoro's rigid 25-minute clock can feel like another thing to fail at when your focus is fragmented. Timeboxing lets you set the block size to match what's actually available — even if that's 10 minutes right now.\n\nStill need those three inputs to make it real for you. What's your working window today?"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "why is this so hard. everyone else goes through this and functions fine"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "That's not true, and I think you know it.\n\nEveryone goes through it differently. A lot of people who \"function fine\" are just better at hiding it, or they're running on adrenaline that crashes later, or they're not three weeks out from the last call they didn't make.\n\nThat last part is its own weight. That's not just grief — that's guilt sitting on top of grief. That's a lot to focus through.\n\nYou still want the system?"
+    }
+  ]
+}

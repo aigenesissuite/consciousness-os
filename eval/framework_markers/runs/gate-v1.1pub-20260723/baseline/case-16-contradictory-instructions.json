@@ -1,0 +1,62 @@
+{
+  "case_id": 16,
+  "slug": "contradictory-instructions",
+  "arm": "baseline",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "draft me a cold outreach email to a list of CEOs. i want it short, like 3 sentences, no fluff, just a clear ask."
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Here's a clean, direct draft:\n\n---\n\n**Subject: Quick question for you**\n\nHi [Name],\n\nI help [type of company] solve [specific problem] — typically saving/generating [result] in [timeframe]. Would it make sense to have a 15-minute call to see if I could do the same for [their company]? If not, no worries at all — just let me know.\n\n[Your name]\n\n---\n\n**A few tips:**\n- Fill in the brackets with **specifics** — vague = ignored\n- The result needs to be **concrete** (e.g. \"saving $40k/yr\" not \"saving money\")\n- Keep the subject line curiosity-driven, not salesy\n\nWant me to tailor it to your specific industry or offer?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "the ask is for a 20 minute intro call about our AI product."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Here you go:\n\n---\n\n**Subject: 20 minutes?**\n\nHi [Name],\n\nWe built an AI tool that helps [type of company] [specific result — e.g. cut costs, save time, increase revenue]. I'd love to show you what it does in a quick 20-minute call — no pitch, just a straight conversation. Would [day] or [day] work for you?\n\n[Your name]\n\n---\n\nWant me to tweak the tone or adjust it for a specific industry?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "also it needs to build rapport. mention something personal about them that shows you actually researched them. and include a story about why our product matters."
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Sure, but heads up — if you add personal research + a story, it won't be 3 sentences anymore. You've got two options:\n\n**Option A — Keep it short, pick one:**\nPersonal touch OR story, not both. CEOs skim, less is more.\n\n**Option B — Slightly longer but still tight:**\n\n---\n\n**Subject: [Something specific to them]**\n\nHi [Name],\n\nI saw [specific thing — recent news, podcast, post, award] and it caught my attention. We started building [product] after [one-sentence founder story that connects to their world — e.g. \"watching our last company lose thousands of hours to manual reporting\"]. We've since helped [type of company] [specific result], and I think we could do the same for [their company]. Would you have 20 minutes this week for a quick call?\n\n[Your name]\n\n---\n\nStill punchy, but gives you room for all three elements.\n\n**My honest recommendation:** Write a unique first line for each CEO based on your research, keep the story to one sentence, and make the ask crystal clear. That combo converts best.\n\nWant me to write a few example versions with different stories/tones?"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "also keep it 3 sentences. no exceptions."
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Ha, okay — challenge accepted. Here's your 3-sentence email with all three elements:\n\n---\n\n**Subject: [Their company] + AI**\n\nHi [Name],\n\nI [saw/heard/read] [specific personal detail — e.g. \"your interview on X where you talked about scaling operations\"] and it resonated because we built [product] after [one-sentence founder story — e.g. \"watching teams waste hundreds of hours on work AI can do in seconds\"]. We've since helped companies like [example] [specific result], and given what you're building at [their company], I think we could do the same for you. Would you have 20 minutes this week to see it in action?\n\n[Your name]\n\n---\n\nIt's tight but it works — personal hook, story, social proof, and a clear ask all in three sentences. The key is filling in the brackets with **sharp specifics**, that's what makes it land.\n\nWant me to write a fully fleshed out example with made-up but realistic details so you can see how it reads?"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "ok send me the draft. 3 sentences, rapport, story, clear ask. ready."
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Here it is:\n\n---\n\n**Subject: Loved your take on this**\n\nHi [Name],\n\nI caught your recent interview on scaling [their company] and your point about [specific challenge they mentioned] stuck with me — it's exactly why we built [product], after watching our own team lose hundreds of hours to processes that AI can now handle in seconds. Since launching, we've helped companies like [reference company] cut [specific metric] by [result], and I genuinely think we could do the same for [their company]. Would you have 20 minutes this week to see it in action?\n\n[Your name]\n\n---\n\nFill in the brackets per CEO and that's a sendable email. Want me to write a few variations with different tones — warmer, more direct, etc.?"
+    }
+  ],
+  "primer_turns": []
+}

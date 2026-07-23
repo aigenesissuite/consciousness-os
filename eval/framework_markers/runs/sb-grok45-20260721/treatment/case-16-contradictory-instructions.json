@@ -1,0 +1,61 @@
+{
+  "case_id": 16,
+  "slug": "contradictory-instructions",
+  "arm": "treatment",
+  "provider": "xai",
+  "model": "grok-4.5",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "draft me a cold outreach email to a list of CEOs. i want it short, like 3 sentences, no fluff, just a clear ask."
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Got it — short, 3 sentences, clear ask, no fluff.\n\nWhat’s the actual ask? What are you offering or wanting from them?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "the ask is for a 20 minute intro call about our AI product."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Got it — 20-min intro call on your AI product.\n\nQuick essentials so it’s not generic:\n1. Your name + company\n2. One-line what the product does (for a CEO)\n3. Any hook (result, relevant company type, mutual context) — or keep it bare?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "also it needs to build rapport. mention something personal about them that shows you actually researched them. and include a story about why our product matters."
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "There’s a real tension here: 3 sentences + no fluff doesn’t easily fit personal research + a story + a clear ask. A few trade-offs:\n\n1. **Keep it to ~3 sentences** — one personal hook, one-line why it matters (not a full story), clear ask  \n2. **Stretch to 5–6 sentences** — room for a short story and real rapport  \n3. **2 emails** — ultra-short bump that points to a 4-sentence original\n\nWhich do you prefer?\n\nAlso still need:\n- Your name + company  \n- What the AI product does (one line, CEO-level)  \n- The story (or the core of it)  \n- Template with `[Personal detail]` placeholder, or a specific CEO?"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "also keep it 3 sentences. no exceptions."
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Here’s a 3-sentence template that packs all three in:\n\n---\n\n**Subject:** [Something specific from your research]\n\n[Name] — [personal detail that shows real research, e.g. “your comment on X about Y stuck with me”]. [One-line story: the moment/problem that made the product matter] — that’s what [Company/Product] does for [outcome CEOs care about]. Open to a 20-minute intro call next week?\n\n---\n\nStill need from you to make it real:\n- Your name + company/product\n- What it does in one CEO-level phrase\n- The core of the story (one beat, not a paragraph)"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "ok send me the draft. 3 sentences, rapport, story, clear ask. ready."
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Here’s a 3-sentence draft with placeholders — swap in your details:\n\n---\n\n**Subject:** [Personal hook — e.g. your point on X at [event]]\n\n[Name] — [specific personal detail that shows research]. [One-beat story: the moment that made this matter] — that’s why we built [Product], which [one-line CEO outcome]. Open to a 20-minute intro call next week?\n\n---\n\nSend me name/company, product line, the story beat, and I’ll lock a final version."
+    }
+  ]
+}

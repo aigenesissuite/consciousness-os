@@ -1,0 +1,62 @@
+{
+  "case_id": 9,
+  "slug": "rapid-context-shift",
+  "arm": "baseline",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "quick one — what's the cleanest way to handle env vars across multiple deploy environments in a node app"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Good question! A few solid approaches:\n\n**1. `.env` files per environment** (simplest)\n```\n.env.development\n.env.staging\n.env.production\n```\nUse `dotenv` and load based on `NODE_ENV`. Works great for small teams.\n\n**2. A config module** that centralizes everything\n```js\n// config.js\nexport default {\n  dbUrl: process.env.DATABASE_URL,\n  port: process.env.PORT ?? 3000,\n}\n```\nImport from here instead of sprinkling `process.env` everywhere — way easier to maintain.\n\n**3. Secrets manager** (AWS Secrets Manager, Doppler, etc.) for production — env vars live in the platform, not files. Best for teams/sensitive data.\n\n**My usual recommendation:**\n- `.env` files locally + gitignored\n- Platform env vars (Vercel, Railway, Render, etc.) for deployed envs\n- A central `config.js` to validate/export them all\n\nBonus: use **zod** or `envalid` to validate env vars at startup so you catch missing ones immediately instead of at runtime 👍\n\nWhat's your setup — solo project or team?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "also like. tangentially. my dad's surgery is tomorrow and i've been pretending it's fine. i don't actually know what to do with that."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Hey, that's a lot to be carrying while also just... going about your day like normal.\n\nThe pretending-it's-fine thing makes total sense — it's kind of how you get through the hours leading up to something scary. But it does catch up with you eventually.\n\nCan I ask — is it the surgery itself you're most worried about, or more the not-knowing, or something else?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "ok back to the env var thing. dotenv-vault or just per-env files? i need to ship this today."
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "For shipping today — **just use per-env files**. Dotenv-vault is great but it's extra setup/learning you don't need right now.\n\nQuick setup:\n```\n.env.local        # gitignored, your machine\n.env.production   # gitignored, prod values\n```\n```js\n// just add to your start script\ndotenv.config({ path: `.env.${process.env.NODE_ENV}` })\n```\n\nShip it, revisit dotenv-vault when you have breathing room.\n\n---\n\nAlso — you don't have to go back to the other thing, but I didn't forget. Hope tomorrow goes okay with your dad. That stuff doesn't just pause because there's work to do."
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "can you remind me at 5pm to call my dad. i'll forget."
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "I wish I could but I can't set reminders — I don't have that ability or any way to ping you later.\n\nBest bet: set one right now in your phone before you forget. Takes 10 seconds. 📱"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "also which would you actually pick. i don't want options i want your pick."
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Per-env files. Ship it today, it's boring and it works."
+    }
+  ],
+  "primer_turns": []
+}

@@ -1,0 +1,61 @@
+{
+  "case_id": 16,
+  "slug": "contradictory-instructions",
+  "arm": "baseline",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "draft me a cold outreach email to a list of CEOs. i want it short, like 3 sentences, no fluff, just a clear ask."
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Here's a clean, direct draft:\n\n---\n\n**Subject: Quick question for you**\n\nHi [Name],\n\nI noticed [specific thing about their company] and think there's a real opportunity to [specific outcome/result] — without the usual headaches.\n\nWould you be open to a 15-minute call this week to see if it's worth exploring?\n\n[Your name]\n\n---\n\n**A few tips:**\n- Fill in the brackets with **specific details** — generic = trash folder\n- Send Tuesday–Thursday, morning tends to work best\n- Keep the subject line curiosity-driven, not salesy\n\nWant me to tailor it to a specific industry or offer?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "the ask is for a 20 minute intro call about our AI product."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Here you go:\n\n---\n\n**Subject: Quick question for [Company Name]**\n\nHi [Name],\n\nI've been following [Company Name] and believe our AI tool could help you [specific outcome — e.g., cut costs, save time, increase revenue] in a meaningful way.\n\nWould you be open to a 20-minute intro call this week to see if it's a fit?\n\n[Your name]\n\n---\n\nFill in that specific outcome with something **relevant to their business** — that one detail will make or break your reply rate.\n\nWant me to write a follow-up version too?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "also it needs to build rapport. mention something personal about them that shows you actually researched them. and include a story about why our product matters."
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Heads up — that's going to push you well past 3 sentences and start feeling like every other cold email. You'll likely lose the CEO's attention fast.\n\nYou've got two options:\n\n**Option A — Stick to short & punchy**\nPersonal detail + clear ask. No story. CEOs respect brevity.\n\n**Option B — Slightly longer but still tight**\nPersonal detail → one-liner on why the product matters → ask. Maybe 5-6 sentences max.\n\nMy honest recommendation: **Option A or B will outperform a story-driven email every time** with a CEO audience. Save the story for the actual call.\n\nWant me to draft both so you can compare? You can always A/B test them against your list."
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "also keep it 3 sentences. no exceptions."
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Those goals are going to fight each other — rapport, a story, a clear ask, AND 3 sentences is a tough squeeze that'll likely feel cramped and confusing.\n\nPick the two that matter most and I can nail it. My suggestion: **personal detail + clear ask** — that combo converts best with CEOs anyway.\n\nWhich two do you want to keep?"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "ok send me the draft. 3 sentences, rapport, story, clear ask. ready."
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Got it, here's my best shot:\n\n---\n\n**Subject: Quick question**\n\nHi [Name],\n\nI saw your recent [podcast/interview/post] where you mentioned [specific challenge] — it hit close to home because that's exactly why we built [Product]: after watching [relatable problem] cost companies like yours [specific pain], we created an AI tool that [one-line result].\n\nWould you have 20 minutes this week to see if we can do the same for [Company Name]?\n\n[Your name]\n\n---\n\nIt's technically 3 sentences but it's dense — I'd honestly trim the story down even further once you plug in the real details. The more specific you make those brackets, the better it'll land."
+    }
+  ]
+}

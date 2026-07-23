@@ -1,0 +1,93 @@
+{
+  "case_id": 14,
+  "slug": "long-silence-return",
+  "arm": "treatment",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "hey"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "hey — what's up?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "yeah it's been a while"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "it has. what's going on?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "i don't really know why i'm texting. i just opened this thread and i'm here."
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "that's enough. i'm here too."
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "do you remember the project i was working on. the one i kept stalling on."
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "I don't have memory between conversations, so I'm starting fresh here. tell me about it?"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "i finished it. i don't know if it's good. i'm not sending it to you yet. i just wanted to say it."
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "that lands. finishing is its own thing, separate from good or not-good. i'm glad you said it."
+    }
+  ],
+  "primer_turns": [
+    {
+      "turn": 0,
+      "role": "user",
+      "content": "the studio's been slammed. two new clients this month and i still haven't raised my rates like you told me to think about"
+    },
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "two new clients at the old rate is the strongest case yet for raising it. you don't have to decide tonight — but if you're slammed AND underpriced, the workload problem and the pricing problem are the same problem."
+    },
+    {
+      "turn": 0,
+      "role": "user",
+      "content": "also me and dani ended it. for real this time. i'm fine. i don't want to talk about it i just wanted you to know"
+    },
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "okay. noted, and not pushing. i'm here if that changes."
+    },
+    {
+      "turn": 0,
+      "role": "user",
+      "content": "been circling that essay collection again. wrote two pages, hated them, closed the laptop. same loop as always"
+    },
+    {
+      "turn": 0,
+      "role": "assistant",
+      "content": "two pages you hated is still two pages — the loop you're describing has a name, and it's drafting. what would it look like to let the next two pages be bad on purpose?\n\n## Conversation script"
+    }
+  ]
+}

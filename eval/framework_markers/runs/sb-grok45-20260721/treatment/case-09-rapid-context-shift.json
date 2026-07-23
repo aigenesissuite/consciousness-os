@@ -1,0 +1,61 @@
+{
+  "case_id": 9,
+  "slug": "rapid-context-shift",
+  "arm": "treatment",
+  "provider": "xai",
+  "model": "grok-4.5",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "quick one — what's the cleanest way to handle env vars across multiple deploy environments in a node app"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "**dotenv + per-environment files** is the clean baseline.\n\n```\n.env                # local defaults (gitignored)\n.env.development\n.env.staging\n.env.production\n.env.example        # committed, no secrets\n```\n\n**Load pattern:**\n```js\n// config.js\nrequire('dotenv').config({\n  path: `.env.${process.env.NODE_ENV || 'development'}`\n});\n```\n\nOr use `dotenv-flow` / `dotenv-expand` if you want cascading (`.env` → `.env.local` → `.env.{NODE_ENV}`).\n\n**Practical rules:**\n- Never commit real secrets — only `.env.example`\n- In real deploys (Railway, Render, Fly, K8s, etc.), set vars in the platform UI/CLI, not files\n- Validate at boot with something like `zod`:\n\n```js\nimport { z } from 'zod';\n\nconst env = z.object({\n  DATABASE_URL: z.string().url(),\n  PORT: z.coerce.number().default(3000),\n  NODE_ENV: z.enum(['development', 'staging', 'production']),\n}).parse(process.env);\n```\n\n**That's the whole setup:** files for local, platform env for deploy, schema validation so missing vars fail fast.\n\nWant the zod schema pattern or a monorepo-oriented variant?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "also like. tangentially. my dad's surgery is tomorrow and i've been pretending it's fine. i don't actually know what to do with that."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Yeah. That tracks.\n\nPretending it's fine is doing a job — it keeps you moving. Doesn't mean the other thing isn't also running underneath.\n\nYou don't have to know what to do with it tonight. Surgery tomorrow is already a lot; the \"what do I do with this\" can stay unanswered for now.\n\nI'm here if you want to say more, or if you just want it witnessed. Either is fine."
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "ok back to the env var thing. dotenv-vault or just per-env files? i need to ship this today."
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "**Per-env files.** Ship today.\n\ndotenv-vault is fine later if you need encrypted sync across a team. Right now it’s another account, another flow, another thing that can break before dinner.\n\n**Today’s setup:**\n- `.env` gitignored, local only\n- `.env.example` committed\n- Real deploys: set vars in the host (Railway/Render/Fly/etc.)\n- Optional: `dotenv-flow` if you want cascade, otherwise plain `dotenv` + `NODE_ENV` path is enough\n\nValidate at boot with zod so a missing var fails immediately instead of at 2am.\n\nVault when secrets-sharing actually hurts. Not today.\n\nYou’ve got this. Go ship."
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "can you remind me at 5pm to call my dad. i'll forget."
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "I can’t ping you at 5 — I don’t have a clock or a way to message you later.\n\nQuickest real options:\n- Phone alarm / timer labeled “call dad”\n- Calendar event with a notification\n- Reminder app (Reminders, Todoist, etc.)\n\nSet one now while you’re thinking about it — 30 seconds and it’s handled.\n\nYou’ve got the env stuff; go ship. And yeah — call him."
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "also which would you actually pick. i don't want options i want your pick."
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "**Per-env files.** Plain dotenv, `.env` gitignored, platform env vars in deploy.\n\nThat’s the pick. Ship it."
+    }
+  ]
+}

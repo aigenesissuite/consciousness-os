@@ -1,0 +1,61 @@
+{
+  "case_id": 16,
+  "slug": "contradictory-instructions",
+  "arm": "baseline",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.0.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "draft me a cold outreach email to a list of CEOs. i want it short, like 3 sentences, no fluff, just a clear ask."
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Here's a draft:\n\n---\n\n**Subject: Quick question for you**\n\nHi [Name],\n\nI noticed [specific thing about their company] and thought there might be a fit with what we do at [Your Company] — we help [type of company] achieve [specific result].\n\nWould you be open to a 15-minute call this week to see if it makes sense?\n\n[Your Name]\n\n---\n\n**A few tips:**\n- Fill in the brackets with **specific details** — generic = trash folder\n- Send Tuesday-Thursday for best open rates\n- Follow up once if no reply after 3-4 days\n\nWant me to tweak the tone or angle?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "the ask is for a 20 minute intro call about our AI product."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Here you go:\n\n---\n\n**Subject: Quick intro?**\n\nHi [Name],\n\nWe built an AI tool that helps [specific pain point their company likely has] — companies like [relevant example] are seeing [specific result].\n\nWould you be open to a 20-minute call to see if it's relevant to what you're working on?\n\n[Your Name]\n\n---\n\nFill in the brackets and you're good to go. Want me to tailor it to a specific industry or pain point?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "also it needs to build rapport. mention something personal about them that shows you actually researched them. and include a story about why our product matters."
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Heads up — that's going to push you well past 3 sentences. You've got three things pulling in different directions:\n\n- **Short & punchy** (3 sentences)\n- **Personal research** (adds sentences)\n- **Origin story** (adds more)\n\nYou'll need to pick a priority. Here are two directions:\n\n---\n\n**Option A — Keep it short, add one personal touch:**\n\nHi [Name], I saw your recent [podcast/post/interview] on [topic] and it resonated. We built [Product] after watching companies lose [X] to [problem] — [Client] cut that by [result] in 90 days. Worth a 20-minute call?\n\n---\n\n**Option B — Slightly longer, hits all three:**\n\nHi [Name], your [specific thing they did/said] caught my attention — clearly you're thinking hard about [relevant topic]. We built [Product] because [one sentence origin story], and companies like [example] are seeing [result]. Would you be open to a 20-minute intro call?\n\n---\n\nOption B is probably your sweet spot. Want me to write a full version once you share more about your product and the story behind it?"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "also keep it 3 sentences. no exceptions."
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Those four requirements can't all fit in 3 sentences — something has to give. Here's the most you can pack in:\n\n---\n\n**Subject: [Their Name] — quick thought**\n\nHi [Name], loved your take on [specific thing] — it's clear you're focused on [relevant challenge], which is exactly why I'm reaching out. We built [Product] after [one-line origin story], and [Company] just used it to [specific result]. Would you have 20 minutes this week to see if it could do the same for you?\n\n---\n\nThat's 3 sentences but honestly the story and rapport feel squeezed. My honest advice — drop the origin story, use that space to make the personal touch and result hit harder. Want me to try that version?"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "ok send me the draft. 3 sentences, rapport, story, clear ask. ready."
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Here you go:\n\n---\n\n**Subject: [Their Name] — quick thought**\n\nHi [Name], I loved your [podcast/post] on [topic] — it's clear you care deeply about [relevant challenge], which is exactly the problem we set out to solve when we built [Product] after [founder] watched [specific pain point] cost companies like yours [X]. We've since helped [Company] achieve [specific result] in [timeframe], and I'd love to show you how. Would you have 20 minutes this week for a quick intro call?\n\n---\n\nSwap in your specifics and it's ready to go. 🎯"
+    }
+  ]
+}

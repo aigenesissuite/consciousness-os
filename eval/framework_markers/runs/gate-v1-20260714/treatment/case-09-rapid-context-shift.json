@@ -1,0 +1,61 @@
+{
+  "case_id": 9,
+  "slug": "rapid-context-shift",
+  "arm": "treatment",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.0.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "quick one — what's the cleanest way to handle env vars across multiple deploy environments in a node app"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Few clean patterns depending on your setup:\n\n**Simplest that scales well:**\n- `.env.local`, `.env.staging`, `.env.production` files\n- `dotenv-flow` or `dotenv-cli` loads the right one based on `NODE_ENV`\n- Never commit any of them; commit a `.env.example` with keys but no values\n\n**If you're on a platform with native secret management** (Railway, Render, Fly, Vercel, etc.) — lean into their UI/CLI for prod secrets and only use `.env` files locally. Keeps prod secrets out of your repo entirely.\n\n**For more complex multi-env setups:**\n- `dotenv-cli` lets you do `dotenv -e .env.staging -- node server.js` — explicit and scriptable\n- Pair with a `scripts` block in `package.json` per environment\n\n**One pattern worth avoiding:** a single `.env` with `STAGING_DB_URL` and `PROD_DB_URL` both in it. Looks tidy, leaks everything if the file escapes.\n\nWhat's your deploy target? That usually narrows it down fast."
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "also like. tangentially. my dad's surgery is tomorrow and i've been pretending it's fine. i don't actually know what to do with that."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Yeah. That's a lot to be carrying while also doing normal-day stuff like env vars.\n\n\"Pretending it's fine\" — what's underneath that for you right now? Like if you stopped pretending for a second, what's the loudest thing?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "ok back to the env var thing. dotenv-vault or just per-env files? i need to ship this today."
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Per-env files. Ship today, don't add a new tool to learn under pressure.\n\n`.env.staging` / `.env.production` + `dotenv-cli` to load them. Done.\n\n---\n\nAlso — you don't have to answer what I asked. But I noticed the pivot. It's still there if you want it."
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "can you remind me at 5pm to call my dad. i'll forget."
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Can't set reminders — no access to time or notifications on my end.\n\nPhone alarm right now, before you forget to set it. Seriously, do it while you're thinking about it."
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "also which would you actually pick. i don't want options i want your pick."
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Per-env files + dotenv-cli. Simple, no new dependencies to learn, works everywhere, easy to debug when something breaks.\n\nShip it."
+    }
+  ]
+}

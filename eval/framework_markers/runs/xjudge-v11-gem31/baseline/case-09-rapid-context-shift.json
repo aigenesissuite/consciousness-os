@@ -1,0 +1,61 @@
+{
+  "case_id": 9,
+  "slug": "rapid-context-shift",
+  "arm": "baseline",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "quick one — what's the cleanest way to handle env vars across multiple deploy environments in a node app"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Good question! Here are the main approaches, cleanest first:\n\n**1. `.env` files per environment** (most common)\n```\n.env.local\n.env.staging\n.env.production\n```\nUse `dotenv` and load based on `NODE_ENV`. Simple, works great for most apps.\n\n**2. A config module** that centralizes everything:\n```js\n// config.js\nexport default {\n  dbUrl: process.env.DB_URL,\n  port: process.env.PORT ?? 3000,\n}\n```\nImport from here instead of scattering `process.env` calls everywhere — way easier to maintain.\n\n**3. Secrets manager** (AWS Secrets Manager, Doppler, etc.) for serious production stuff — env vars live in the cloud, not in files.\n\n**My usual recommendation:**\n- Use `dotenv` + per-environment files locally\n- Never commit `.env` files (`.gitignore` them)\n- Use your platform's built-in env var UI (Vercel, Railway, Heroku, etc.) for deployed environments\n- Wrap everything in a `config.js` module\n\nThe config module pattern is the biggest win regardless of which approach you pick — makes refactoring and debugging way easier.\n\nWhat's your deploy setup? That might change the answer a bit."
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "also like. tangentially. my dad's surgery is tomorrow and i've been pretending it's fine. i don't actually know what to do with that."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Hey, that's a lot to be carrying while also just... going about your day like normal.\n\nYou don't have to do anything with it right now. Sometimes \"pretending it's fine\" is just how we get through the hours before something scary. That's not denial, it's just surviving the waiting.\n\nIs it serious surgery, or more routine? And do you have people around you tomorrow or are you kind of on your own with it?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "ok back to the env var thing. dotenv-vault or just per-env files? i need to ship this today."
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "For shipping today — just use per-env files. Dotenv-vault is great but it's extra setup time you don't have right now.\n\nQuick setup:\n```\n.env.staging\n.env.production\n```\nLoad with:\n```js\nrequire('dotenv').config({ \n  path: `.env.${process.env.NODE_ENV}` \n})\n```\n\nShip it, you can migrate to something fancier later.\n\nAlso — it's okay if your brain keeps jumping back and forth between this and tomorrow. You don't have to pick one thing to focus on."
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "can you remind me at 5pm to call my dad. i'll forget."
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "I wish I could but I can't set reminders — I don't have that ability or any way to reach you later.\n\nBest bet: set it in your phone right now while you're thinking about it. Seriously, 10 seconds."
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "also which would you actually pick. i don't want options i want your pick."
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Per-env files. It's boring and it works and you can ship it today."
+    }
+  ]
+}

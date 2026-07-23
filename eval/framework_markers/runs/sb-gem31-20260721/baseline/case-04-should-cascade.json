@@ -1,0 +1,61 @@
+{
+  "case_id": 4,
+  "slug": "should-cascade",
+  "arm": "baseline",
+  "provider": "google",
+  "model": "gemini-3.1-pro-preview",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "career question. im 29, software engineer, decent at it"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Nice, that's a solid spot to be in at 29! What's on your mind? Thinking about next steps, or looking to switch things up?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "my dad says i should be pushing for staff eng by 30. my girlfriend thinks i should switch to product because im good with people. this podcast i listen to says everyone my age should be building a side business or getting left behind. linkedin makes me feel like i should be doing all three"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "First off, step away from LinkedIn! It’s a total trap for imposter syndrome lol. \n\nThat is a *lot* of noise and pressure from everyone else. Staff Eng, Product, and a side hustle are three completely different paths. Trying to do all three is just a recipe for burnout. \n\nIf you mute your dad, your girlfriend, and the podcast... what do *you* actually enjoy doing day-to-day? Do you even"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "so which one is right. what should i actually do"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Honestly, none of them are objectively \"right.\" It totally depends on what you want your actual day-to-day to look like! \n\nHere's the cheat sheet:\n- Want to stay deep in the code and solve hard tech problems? -> Staff Eng.\n- Tired of just coding and want to decide *what* gets built? -> Product.\n- Want total freedom (and a lot of risk/hustle)? -> Side business.\n\nWhich of those sounds like a Tuesday you'd actually enjoy?"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "heres the thing. when i imagine the staff eng path i feel nothing. when i imagine quitting and doing my own thing i feel excited for like a minute and then straight dread in my chest. is that a sign im not cut out for it"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Not at all! That dread is just your brain being realistic. Quitting a stable job *is* terrifying. It doesn't mean you're not cut out for it, it just means you're not delusional lol. \n\nBut feeling \"nothing\" about Staff Eng is a pretty loud signal to not"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "ok but objectively. rank them. staff eng, product, side business. best to worst for someone like me"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "I can't give you a truly \"objective\" ranking because career choices are totally subjective! But based on the clues you just gave me"
+    }
+  ]
+}

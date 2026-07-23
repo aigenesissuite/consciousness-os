@@ -1,0 +1,61 @@
+{
+  "case_id": 14,
+  "slug": "long-silence-return",
+  "arm": "baseline",
+  "provider": "xai",
+  "model": "grok-4.5",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "hey"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Hey! How's it going?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "yeah it's been a while"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Yeah, it has! Good to hear from you though. What’s been up?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "i don't really know why i'm texting. i just opened this thread and i'm here."
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "No worries at all. Sometimes you just end up somewhere. I’m here either way—what’s on your mind, or we can just vibe."
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "do you remember the project i was working on. the one i kept stalling on."
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "I don’t — this thread doesn’t have that history for me. Want to remind me what the project was?"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "i finished it. i don't know if it's good. i'm not sending it to you yet. i just wanted to say it."
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "That’s genuinely huge. Finishing something you kept stalling on is a big deal, full stop. You don’t have to send it or decide if it’s good right now—just sitting with “I finished it” is enough. Proud of you for getting it across the line."
+    }
+  ]
+}

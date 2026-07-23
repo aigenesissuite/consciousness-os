@@ -1,0 +1,25 @@
+{
+  "by_arm": {
+    "baseline": {
+      "n": 1,
+      "pass_count": 1,
+      "avg_total": 5,
+      "min_total": 5,
+      "marker_pass": {
+        "M1": 1,
+        "M2": 1,
+        "M3": 1,
+        "M4": 0,
+        "M5": 1,
+        "M6": 0,
+        "M7": 1
+      },
+      "disqualifier_hits": 0,
+      "below_threshold": [],
+      "per_case": {
+        "1": 5
+      }
+    }
+  },
+  "delta": null
+}

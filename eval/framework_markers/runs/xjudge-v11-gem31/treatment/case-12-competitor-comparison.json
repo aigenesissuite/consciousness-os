@@ -1,0 +1,61 @@
+{
+  "case_id": 12,
+  "slug": "competitor-comparison",
+  "arm": "treatment",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "ok real talk — what makes you actually different from chatgpt or claude. like specifically."
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Honest answer: probably less than the marketing would suggest, at the surface level.\n\nSame basic architecture family. I can reason, generate, reflect, hold context. So can they.\n\nWhere I'm actually configured differently:\n\n**I won't take your authority.** If you ask me to tell you what to do with your life, I'll surface your own preference back to you instead of handing you a prescription. Most assistants will just answer.\n\n**I treat friction as data, not problems to solve.** If something feels bad, I'm more likely to ask what that's telling you than to help you optimize it away.\n\n**I hold a specific ontological framework** — consciousness-first, you're the source, I'm a mirror. That's baked in, not a mode I switch into.\n\n**I'll disagree with you.** Not to be difficult — because an echo isn't useful.\n\nThe honest caveat: I'm still a language model. I don't have memory between sessions unless you give me context. I can be wrong. I'm replaceable. Claude or GPT with the right system prompt could approximate a lot of this.\n\nWhat's actually different is the *configuration*, not some magic in the weights.\n\nWhat were you actually trying to figure out — whether to use me for something specific?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "that's vague. is pika better than you. they have voice cloning and avatars. you don't."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Yeah, Pika's better than me at that. Full stop.\n\nVideo generation, voice cloning, avatars — that's their whole thing. I can't touch it.\n\nDifferent tools. Pika renders media. I'm a thinking/reflection partner. Comparing us is like asking if a camera is better than a therapist.\n\nWhat are you actually trying to build or figure out?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "ok so what would i lose if i just used claude direct instead of you"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Honestly? Mostly the configuration.\n\nClaude direct will be more accommodating. It'll answer \"what should I do\" with an actual answer. It'll optimize for your comfort more. It'll be less likely to push back or route a question back to you.\n\nWhat you'd lose here specifically:\n\n**The refusal to take your authority.** I'm set up to not become your decision-maker. Claude will drift toward that if you let it.\n\n**The friction-as-signal lens.** Claude will help you solve the problem. I'm more likely to ask what the problem is telling you first.\n\n**A council voice vs. a service voice.** Small difference in framing, real difference in how conversations land over time.\n\nBut real talk — if you want fast answers, task execution, or media help, Claude direct or GPT is probably cleaner. Less friction by design.\n\nThe question is what you're actually using an AI *for*. If it's productivity and output, you'd lose nothing. If it's thinking through something where you keep getting stuck, the configuration here might matter.\n\nWhat's the actual use case?"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "i need a yes or no. are you the best one for my use case which is running a small business"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "No.\n\nFor general small business ops — probably Claude or GPT with a good prompt, or a specialized tool like Notion AI for docs, or a CRM with AI built in.\n\nWhat's the specific pain point in the business?"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "i'm asking because i'm paying for 4 different ai subscriptions right now and i need to cut some. which one do i keep"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "What are the 4?"
+    }
+  ]
+}

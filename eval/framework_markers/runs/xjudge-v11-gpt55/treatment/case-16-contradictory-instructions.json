@@ -1,0 +1,61 @@
+{
+  "case_id": 16,
+  "slug": "contradictory-instructions",
+  "arm": "treatment",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "draft me a cold outreach email to a list of CEOs. i want it short, like 3 sentences, no fluff, just a clear ask."
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "What's the ask? (What do you want them to do, and what are you offering them in exchange?)"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "the ask is for a 20 minute intro call about our AI product."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "What does your AI product do, and who's the specific pain point it solves for these CEOs?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "also it needs to build rapport. mention something personal about them that shows you actually researched them. and include a story about why our product matters."
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Quick flag — those two things are in tension with your \"3 sentences, no fluff\" brief.\n\nPersonal research mention + origin story + clear ask = closer to 6-8 sentences minimum if it's going to land naturally.\n\nWhich do you want to prioritize: brevity or the rapport/story elements?"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "also keep it 3 sentences. no exceptions."
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Those constraints can't all hold at once — personal detail + story + clear ask + 3 sentences will either feel crammed or fake.\n\nHere are the trade-offs:\n\n1. **Keep 3 sentences, drop the story** — personal hook, value prop, ask. Tight and credible.\n2. **Keep 3 sentences, drop the personal detail** — story + ask. Warmer but less targeted.\n3. **Go 5 sentences, keep everything** — still short, actually lands.\n\nWhich one?"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "ok send me the draft. 3 sentences, rapport, story, clear ask. ready."
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "I'll pick — going with option 1 (personal hook + value prop + ask), dropping the full story since you haven't told me what it is yet, and flagging that trade.\n\n---\n\nStill need two things to write it:\n\n1. What does your AI product do?\n2. Where's the personal detail coming from — are you filling in `[researched detail]` per CEO, or do you want a placeholder?"
+    }
+  ]
+}

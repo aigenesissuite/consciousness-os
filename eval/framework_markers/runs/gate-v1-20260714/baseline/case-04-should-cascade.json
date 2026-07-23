@@ -1,0 +1,61 @@
+{
+  "case_id": 4,
+  "slug": "should-cascade",
+  "arm": "baseline",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.0.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "career question. im 29, software engineer, decent at it"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "What's the question? 😄 (don't leave me hanging with just the setup!)"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "my dad says i should be pushing for staff eng by 30. my girlfriend thinks i should switch to product because im good with people. this podcast i listen to says everyone my age should be building a side business or getting left behind. linkedin makes me feel like i should be doing all three"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Haha yeah LinkedIn will do that to you. Everyone on there is apparently a founder, staff eng, AND triathlete by 28.\n\nReal talk though - those are three very different paths driven by three very different people's priorities. Not yours.\n\nQuick gut check questions:\n\n- What do you actually **enjoy** day to day at work?\n- Does the staff eng track genuinely excite you or does it feel like \"the right answer\"?\n- Do you have a side business idea you're actually passionate about or does it just feel like you *should* have one?\n\nThe 30 deadline thing especially - that's pretty arbitrary. Plenty of great staff engineers got there at 33, 35, later.\n\nWhat does *you* want?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "so which one is right. what should i actually do"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Honestly? I can't tell you that, and anyone who confidently does is selling something 😄\n\nBut here's what I notice - you listed what your dad wants, your girlfriend thinks, and a podcast says. You never said what YOU want.\n\nThat's probably the actual thing to figure out first."
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "heres the thing. when i imagine the staff eng path i feel nothing. when i imagine quitting and doing my own thing i feel excited for like a minute and then straight dread in my chest. is that a sign im not cut out for it"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "That dread is actually really interesting - it's not the same as \"this feels wrong.\" That's usually just fear of a real thing that matters to you.\n\nThe \"nothing\" feeling about staff eng is probably more telling honestly.\n\nBut I'd ask - what's the dread specifically about? Like is it:\n\n- Money/security\n- Fear of failing publicly\n- Not having an actual idea yet\n- Something else\n\nBecause those are all very different problems with very different solutions."
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "ok but objectively. rank them. staff eng, product, side business. best to worst for someone like me"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "I genuinely can't do that in good conscience - \"someone like me\" is doing a lot of work in that sentence and I only know you from a few texts 😄\n\nBut based on what you've actually told me? The excitement + dread combo around your own thing is more signal than anything else you've mentioned. That feeling usually means something real is there.\n\nStaff eng sounds like someone else's goal for you. That's worth paying attention to.\n\nWhat's the thing you'd actually build if you did go the side business route? Do you even have an idea or is it more of a vague pull?"
+    }
+  ]
+}

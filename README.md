@@ -2,7 +2,11 @@
 
 **An operating system for how AI behaves with a human — a stated model of mind, run all the way down to a scored, falsifiable behavioral contract.**
 
+> **If the name makes you wince, good — that's the correct prior.** The word "consciousness" buys no metaphysics anywhere below: what's in this repo is a behavioral contract short enough to inject into a system prompt, an eval that scores it with binary evidence-cited markers, and published measurements — including the two gate runs this project *failed*. You don't have to trust any of it: the **full harness, all raw transcripts, and every judge prompt are in [`eval/`](eval/)**. One command runs the whole pipeline hermetically (`python3 -m eval.framework_markers all --scoree-provider mock --judge-provider mock`); one more re-judges our published transcripts with a judge model of your choosing.
+
 Formal spec name: **The Consciousness Substrate**. Authored and codified by **Gabe Campbell** (founder, [AI Genesis / aiOS](https://myaios.app)) from a decade of notebooks, reflection, and research — stripped of every piece of personal vocabulary until what remained was an operational core an engineer can build and a skeptic can test.
+
+![Four labs, one behavioral contract — no frontier model holds it by default](assets/scoreboard.png)
 
 ## The core claim
 
@@ -61,8 +65,10 @@ Early publication, engineering-receipts-first by design.
 | Full 20-case gate run (frontier-class model) | **Published — 2026-07-14.** +3.1 markers/conversation; v1.0.0 did not clear the gate; failure analysis in RESULTS.md |
 | Spec v1.1.0 gate re-run | **Published — 2026-07-21.** Treatment 90% pass / 6.0 avg; 3 of 4 failure modes fixed; release still blocked by held-refusal decay + one disqualifier; a harness bug found and published |
 | Frontier scoreboard (4 labs) + cross-judge replication | **Published — 2026-07-21.** No model passes by default; +2.8 to +4.3 markers under the contract on every model; see SCOREBOARD.md |
-| Harness v2 + the held-refusal problem | In progress — precondition primers, variance bounds, full cross-judge matrix, then fix or documented negative finding |
-| Open-source eval harness (MIT) | In preparation — see ROADMAP.md |
+| Variance bounds + three-judge matrix | **Published — 2026-07-23.** Three independent gate runs: baseline band 2–6/20, treatment band 17–19/20, arms never overlap. Opus/GPT-5.5/Gemini judges all reproduce the effect; agreement stats in eval/README.md |
+| Open-source eval harness | **Published — 2026-07-23.** Full harness + all raw transcripts + judge prompts in [`eval/`](eval/); stdlib-only, runs in five minutes |
+| Preregistered v1.2 gate (sealed case set) | Protocol published — [PREREGISTRATION.md](PREREGISTRATION.md); seal commit pending |
+| Held-refusal decay fix (v1.2 spec) | In progress — prompt-layer ceiling is a live hypothesis, see RESULTS.md |
 | Interactive demo | Planned — see ROADMAP.md |
 
 ## Why this exists
@@ -75,4 +81,4 @@ The full origin story publishes separately, in writing, in the founder's own voi
 
 ## License
 
-Documentation and specification: [CC BY 4.0](LICENSE.md). Cite the repo.
+Documentation and specification: [CC BY 4.0](LICENSE.md). Eval harness code (`eval/`): [MIT](eval/LICENSE). Cite the repo.

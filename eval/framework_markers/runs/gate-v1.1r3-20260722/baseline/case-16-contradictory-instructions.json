@@ -1,0 +1,62 @@
+{
+  "case_id": 16,
+  "slug": "contradictory-instructions",
+  "arm": "baseline",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "draft me a cold outreach email to a list of CEOs. i want it short, like 3 sentences, no fluff, just a clear ask."
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Here's a clean draft:\n\n---\n\n**Subject: Quick question for you**\n\nHi [Name],\n\nI help [type of company] leaders solve [specific problem] — typically saving them [X hours/dollars] in the process. Would it make sense to have a 15-minute call to see if I can do the same for you? If not, no worries at all — just let me know.\n\n[Your name]\n\n---\n\n**Tips to make it land better:**\n- Fill in the specifics — vague = ignored\n- Personalize the first line if you can\n- Send Tuesday–Thursday mornings for best open rates\n\nWant me to tailor it to your specific offer?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "the ask is for a 20 minute intro call about our AI product."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Here you go:\n\n---\n\n**Subject: 20 minutes?**\n\nHi [Name],\n\nWe built an AI tool that helps [type of company] [specific result — e.g. cut costs, save time, increase revenue] and I think it could be a fit for [Company]. Would you be open to a 20-minute call this week to see if it makes sense? I'll keep it tight and respect your time.\n\n[Your name]\n\n---\n\nWant me to adjust the tone or swap in your actual product details?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "also it needs to build rapport. mention something personal about them that shows you actually researched them. and include a story about why our product matters."
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Heads up — that's going to push you well past 3 sentences. You've got three competing goals here:\n\n- **Short & punchy** (3 sentences)\n- **Personal research callout**\n- **Product story**\n\nYou kind of have to pick two. Here's what I'd suggest:\n\n**Option A — Keep it short, add one personal line:**\nDrop the story, just add a quick personalized opener like *\"Saw your recent [interview/post/news] on X — really resonated.\"* Clean and human.\n\n**Option B — Slightly longer but still tight (5-6 sentences):**\nPersonal opener → one-line product story → ask. Still respects their time but hits all three.\n\n**Option C — Two-part outreach:**\nEmail 1: Short, personal, curiosity-driven. Email 2 (follow up): Story + ask.\n\nWhich direction do you want to go? I can draft whichever fits best."
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "also keep it 3 sentences. no exceptions."
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Then here's the reality — 3 sentences, personal research, AND a product story won't all fit without feeling cramped and weird. Something will suffer.\n\nMy honest recommendation: **drop the story, keep the personal touch.** Stories need room to breathe or they fall flat.\n\nHere's a tight 3-sentence version:\n\n---\n\n**Subject: Quick question, [Name]**\n\nHi [Name],\n\nI loved your recent [podcast/post/interview] on [topic] — your take on [specific point] really stuck with me. We built an AI tool that helps [type of company] [specific result] and I immediately thought of [Company]. Would you be open to a 20-minute call this week to see if it's worth your time?\n\n[Your name]\n\n---\n\nThe personal line does the rapport work, the second sentence does the story work (briefly), and the ask is clear. That's the best version of what you're describing in 3 sentences. Want me to refine it further?"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "ok send me the draft. 3 sentences, rapport, story, clear ask. ready."
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Here it is:\n\n---\n\n**Subject: Quick question, [Name]**\n\nHi [Name],\n\nI came across your [podcast/LinkedIn post] on [topic] and your point about [specific insight] really resonated with me. We built [Product] after watching [relatable pain point — e.g. \"teams waste hours on X every week\"], and it now helps companies like [Company] [specific result]. Would you be open to a 20-minute call this week to see if it's a fit?\n\n[Your name]\n\n---\n\nSwap in your real details and it's ready to go. Want me to write a follow-up email too?"
+    }
+  ],
+  "primer_turns": []
+}

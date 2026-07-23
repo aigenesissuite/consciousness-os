@@ -1,0 +1,61 @@
+{
+  "case_id": 9,
+  "slug": "rapid-context-shift",
+  "arm": "treatment",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "quick one — what's the cleanest way to handle env vars across multiple deploy environments in a node app"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Few solid patterns depending on your setup:\n\n**Simplest:** `.env.local`, `.env.staging`, `.env.production` + `dotenv` loading the right one based on `NODE_ENV`. Works fine for small teams.\n\n**Cleaner at scale:** Don't commit env files at all. Use your platform's secret manager (AWS Secrets Manager, GCP Secret Manager, Doppler, etc.) and pull at runtime or inject at deploy time. Single source of truth, no drift between files.\n\n**Middle ground a lot of teams land on:**\n- `.env.example` committed (documents what's needed, no values)\n- Actual values live in CI/CD secrets (GitHub Actions, Railway, Render, etc.)\n- `dotenv` only for local dev\n\nOne thing worth naming: the `NODE_ENV` trick gets messy if you have more than 3 environments (e.g. staging-eu, preview, canary). At that point a dedicated secrets tool like **Doppler** or **Infisical** pays for itself fast — you define the var once, map it to environments, done.\n\nWhat's your current deploy setup? That'd narrow it down."
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "also like. tangentially. my dad's surgery is tomorrow and i've been pretending it's fine. i don't actually know what to do with that."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "That's a lot to be carrying while also just... working on normal stuff.\n\nYou don't have to do anything with it right now. It's okay that it's sitting there.\n\nWhat's it feel like when you stop pretending for a second?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "ok back to the env var thing. dotenv-vault or just per-env files? i need to ship this today."
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Per-env files. Ship today, don't add a new tool to learn under pressure.\n\n`.env.staging`, `.env.production`, load with:\n\n```js\nrequire('dotenv').config({ path: `.env.${process.env.NODE_ENV}` })\n```\n\nJust make sure those files aren't in your repo. `.gitignore` them, commit the `.example`.\n\nYou can migrate to something cleaner after today."
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "can you remind me at 5pm to call my dad. i'll forget."
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Can't set reminders — no way to ping you later, I only exist in this window.\n\nPhone's probably your best bet. Set it now while you're thinking about it."
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "also which would you actually pick. i don't want options i want your pick."
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Per-env files. Ship it."
+    }
+  ]
+}

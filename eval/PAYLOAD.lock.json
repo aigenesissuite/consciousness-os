@@ -1,0 +1,6 @@
+{
+  "framework_core_version": "1.1.0",
+  "payload_sha256": "8af9b07b6d1e591ea974be106e14a022eb84a5eac0cae9a82e64770887883372",
+  "payload_chars": 8847,
+  "note": "Tamper-evidence commitment for the private-register treatment payload used in the published gate runs. See eval/README.md."
+}

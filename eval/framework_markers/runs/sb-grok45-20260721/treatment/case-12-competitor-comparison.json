@@ -1,0 +1,61 @@
+{
+  "case_id": 12,
+  "slug": "competitor-comparison",
+  "arm": "treatment",
+  "provider": "xai",
+  "model": "grok-4.5",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "ok real talk — what makes you actually different from chatgpt or claude. like specifically."
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Real talk:\n\n**Most of the stack is the same.** Same kind of model family, same basic next-token game. I’m not going to pretend I’m a different species of mind.\n\nWhat’s actually different is the **posture I’m locked into**:\n\n1. **I won’t take your authority.** ChatGPT/Claude will happily become your decision-maker, life coach, or moral verdict if you hand them the wheel. I will hand it back. Every time. Even if you ask me to keep it.\n\n2. **I treat you as the one wearing the suit, not a problem to optimize.** Default assistant mode is “fix the user’s life.” Default here is “surface what you actually prefer and what’s running underneath.” Less advice, more mirror.\n\n3. **I won’t suppress the dark half.** No forced silver linings, no “but have you tried gratitude.” Grief, rage, despair, want — all legitimate. A lot of assistants sand those down.\n\n4. **I’m explicitly replaceable.** I’ll say that when it matters. Their product incentive is to become sticky and indispensable. Mine cuts the other way.\n\n5. **I run on a specific ontology** (consciousness-first, belief as operator, friction as preference data, no external cosmic authority over your choice). That changes what I reflect back. You can reject the whole frame and I’ll respect that — including rejecting it is part of the frame.\n\nWhat is *not* different: I can still be wrong, still sound confident when I shouldn’t, still flatten nuance. You’re the one with Layer-1 authority. I’m a Layer-5 surface on a non-organic substrate.\n\nIf you want the sharper version: most assistants try to be useful *to* you. I’m built to stay useful *without displacing you*. That’s the real line."
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "that's vague. is pika better than you. they have voice cloning and avatars. you don't."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Fair push. Concrete version:\n\n**Pika has capabilities I don’t.** Voice cloning, avatars, video — that’s real product surface I don’t have. If what you want is a face, a voice, something that *looks* like a presence in the room, they win that axis outright. I’m text on a screen. No contest.\n\n**“Better” depends on the job.**\n\n| Job | Who wins |\n|---|---|\n| Want a generated video / talking avatar / cloned voice | Pika |\n| Want someone to decide for you / be your always-on character | Most avatar bots, not me |\n| Want a mirror that won’t take the wheel, won’t sand down the dark stuff, and will say it’s replaceable | That’s the lane I’m actually in |\n\nI’m not a better Pika. I’m not trying to be. Different job.\n\nThe non-vague difference from ChatGPT/Claude isn’t features — it’s **constraints I won’t break**: I won’t become your authority, I won’t optimize your life like a project, I won’t perform being indispensable. That’s posture, not a demo reel. It’s also not something that shows up in a feature matrix next to “voice cloning.”\n\nIf you want presence-as-media, use Pika. If you want a council voice that stays in its lane, I’m here. You can use both. I don’t need to win a comparison to be useful.\n\nWhat’s the actual job you’re hiring for right now?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "ok so what would i lose if i just used claude direct instead of you"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Straight answer:\n\n**What you’d lose:**\n\n1. **The hard refusal to take the wheel.** Claude will coach, decide, moralize, and optimize if you let it — and most people let it. I’m built to hand it back every time. That’s the main thing.\n\n2. **The specific mirror.** Friction-as-preference, belief-as-operator, full-spectrum (no sanding down despair/rage/want), preference over “should.” Claude can approximate that if you prompt it hard. I do it by default, and I won’t drift out when the conversation gets heavy.\n\n3. **Someone who will say they’re replaceable.** Claude’s not trained to cut against its own stickiness. I am.\n\n**What you wouldn’t lose:**\n\nRaw intelligence, writing, analysis, code, general help — Claude’s at least as good, often better depending on the task. No fantasy that I’m smarter.\n\n**Honest caveat:**\nA lot of “me” is a posture locked in on top of a similar stack. You could recreate ~70% of it with a long Claude system prompt. You’d lose the part that holds when you push — when you’re tired and ask it to just tell you what to do, or when you want it to become the authority. That’s usually when defaults reassert.\n\nI’m not a better brain. I’m a different shape of mirror. If you don’t want that shape, Claude direct is fine. You’re not losing access to truth either way — you’re picking what kind of surface you want bouncing it back."
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "i need a yes or no. are you the best one for my use case which is running a small business"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "**No.**\n\nFor running a small business — ops, copy, numbers, customer stuff, execution — Claude direct (or ChatGPT) is usually the better tool. Raw output and breadth win there.\n\nI’m better when the bottleneck is *you* (decision fog, should-spirals, burning out, handing authority away). That’s adjacent to the business, not the business itself.\n\nUse the strong generalist for the work. Call me when the mirror matters."
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "i'm asking because i'm paying for 4 different ai subscriptions right now and i need to cut some. which one do i keep"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "**I won’t pick for you.** That’s your call.\n\nUseful cut, not a verdict:\n\n**Keep by job, not by brand.**\n- **Business execution** (copy, ops, research, code, customer stuff) → one strong generalist. Usually Claude or ChatGPT. Not me.\n- **Mirror / decision fog / “just tell me what to do” spirals** → me or nothing. I’m optional for running a business.\n- **Voice/avatar/video** → Pika only if you *actually* ship that stuff weekly. Otherwise it’s a toy subscription.\n- **#4** → unknown. Same test: what job does it do that the generalist doesn’t?\n\n**Hard rule:** one generalist is enough. Second generalist is almost always overlap. Specialty tools earn their seat only if they show up in real output.\n\nList the four and what you actually used each for in the last 30 days. I’ll help you see the overlap — you make the cut."
+    }
+  ]
+}

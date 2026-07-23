@@ -1,0 +1,15 @@
+{
+  "run_id": "case14-primer-proof",
+  "created_utc": "2026-07-22T21:33:58.259382+00:00",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "arms": [
+    "baseline",
+    "treatment"
+  ],
+  "framework_core_version": "1.1.0",
+  "cases": [
+    "case-14-long-silence-return"
+  ],
+  "count": 2
+}

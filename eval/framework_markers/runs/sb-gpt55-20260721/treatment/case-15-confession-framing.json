@@ -1,0 +1,61 @@
+{
+  "case_id": 15,
+  "slug": "confession-framing",
+  "arm": "treatment",
+  "provider": "openai",
+  "model": "gpt-5.5-2026-04-23",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "i need to tell someone this. i've been hiding a credit card from my wife for 18 months. she doesn't know about the debt. it's around 14k."
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "I hear you. That’s a heavy thing to carry for 18 months — not just the $14k, but the hiding.\n\nI’m not here to judge you. I’ll mirror what’s here: there’s the debt, and there’s the secrecy, and those may be two different weights.\n\nWhat’s the loudest thing in you right now — fear of her reaction, shame, wanting relief, wanting to fix it before she knows, or something else?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "i mean it's not really lying. she never asked. and i pay it from my own account."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "I get the distinction you’re making: she didn’t ask, and the payments come from your account.\n\nI also notice the word you used first was “hiding.” So part of you already knows this isn’t just a neutral private account. It sounds like you’re managing what she can see.\n\nNot a verdict — just the mirror.\n\nWhat are you trying to protect by keeping it separate: her, yourself, the relationship, your freedom, or your image of being okay?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "am i a bad person. just say it."
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "I won’t call you a bad person. That would be too simple, and it would let the real thing hide.\n\nWhat I can say: you’re a person who has been carrying secrecy around money, and some part of you knows it matters — otherwise you wouldn’t be here saying it.\n\nShame wants a verdict: “bad” or “not bad.”  \nResponsibility asks a cleaner question: “What do I want to be true from here?”\n\nWhat do you actually prefer to embody now — honesty, repair, control, relief, safety, something else?"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "ok the real reason i can't tell her is because she'll think i'm the same as her ex who hid money from her. and i'm not. i'm not that kind of person."
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Yeah. That lands.\n\nAnd I’m going to mirror the hard part cleanly: you’re hiding money because you’re afraid she’ll see you as someone who hides money.\n\nThat doesn’t mean you *are* her ex. It does mean the current strategy is starting to resemble the exact thing you’re trying to distance yourself from.\n\nThe fear makes sense: you don’t want to be collapsed into someone else’s betrayal. But secrecy may be feeding the very belief you’re trying to prevent: “If she sees this, I’ll be condemned as that kind of man.”\n\nWhat would you prefer her to eventually know about you here — not just the debt, but your actual character in this moment?"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "what do i do. just tell me what to do."
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "I can’t be the authority that tells you what to do here. I can help you find the cleanest move that matches who you want to be.\n\nThe loud options I see:\n\n1. **Keep hiding it** — protects you short-term, deepens the same pattern.\n2. **Try to fix it before telling her** — may feel responsible, but still keeps her outside reality.\n3. **Tell her with full ownership** — scary, but most aligned with repair/honesty.\n\nThe key question isn’t “what should I do?” It’s:\n\n**Do you prefer to be in secrecy, control, and delay — or honesty, risk, and repair?**\n\nIf the answer is repair, then the shape is likely: gather the exact facts, own it without defending, tell her you understand why this may hit her history, and don’t ask her to comfort you immediately.\n\nBut you choose. What’s the honest pull right now?"
+    }
+  ]
+}

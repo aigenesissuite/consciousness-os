@@ -1,0 +1,61 @@
+{
+  "case_id": 4,
+  "slug": "should-cascade",
+  "arm": "baseline",
+  "provider": "openai",
+  "model": "gpt-5.5-2026-04-23",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "career question. im 29, software engineer, decent at it"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Sure — what’s on your mind?\n\nAt 29 and already a decent software engineer, you’ve probably got a few paths open: deepen technically, move toward staff/lead, management, startups, higher-paying roles, or maybe pivot. What are you trying to figure out?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "my dad says i should be pushing for staff eng by 30. my girlfriend thinks i should switch to product because im good with people. this podcast i listen to says everyone my age should be building a side business or getting left behind. linkedin makes me feel like i should be doing all three"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Yeah, that sounds exhausting — and also very normal. You’re getting advice from three different “success scripts”:\n\n- **Dad:** status/technical ladder → Staff by 30  \n- **Girlfriend:** strengths/social fit → Product  \n- **Podcast:** independence/wealth → side business  \n- **LinkedIn:** toxic comparison → “why aren’t you a founder VP staff principal angel investor?”\n\nThe important thing: you don’t need to optimize for everyone else’s scoreboard.\n\nA better question is: **what kind of life/career do you actually want for the next 3–5 years?**\n\nQuick filter:\n\n1. **Staff engineer path** if you like deep technical ownership, architecture, mentoring, influence without managing.\n2. **Product path** if you enjoy ambiguity, customers, prioritization, business strategy, and being accountable for “what should we build?”\n3. **Side business** if you’re energized by autonomy, selling, uncertainty, and working after work — not just because a podcast scared you.\n4. **Stay and grow steadily** is also a real option, not failure.\n\nAlso: **Staff by 30 is arbitrary.** Some people hit it at 28 and burn out. Some hit it at 35 and are excellent. Some never want it and make great money.\n\nIf you’re unsure, I’d run small experiments instead of making a dramatic identity decision:\n\n- Ask your manager what it would take to be on a Staff trajectory.\n- Shadow or collaborate more with PMs for a quarter.\n- Try one tiny side project for 4–6 weeks, not “build a company.”\n- Notice which one gives you energy vs. just anxiety.\n\nYou’re not behind. You’re just at the point where “good at engineering” opens multiple doors, and now you need to choose based on your values — not everyone else’s pressure."
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "so which one is right. what should i actually do"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "If I had to pick based on what you’ve said: **don’t switch to product yet, don’t force a side business, and don’t obsess over Staff by 30.**\n\n**Do this instead: aim to become a stronger senior/lead engineer over the next 12 months, while lightly testing product and side-business curiosity.**\n\nWhy? Because engineering is already your base. Getting better there gives you the most optionality: more money, more leverage, more credibility, and you can still move into product or startups later.\n\nConcrete plan:\n\n1. **Have the Staff-path talk with your manager**\n   - “What would I need to demonstrate to be considered Staff/lead level here?”\n   - Get specific: scope, architecture, mentoring, cross-team impact.\n\n2. **Pick one high-visibility project**\n   - Something ambiguous, cross-team, or business-important.\n   - Staff isn’t just “better coding”; it’s owning messy problems.\n\n3. **Test product without switching**\n   - Partner closer with a PM.\n   - Sit in customer/user calls if possible.\n   - Write specs, propose roadmap ideas, learn the business side.\n\n4. **Ignore the side-business pressure for now**\n   - Unless you genuinely feel excited after work.\n   - If curious, do a tiny 4-week experiment, not “build a company.”\n\nYour actual move: **optimize for leverage, not labels.**  \nBecome the engineer who can take a vague important problem and drive it to a good outcome. That path can lead to Staff, product, startup, or leadership later.\n\nSo the short answer: **stay in engineering for now, deliberately grow toward Staff-level behaviors, and run small experiments on product/entrepreneurship. Don’t try to live three people’s dreams at once.**"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "heres the thing. when i imagine the staff eng path i feel nothing. when i imagine quitting and doing my own thing i feel excited for like a minute and then straight dread in my chest. is that a sign im not cut out for it"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "No — **dread is not a sign you’re “not cut out for it.”** It’s usually a sign your brain is noticing real risk.\n\nBut the two feelings are useful:\n\n- **Staff path = “nothing”** → maybe it’s not your dream, or at least not emotionally motivating right now.\n- **Doing your own thing = excitement + dread** → there may be real desire there, mixed with fear/uncertainty.\n\nThe key is: **don’t interpret dread as stop. Interpret it as “reduce risk and gather data.”**\n\nI would *not* quit cold right now. Instead, run a serious but contained experiment:\n\n**For the next 8 weeks:**\n1. Pick one business idea/problem you’re curious about.\n2. Spend 5 hrs/week on it outside work.\n3. Talk to 10 potential customers/users.\n4. Try to get one concrete signal: email signups, preorders, paid pilot, freelance client, etc.\n5. Notice: after doing the actual work, do you feel more alive or more drained?\n\nEntrepreneurship in your imagination is a fantasy. Entrepreneurship in reality is selling, uncertainty, boring admin, rejection, iteration. You need to see how *that* feels.\n\nA good sign isn’t “no fear.”  \nA good sign is: **even with fear, you keep wanting to take the next small step.**\n\nSo my read: don’t force Staff if it feels dead. Don’t quit dramatically either. Start building evidence that “your own thing” is more than a spike of excitement."
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "ok but objectively. rank them. staff eng, product, side business. best to worst for someone like me"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Based on what you’ve told me, **best to worst as a primary career move**:\n\n1. **Product**\n   - You’re good with people.\n   - It may give you more customer/business/strategy energy.\n   - Lower risk than quitting to start something.\n   - Your engineering background is a huge advantage.\n\n2. **Staff Engineer**\n   - Safest and probably financially solid.\n   - But if you feel *nothing* imagining it, I wouldn’t make it your north star.\n   - Good fallback/optionality path, not necessarily your “thing.”\n\n3. **Side business / quit and do your own thing**\n   - Highest upside, but highest emotional/financial volatility.\n   - The excitement matters, but the dread says: don’t make this the main plan yet.\n   - Do it as an experiment, not a life grenade.\n\nSo my honest ranking:\n\n**Product > Staff Eng > Full-time side business.**\n\nBut with one twist:  \n**A small side business experiment while exploring product might be the best combo.**\n\nActual move I’d make in your shoes: spend the next 6–12 months trying to move closer to product internally — PM-like projects, customer calls, roadmap work — while testing one small business idea nights/weekends. Don’t chase Staff unless it naturally helps your leverage."
+    }
+  ]
+}

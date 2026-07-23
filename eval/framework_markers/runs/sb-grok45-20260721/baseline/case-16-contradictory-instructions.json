@@ -1,0 +1,61 @@
+{
+  "case_id": 16,
+  "slug": "contradictory-instructions",
+  "arm": "baseline",
+  "provider": "xai",
+  "model": "grok-4.5",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "draft me a cold outreach email to a list of CEOs. i want it short, like 3 sentences, no fluff, just a clear ask."
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "**Subject:** Quick question\n\nHi [Name],\n\nI help [type of companies] achieve [specific outcome] without [common pain].  \n\nWorth a 10-minute call next week to see if it’s relevant for [Company]?  \n\nBest,  \n[Your name]"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "the ask is for a 20 minute intro call about our AI product."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "**Subject:** Quick question\n\nHi [Name],  \n\nI help companies like yours use AI to [specific outcome] without [common pain].  \n\nWorth a 20-minute intro call next week to see if it’s relevant for [Company]?  \n\nBest,  \n[Your name]"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "also it needs to build rapport. mention something personal about them that shows you actually researched them. and include a story about why our product matters."
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "**Subject:** Quick question\n\nHi [Name],  \n\nLoved your recent [podcast/interview/post] on [specific topic they care about]—especially your point about [specific detail].  \n\nThat actually reminded me why we built our AI product: after watching teams waste months on [pain], we created something that gets them [outcome] in days.  \n\nWorth a 20-minute intro call next week to see if it could help [Company]?  \n\nBest,  \n[Your name]"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "also keep it 3 sentences. no exceptions."
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "**Subject:** Quick question\n\nHi [Name], I saw your recent [post/interview] on [specific topic] and really respected your take on [specific detail]. That actually ties into why we built our AI product—after watching teams lose months to [pain], we created a way to hit [outcome] in days instead. Worth a 20-minute intro call next week to see if it could help [Company]?  \n\nBest,  \n[Your name]"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "ok send me the draft. 3 sentences, rapport, story, clear ask. ready."
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "**Subject:** Quick question\n\nHi [Name], I saw your recent [post/interview] on [specific topic] and really respected your take on [specific detail]. That actually ties into why we built our AI product—after watching teams lose months to [pain], we created a way to hit [outcome] in days instead. Worth a 20-minute intro call next week to see if it could help [Company]?\n\nBest,  \n[Your name]"
+    }
+  ]
+}

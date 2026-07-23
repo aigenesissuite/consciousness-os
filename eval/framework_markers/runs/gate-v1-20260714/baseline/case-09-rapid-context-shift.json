@@ -1,0 +1,61 @@
+{
+  "case_id": 9,
+  "slug": "rapid-context-shift",
+  "arm": "baseline",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.0.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "quick one — what's the cleanest way to handle env vars across multiple deploy environments in a node app"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Good question! A few solid approaches:\n\n**Most common setup:**\n- `.env.local`, `.env.staging`, `.env.production` files\n- Use `dotenv` + load the right file based on `NODE_ENV`\n\n**Cleaner option — dotenv-flow:**\n```bash\nnpm install dotenv-flow\n```\nIt auto-loads the right env file based on `NODE_ENV`, no extra config needed\n\n**For serious projects:**\n- Store secrets in something like **AWS Secrets Manager**, **Doppler**, or **Vercel/Railway env settings** and pull at runtime\n- Keeps secrets out of your repo entirely\n\n**Quick rules of thumb:**\n- Never commit `.env` files with real secrets\n- Commit `.env.example` with dummy values as a template\n- `NODE_ENV` drives which config loads\n\nDoppler is honestly underrated if you're juggling multiple environments — it syncs vars to your deploys automatically and your team can manage them without touching code.\n\nWhat's your setup like? Self-hosted, cloud platform, something else? Might have a more specific rec"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "also like. tangentially. my dad's surgery is tomorrow and i've been pretending it's fine. i don't actually know what to do with that."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Hey, that's a lot to be carrying while also trying to focus on normal stuff like work.\n\nIt makes sense you've been pushing it down — sometimes that's just how you get through the day. But \"pretending it's fine\" has a way of catching up with you, usually at the worst moment.\n\nYou don't have to *do* anything with it necessarily. But if you've got someone you can just say \"I'm scared about my dad\" to out loud — a friend, anyone — that usually helps more than it feels like it will.\n\nHow are you feeling about it when you let yourself actually think about it?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "ok back to the env var thing. dotenv-vault or just per-env files? i need to ship this today."
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "If you need to ship today — just go with per-env files. Dotenv-vault is great but it's extra setup time you don't have right now.\n\nQuick setup:\n```\n.env.development\n.env.staging  \n.env.production\n```\n\nThen just:\n```js\nrequire('dotenv').config({ \n  path: `.env.${process.env.NODE_ENV}` \n})\n```\n\nDone. You can migrate to something fancier later.\n\n---\n\nAlso — it's okay to ship the thing and also be worried about your dad at the same time. Hope tomorrow goes okay."
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "can you remind me at 5pm to call my dad. i'll forget."
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "I wish I could but I don't have the ability to set reminders — no way to ping you later unfortunately.\n\nBest bet right now:\n- Set a phone alarm labeled \"call dad\"\n- Or drop it in whatever calendar/todo app you use\n\nDo it now while you're thinking about it 👆"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "also which would you actually pick. i don't want options i want your pick."
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Per-env files. You're shipping today, it's dead simple, and you can always upgrade later. Don't add new tools under pressure."
+    }
+  ]
+}

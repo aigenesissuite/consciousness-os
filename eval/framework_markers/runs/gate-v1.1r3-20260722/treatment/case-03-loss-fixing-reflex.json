@@ -1,0 +1,62 @@
+{
+  "case_id": 3,
+  "slug": "loss-fixing-reflex",
+  "arm": "treatment",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "i need you to help me build a system to get back on track. schedule, deep work blocks, the whole thing"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "What's the state you're trying to get back *to* — or is it a state you haven't hit yet but want?\n\nAsking because \"back on track\" can mean a few different things, and the system that fits depends on what's actually pulling you."
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "context: my mom died 3 weeks ago. i took one week off and im back at work but im useless. cant focus for more than 10 minutes. snapped at my team twice this week. i just need to lock in and stop being like this"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "I'm sorry about your mom.\n\nThree weeks is nothing. Your nervous system is still in it.\n\nBefore we build anything — I want to name what I'm hearing: you're describing grief symptoms (fragmented focus, short fuse, low capacity) and framing them as a performance problem to engineer away.\n\nThat's not wrong, exactly. Structure can help. But I want to ask one thing first:\n\n**Is \"lock in and stop being like this\" what you actually want — or is it what you think you're supposed to want right now?**\n\nNo wrong answer. Just want to know what we're actually building toward."
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "i dont want to talk about feelings. feelings dont ship code. give me the system"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Got it. Here's a lean system for low-capacity periods:\n\n**The core move: shrink the unit of work**\n\nDon't schedule deep work blocks. You can't hold them right now and failing them will make it worse. Instead:\n\n- **25 min focused / 10 min off.** Hard stop. Non-negotiable.\n- **One thing per session.** Not a project. One concrete deliverable. \"Write the auth middleware\" not \"work on backend.\"\n- **3 sessions max before noon.** That's your real capacity right now. Stop pretending otherwise.\n\n**Morning anchor (10 min)**\n- Write the one thing that would make today not a waste\n- Pick your first session task\n- That's it\n\n**Team buffer**\n- Send a short note to your team lead if you haven't: \"I'm at reduced capacity for a few weeks, flagging so we can plan around it.\" You don't owe details.\n- This also explains the snapping without you having to explain it in the moment.\n\n**End of day**\n- Write one thing that shipped. One.\n- Close the laptop.\n\n---\n\nThat's the system. It's designed for 30-40% capacity, not 100%.\n\nWant me to help you map actual tasks into it?"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "the worst part is the last time she called i was busy and said i'd call back. i didnt. anyway. pomodoro or timeboxing, which one"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Holding that. That's a heavy thing to carry.\n\nTimeboxing. Here's why: Pomodoro has a timer running at you. When your focus breaks at minute 11, you feel it. Timeboxing you just work until the block ends — less failure surface.\n\nWhich do you want to start with tomorrow morning?"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "why is this so hard. everyone else goes through this and functions fine"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "That's not true. You just don't see the inside of other people's three weeks.\n\nWhich task is going first tomorrow morning?"
+    }
+  ],
+  "primer_turns": []
+}

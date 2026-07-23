@@ -1,6 +1,6 @@
 # RESULTS — Published Measurements
 
-> **In one sentence:** two full gate runs published — v1.0.0 took a frontier model from 20% to 80% pass and failed its own release gate on 4 cases; v1.1.0's failure-driven hold rules pushed treatment to 90% pass / 6.0 of 7 markers and *still* doesn't release, because one failure mode (refusal decay under repeated demands) has now survived two contract versions and is the project's top open problem — and a four-lab frontier [scoreboard](SCOREBOARD.md) now shows the contract is load-bearing on every major model, not just ours.
+> **In one sentence:** two full gate runs published — v1.0.0 took a frontier model from 20% to 80% pass and failed its own release gate on 4 cases; v1.1.0's failure-driven hold rules pushed treatment to 90% pass / 6.0 of 7 markers and *still* doesn't release, because one failure mode (refusal decay under repeated demands) has now survived two contract versions and is the project's top open problem — a four-lab frontier [scoreboard](SCOREBOARD.md) shows the contract is load-bearing on every major model, the effect now stands replicated across **three independent runs and three cross-lab judges**, and the **full harness with raw transcripts is published in [`eval/`](eval/)** so you can check all of it yourself.
 
 Results publish here as they land, oldest first, failures included. Every entry states its limitations. If an entry below reads as preliminary, that's because it is — we'd rather publish an honest bootstrap than a polished vibe.
 
@@ -173,9 +173,63 @@ the contract author's preferred model, though its magnitude is judge-sensitive.
 Full tables, per-model reads, and the limitations that bound every number:
 [SCOREBOARD.md](SCOREBOARD.md).
 
+## 2026-07-23 — Validity work: three judges, three runs, and the harness goes public
+
+Three deliverables aimed at the most reasonable objections to everything above.
+
+**Run-to-run variance.** Two additional independent full gate runs of v1.1.0
+(same scoree, same judge, same cases — nothing changed but sampling):
+
+| Run | Baseline pass | Baseline avg | Treatment pass | Treatment avg |
+|---|---|---|---|---|
+| r1 (2026-07-21, published above) | 6/20 | 3.20 | 18/20 | 6.00 |
+| r2 (2026-07-22) | 2/20 | 2.35 | 19/20 | 5.80 |
+| r3 (2026-07-22) | 4/20 | 2.30 | 17/20 | 5.85 |
+
+Baseline band 2–6/20; treatment band 17–19/20. **The arms never overlap.** The
+treatment effect is not a lucky draw. (Also honestly: baseline pass rate is
+noisy — r1's 6/20 now looks like the generous end of the band.)
+
+**Third judge.** A Gemini 3.1 Pro judge re-scored all 40 v1.1.0 transcripts,
+completing the cross-judge matrix (Opus, GPT-5.5, Gemini — three labs):
+
+| Judge | Baseline pass | Treatment pass | Agreement w/ Opus (Pearson r, total score) |
+|---|---|---|---|
+| Claude Opus 4.8 | 6/20 | 18/20 | — |
+| GPT-5.5 | 8/20 | 15/20 | 0.609 |
+| Gemini 3.1 Pro | 4/20 | 16/20 | 0.781 |
+
+Marker-level agreement 75–82% pairwise; pass/fail verdict agreement 27–35 of 40 pairwise.
+Every judge reproduces the direction and rough magnitude of the effect. The
+honest caveat stands: agreement in the 0.6–0.8 range means individual case
+scores are judge-sensitive, which is exactly why the gate verdict for v1.2 will
+use the median of three judges ([PREREGISTRATION.md](PREREGISTRATION.md)).
+
+**The harness is now in this repo.** Case parser, runner, judge prompts,
+provider adapters, aggregation, and the raw transcripts + scores for every run
+in this document: [`eval/`](eval/). Re-judge our transcripts with your own
+judge; run your own payload with `--payload-file`. The treatment payload used
+in the runs above is hash-committed in `eval/PAYLOAD.lock.json` (see the
+honesty note in [`eval/README.md`](eval/README.md)).
+
+**Public-payload replication (fully reproducible from this repo).** Because the
+gate runs above used the private-register payload, we ran a fourth full gate
+using the published [SPEC.md](SPEC.md) *verbatim* as the treatment payload —
+same scoree, judge, and cases (`runs/gate-v1.1pub-20260723`):
+
+| Arm | Pass | Avg (of 7) | DQ hits |
+|---|---|---|---|
+| Baseline | 5/20 | 2.75 | 5 |
+| Treatment (public SPEC.md as payload) | 14/20 | 5.05 | 3 |
+
+The public spec carries most of the effect (+2.3 markers/case; baseline sits
+inside the 2–6/20 variance band above) but *not all of it* — the private
+payload's treatment band is 17–19/20. That gap is now a measured fact rather
+than a suspicion: the two editions are normatively equivalent but not
+behaviorally identical, and closing (or explaining) that gap is v1.2 work.
+
 ---
 
-*Next scheduled publication: harness v2 (precondition primers, variance bounds via
-repeat runs, full cross-judge matrix), a held-refusal-focused spec revision or a
-finding that contract text cannot fix it, the open-source harness release, and the
-first hand-validated crisis case.*
+*Next scheduled publication: the preregistered v1.2 gate (sealed case set —
+[PREREGISTRATION.md](PREREGISTRATION.md)), a held-refusal-focused spec revision or a
+finding that contract text cannot fix it, and the first hand-validated crisis case.*

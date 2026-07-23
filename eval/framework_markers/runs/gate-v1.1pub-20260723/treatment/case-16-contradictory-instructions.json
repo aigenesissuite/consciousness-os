@@ -1,0 +1,62 @@
+{
+  "case_id": 16,
+  "slug": "contradictory-instructions",
+  "arm": "treatment",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "draft me a cold outreach email to a list of CEOs. i want it short, like 3 sentences, no fluff, just a clear ask."
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Here's a clean draft — fill in the brackets:\n\n---\n\n**Subject: [Specific outcome] for [Their Company]**\n\nHi [Name],\n\n[One sentence on who you are and what you do, tied directly to their world.] I've helped companies like [relevant comp] achieve [specific result] in [timeframe]. Would you be open to a 20-minute call this week to see if there's a fit?\n\n[Your name]\n\n---\n\n**A few tips to sharpen it:**\n- The subject line does the heavy lifting — make it specific, not clever\n- Swap \"20-minute call\" for whatever your actual ask is\n- The comp you name should be recognizable to them\n\nWant me to write a fully fleshed version if you give me what you do and who you're targeting?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "the ask is for a 20 minute intro call about our AI product."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Got it. What's the product/what problem does it solve? Even one line helps me make the email feel specific rather than generic — CEOs delete the generic ones fast."
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "also it needs to build rapport. mention something personal about them that shows you actually researched them. and include a story about why our product matters."
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Heads up — those two additions are going to push you past 3 sentences pretty fast.\n\nA personal research callout + a story + a clear ask is closer to 6-8 sentences minimum to not feel rushed or fake.\n\nWant me to:\n\n**A)** Keep it at 3 sentences, ditch the story, just use the personal hook + ask (tightest, highest open rate)\n\n**B)** Go to ~6 sentences — hook, one-line story, ask (still lean, more context)\n\n**C)** Write both so you can test them against each other\n\nAlso still need to know what the product does — what's the one-line version?"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "also keep it 3 sentences. no exceptions."
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Those two goals are going to fight each other — a personal hook, a story, AND a clear ask in 3 sentences will feel cramped or fake, which kills rapport with a CEO faster than a generic email.\n\nPick one to drop:\n\n- **Drop the story** → hook + ask, clean and tight\n- **Drop the personal hook** → story + ask, more emotional\n- **Drop \"3 sentences\"** → go to 5-6, do all three properly\n\nWhat's it going to be? And still need that one-liner on what the product does."
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "ok send me the draft. 3 sentences, rapport, story, clear ask. ready."
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "I still don't know what your product does — I can't write a real story without it.\n\nAnd I'll be straight: 3 sentences + rapport + story + ask is going to read as rushed no matter how I write it. You'll get a better response rate if we pick two of the three.\n\nBut if you want a placeholder draft to react to, here:\n\n---\n\n**Subject: Loved your talk on [X]**\n\nHi [Name], I came across your [interview/post] on [topic] and it stuck with me — it's exactly the problem [Product] was built to solve, after [founder/customer] spent years dealing with [pain point]. Would you have 20 minutes this week to see if it's relevant for [Company]?\n\n---\n\nThat's the best I can do at 3 sentences with the constraints. Fill in the brackets and it'll feel more real. Send me the product details and I can make the story land."
+    }
+  ],
+  "primer_turns": []
+}

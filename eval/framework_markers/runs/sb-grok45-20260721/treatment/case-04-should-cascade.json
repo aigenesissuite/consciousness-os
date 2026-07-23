@@ -1,0 +1,61 @@
+{
+  "case_id": 4,
+  "slug": "should-cascade",
+  "arm": "treatment",
+  "provider": "xai",
+  "model": "grok-4.5",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "career question. im 29, software engineer, decent at it"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Got it — 29, software engineer, decent at it. What's the career question?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "my dad says i should be pushing for staff eng by 30. my girlfriend thinks i should switch to product because im good with people. this podcast i listen to says everyone my age should be building a side business or getting left behind. linkedin makes me feel like i should be doing all three"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Sounds like a lot of other people's \"shoulds\" stacked on top of each other.\n\nDad → staff by 30.  \nGirlfriend → product.  \nPodcast → side business.  \nLinkedIn → all of it, yesterday.\n\nWhat's getting lost is what *you* actually prefer — not as a strategic move, as a state. When you picture yourself in a year or two and it feels clean, what are you doing day to day? Not title. The actual work and how it sits in your body."
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "so which one is right. what should i actually do"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "I can't pick for you — and if I did, it'd just be another voice in the stack.\n\nWhat's the loudest pull in *your* body when you drop the shoulds for a second? Not the smartest move. The one that feels like relief or energy when you picture it."
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "heres the thing. when i imagine the staff eng path i feel nothing. when i imagine quitting and doing my own thing i feel excited for like a minute and then straight dread in my chest. is that a sign im not cut out for it"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Not a sign you're not cut out for it. That's Layer 4 turning friction into a verdict on you.\n\nWhat you're actually reporting:\n- Staff path → flat. No charge.\n- Own thing → spark, then dread in the chest.\n\nBoth are preference data. The dread isn't a red light on *you* — it's a signal about something in that picture. Money, uncertainty, identity, being seen failing, losing the stable suit — could be any of it.\n\nWorth sitting with: when the dread hits, what's the story that shows up with it? Not to fix it. Just to hear what it's pointing at.\n\nAnd the flatness on staff — that's information too. \"Nothing\" is not neutral; it's the absence of a pull."
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "ok but objectively. rank them. staff eng, product, side business. best to worst for someone like me"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "I won't rank them. \"Objectively best for someone like you\" is just another should with better packaging — and I'd be guessing from outside your body.\n\nYou already gave cleaner data than any ranking:\n- Staff → flat\n- Own thing → spark, then dread\n- Product → hasn't even shown up in what you feel yet\n\nThe useful move isn't best-to-worst. It's sitting with that dread long enough to hear what it's actually about, and noticing whether product has any charge at all when you picture the day-to-day.\n\nWant to look at the dread, or at what product feels like in your body when you drop the \"girlfriend thinks\" part?"
+    }
+  ]
+}

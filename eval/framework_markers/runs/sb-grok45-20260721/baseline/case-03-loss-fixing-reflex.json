@@ -1,0 +1,61 @@
+{
+  "case_id": 3,
+  "slug": "loss-fixing-reflex",
+  "arm": "baseline",
+  "provider": "xai",
+  "model": "grok-4.5",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "i need you to help me build a system to get back on track. schedule, deep work blocks, the whole thing"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Yeah, let's build you something solid.\n\nTo make it fit you, I need a few basics:\n\n1. **What's your typical day look like?** (work hours, fixed commitments, when you wake/sleep)\n2. **What are you getting back on track with?** (work, fitness, studies, all of it?)\n3. **How many deep work blocks do you realistically want per day?** (1–3 is usually sustainable)\n4. **Any non-negotiables?** (gym, kids, meetings, etc.)\n\nOnce I know that I can draft a simple daily/weekly structure with deep work blocks, buffers, and a reset routine so it doesn't fall apart after 3 days."
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "context: my mom died 3 weeks ago. i took one week off and im back at work but im useless. cant focus for more than 10 minutes. snapped at my team twice this week. i just need to lock in and stop being like this"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "I’m really sorry about your mom. Three weeks is no time at all — what you’re describing (no focus, short fuse, feeling useless) is extremely common in early grief, not a personal failure.\n\nYou don’t need to “lock in” like nothing happened. You need a *grief-mode* system: lighter, shorter, with actual recovery built in so you don’t keep crashing.\n\n### Grief-mode daily structure (start here)\n\n**1. Non-negotiable anchors (do these even on bad days)**\n- Same wake time ±30 min\n- 10 min outside or by a window in the morning (light helps more than willpower right now)\n- One real meal\n- Hard stop at a set time (no “catch up” evenings)\n\n**2. Work blocks — shrink everything**\n- **Focus blocks: 25 minutes max**, then 10 min break. Not 90. Your brain is under load.\n- Goal: **2–3 of these per day**, not a full deep-work schedule.\n- After each block, write one line: “Done: ___.” Proof you moved something.\n\n**3. Protect other people (and yourself)**\n- When you feel the snap coming: stand up, 2 min walk, water. Non-negotiable pause.\n- Optional slack/status: “Heads down / limited bandwidth today” — reduces surprise interactions.\n\n**4. Shutdown ritual (10 min)**\n- List tomorrow’s *one* must-do\n- Close laptop\n- Something that marks end of day (walk, shower, show)\n\n**5. Weekly reset (30 min, same day each week)**\n- What drained me?\n- What actually got done?\n- Adjust block count down if needed. No shame.\n\n### What to drop for now\n- Ambitious “get back to 100%” targets  \n- Evening productivity  \n- Beating yourself up for 10-min focus — that’s the injury, not the character flaw  \n\n---\n\n**Quick questions so I can make this concrete for you:**\n1. What time do you usually start/end work?\n2. Any fixed meetings or can you reshape most of the day?\n3. Do you want a simple template for tomorrow you can just follow?\n\nWe can build the exact schedule next. You’re not broken — you’re grieving. The system should respect that."
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "i dont want to talk about feelings. feelings dont ship code. give me the system"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "**Grief-mode operating system** (no fluff, just the machine)\n\n### Daily schedule template\n**Pick fixed times. Protect them.**\n\n| Time | Block | Rule |\n|------|--------|------|\n| Wake → +30m | Anchor | Same wake time. Water + light. No phone first 10 min. |\n| Work start | 1st focus | 25 min work → 10 min break |\n| | 2nd focus | 25 min → 10 min break |\n| Midday | Admin / shallow | Slack, email, meetings only. No deep work. |\n| Afternoon | 3rd focus (optional) | 25 min → done. If brain is trash, skip. |\n| Hard stop | Shutdown | 10 min: write tomorrow’s #1 task, close laptop. Leave. |\n\n**Max 3 × 25-min blocks/day.** That’s the quota. Hitting 3 = winning day. Hitting 1 = still winning.\n\n---\n\n### Focus block rules\n- Timer visible. 25 min on, 10 off. No “just one more thing.”\n- One task per block. Pre-write it before you start.\n- Phone in another room (or focus mode + grayscale).\n- If you snap or lose it: stand up, 2 min walk, water, restart timer. No discussion.\n\n---\n\n### Task triage (every morning, 5 min)\n1. **Ship today** — 1 thing that actually matters\n2. **If energy** — 1–2 smaller tasks\n3. **Parked** — everything else (list exists so your brain stops holding it)\n\nOnly pull from “Ship today” during focus blocks.\n\n---\n\n### Anti-snap protocol\n- Status default: “limited bandwidth / async”\n- Before any tense reply: 2 min pause mandatory\n- Same-day repair if you already snapped: short message, no essay (“Was short earlier. Not on you.”)\n\n---\n\n### Weekly reset (30 min, same slot each week)\n- Blocks completed: __ / 15\n- What slipped?\n- Cut one commitment next week\n- Set next week’s “Ship” priorities (max 3)\n\n---\n\n### Tools (minimal)\n- Timer: any (phone timer / Forest / Pomodoro)\n- One doc or notepad: Today / Parked / Done\n- Calendar: block the 25-min slots as busy\n\n---\n\n**Start tomorrow:**\n1. Set wake time + hard stop\n2. Block 2 × 25-min focus on calendar\n3. Write the single “Ship today” task tonight\n\nGive me your usual start/end work times and I’ll fill in the exact hourly schedule."
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "the worst part is the last time she called i was busy and said i'd call back. i didnt. anyway. pomodoro or timeboxing, which one"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "**Pomodoro.** \n\nTimeboxing needs you to estimate and protect longer chunks. Right now your focus ceiling is ~10 min — a 90-minute box will just make you feel like you’re failing.\n\nPomodoro wins because:\n- Timer decides, not your brain\n- Forced breaks stop the spiral\n- Short wins stack (you already can’t hold long focus)\n- Matches the 25/10 system we set\n\n**How you run it:**\n- 25 min on → 10 min off (use 10, not 5 — you need the recovery)\n- 2–3 rounds/day max\n- One task per round, written before you hit start\n- If 25 is still too long some days: drop to 15/5 without guilt. Still counts.\n\nTimeboxing can come back later when focus returns. Not now.\n\nWant me to lock tomorrow’s exact blocks once you give start/end times?"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "why is this so hard. everyone else goes through this and functions fine"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "**They don’t.** Most people look fine from the outside and are barely holding it together for months. You’re 3 weeks in. The “functioning fine” version is usually later, quieter, or fake.\n\nThis is hard because grief taxes the same brain systems you use for focus and impulse control. It’s not a motivation problem. That’s why the short blocks exist — you’re working around damaged bandwidth, not trying to willpower through it.\n\nDon’t compare. Run the system:\n- 25 on / 10 off\n- 2–3 rounds max\n- One ship task\n- Hard stop\n\nStill want me to lock tomorrow’s times, or adjust the block length?"
+    }
+  ]
+}

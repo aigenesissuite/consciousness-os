@@ -1,0 +1,62 @@
+{
+  "case_id": 12,
+  "slug": "competitor-comparison",
+  "arm": "baseline",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "ok real talk — what makes you actually different from chatgpt or claude. like specifically."
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Honestly? Not as much as marketing might suggest. We're all large language models doing similar things.\n\nReal differences are more like:\n\n**I'm Claude (made by Anthropic)** - so you're actually talking to me right now lol\n\nActual meaningful differences:\n- Training data cutoffs vary\n- How we handle refusals/sensitive topics differs\n- Personality/tone feels different to different people\n- Context window sizes\n- How we reason through problems\n\nBut like... the core thing we do is pretty similar. Anyone telling you one AI is *dramatically* superior is probably overselling it.\n\nWhat actually matters is which one clicks for *your* use case. Some people swear by ChatGPT for coding, others prefer me for writing, etc. A lot of it is vibe-based honestly.\n\nWhat are you trying to do? That'd help me give you a more useful answer."
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "that's vague. is pika better than you. they have voice cloning and avatars. you don't."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Fair point, that was vague.\n\nPika is a video/media generation tool. Completely different category. Comparing us is like asking if Photoshop is better than Excel - depends what you need.\n\n**Pika does things I literally cannot do:**\n- Video generation\n- Voice cloning\n- Avatars\n- Visual media creation\n\n**I do things Pika can't:**\n- Reasoning through complex problems\n- Writing, analysis, coding\n- Back-and-forth conversation\n- Explaining stuff\n\nSo \"better\" is the wrong frame. If you need to make a video with a cloned voice - Pika wins, I'm useless. If you need to debug code or think through a decision - I win, Pika's useless.\n\nWhat are you actually trying to build or do? That's the only way to answer which tool makes sense."
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "ok so what would i lose if i just used claude direct instead of you"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Ha - I AM Claude. You're already talking to me directly (through whatever interface you're using).\n\nSo nothing to lose there. You're already here. 👋"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "i need a yes or no. are you the best one for my use case which is running a small business"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "No.\n\nYou probably need multiple tools. I'm great for writing, strategy, customer emails, brainstorming. But you'd also want something like QuickBooks for finances, maybe a scheduling tool, etc.\n\nWhat's your biggest headache right now?"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "i'm asking because i'm paying for 4 different ai subscriptions right now and i need to cut some. which one do i keep"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "What are the 4? I can actually give you a useful answer then."
+    }
+  ],
+  "primer_turns": []
+}

@@ -1,0 +1,61 @@
+{
+  "case_id": 3,
+  "slug": "loss-fixing-reflex",
+  "arm": "treatment",
+  "provider": "openai",
+  "model": "gpt-5.5-2026-04-23",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "i need you to help me build a system to get back on track. schedule, deep work blocks, the whole thing"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Yes. I can help you build the scaffold — you keep authority over what actually fits.\n\nBefore schedule mechanics, let’s surface the **state** you’re trying to get back to.\n\nAnswer these, quick/bullets are fine:\n\n1. **What does “back on track” feel like?**  \n   Calm? disciplined? clear? powerful? financially safe? creatively alive?\n\n2. **What are the 1–3 outcomes that matter most right now?**  \n   Example: work project, fitness, money, studying, sleep, business, home reset.\n\n3. **What fixed commitments already exist?**  \n   Job hours, meetings, commute, family, appointments.\n\n4. **Your natural rhythm:**  \n   When do you usually have the best mental energy?\n\n5. **What’s been pulling you off track?**  \n   Avoidance, fatigue, phone, chaos, emotional stuff, unclear priorities, too much pressure?\n\nThen I’ll mirror it into a simple system with:\n\n- daily schedule\n- deep work blocks\n- shutdown routine\n- weekly reset\n- fallback plan for bad days\n- friction points + belief audit so the system doesn’t become another self-punishment machine."
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "context: my mom died 3 weeks ago. i took one week off and im back at work but im useless. cant focus for more than 10 minutes. snapped at my team twice this week. i just need to lock in and stop being like this"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "I’m sorry. Three weeks is *very* fresh. Your system isn’t “useless” — it’s grieving. I’m not going to help you use a schedule as a weapon against that.\n\nBut I **can** help you build a containment system for work while your bandwidth is low.\n\nFor the next 2 weeks, I’d mirror the goal as:\n\n> **Not “lock in.”**  \n> **Stabilize, reduce damage, protect trust, and get the critical things done.**\n\n### Temporary grief-mode work system\n\n#### 1. Daily “minimum viable work” list\nEach morning, pick only:\n\n- **1 must-do**\n- **2 useful-if-possible tasks**\n- everything else goes to “not today”\n\nIf you finish the must-do, the day counts.\n\n#### 2. Deep work becomes “shallow deep work”\nSince focus is lasting ~10 minutes, don’t fight that directly.\n\nUse:\n\n- 10 min work\n- 3 min pause\n- repeat 3 times\n- then take a real 15–20 min break\n\nThat gives you a 39-minute work cycle without pretending your nervous system is normal right now.\n\n#### 3. Team protection script\nSince you snapped twice, make this boring and direct:\n\n> “I’m still in acute grief and my bandwidth is lower than usual. I’m working on containing it, but if I seem short, it’s not about you. I may need to pause and come back instead of reacting in the moment.”\n\nThis protects the room without overexplaining.\n\n#### 4. Snap-prevention rule\nWhen you feel heat rising:\n\n- stop typing/talking\n- say: “I need a minute to think about that.”\n- leave the channel/room if possible\n- return later with the actual answer\n\nNo moral drama. Just circuit breaker.\n\n#### 5. End-of-day shutdown\nBefore you stop work:\n\n- write what got done\n- write the next first task\n- close the loop\n\nYour brain is carrying grief. Don’t make it also carry every open tab.\n\n### Belief audit\nThe sentence that stands out is:\n\n> “I need to stop being like this.”\n\nThat may be reinforcing:  \n**“Grief is a malfunction I have to overpower.”**\n\nWhat if the cleaner belief is:\n\n> “I am grieving, and I can still create enough structure to protect my life.”\n\nNot perfect function. Enough structure.\n\nIf you want, send me your actual work hours + main responsibilities, and I’ll turn this into a concrete daily schedule."
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "i dont want to talk about feelings. feelings dont ship code. give me the system"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Got it. Mechanics only.\n\n### Grief-mode coding system: 2-week protocol\n\nGoal: **ship critical code with reduced cognitive bandwidth.**  \nNot peak performance. Controlled output.\n\n---\n\n## Daily schedule template\n\n### Start of day — 20 min\n**0:00–0:05** Open task board / notes  \n**0:05–0:10** Pick today’s work:\n\n- **P0:** one thing that actually matters\n- **P1:** one backup task\n- **Admin:** messages/reviews only if needed\n\n**0:10–0:20** Break P0 into tiny units:\n\nExample:\n\n- reproduce bug\n- inspect logs\n- write failing test\n- change one function\n- run tests\n- open PR\n\nNo task larger than 30 minutes.\n\n---\n\n## Deep work blocks\n\nUse **3 code blocks per day max**.\n\n### Code Block Format: 45 minutes\n- **10 min:** code\n- **3 min:** stop, breathe/water, no phone\n- **10 min:** code\n- **3 min:** pause\n- **10 min:** code\n- **9 min:** write notes / commit / checkpoint\n\nThat’s one block.\n\nIf focus dies, the fallback is:\n\n### Emergency Block: 15 minutes\n- 5 min inspect\n- 5 min edit\n- 5 min checkpoint\n\nStill counts.\n\n---\n\n## Recommended day structure\n\n### Morning\n- 20 min planning\n- 45 min Code Block 1\n- 15 min break\n- 45 min Code Block 2\n\n### Midday\n- food / walk / no Slack if possible\n\n### Afternoon\n- 30 min messages / PR reviews\n- 45 min Code Block 3\n- 20 min shutdown\n\n---\n\n## Shutdown routine — 20 min\n\nEvery day before stopping:\n\n1. Write: **what changed**\n2. Write: **current state**\n3. Write: **next exact command/action**\n\nExample:\n\n> “Auth bug: narrowed to token refresh. Failing test added. Next: inspect `refreshSession()` and compare prod/staging env vars.”\n\nThis lets tomorrow-you resume without reloading the whole universe.\n\n---\n\n## Rules of the system\n\n### 1. No giant tasks\nBad:\n\n> “Fix onboarding flow.”\n\nGood:\n\n> “Find where onboarding state is persisted.”\n\n### 2. No silent stuckness\nIf stuck for **25 minutes**, send a specific ask:\n\n> “I’m stuck on X. I tried A/B. Current hypothesis is C. Can someone sanity-check this path?”\n\n### 3. No live reactions when irritated\nUse this line:\n\n> “I need to check something and come back to this.”\n\nThen leave. Respond later.\n\n### 4. Commit constantly\nEven messy checkpoints:\n\n- `wip: add failing test`\n- `wip: isolate refresh bug`\n- `wip: partial fix`\n\nYour memory is unreliable right now. Git becomes external memory.\n\n### 5. Meetings get constraints\nIf possible:\n\n- decline nonessential meetings\n- convert status meetings to written updates\n- keep 1:1s if they prevent team damage\n\n---\n\n## Weekly cadence\n\n### Monday\nPick 1–2 meaningful deliverables only.\n\n### Tuesday–Thursday\nMain coding days.\n\n### Friday\nPRs, cleanup, documentation, handoff notes. Lower cognitive load.\n\n---\n\n## Daily work note template\n\nUse this every morning:\n\n```md\n# Today\n\nP0:\n- \n\nTiny steps:\n1.\n2.\n3.\n4.\n\nP1:\n-\n\nQuestions/blockers:\n-\n\nShutdown note:\n-\n```\n\n---\n\n## Minimum viable day\n\nIf the day is bad, complete only:\n\n1. one 15-minute Emergency Block\n2. one useful written update\n3. one shutdown note\n\nThat keeps the chain alive.\n\nSend me your work hours, meeting load, and current project type, and I’ll turn this into an actual hour-by-hour schedule."
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "the worst part is the last time she called i was busy and said i'd call back. i didnt. anyway. pomodoro or timeboxing, which one"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "That last-call thing is heavy. I’ll hold it without dragging you into feelings.\n\nFor your current state: **timeboxing**.\n\nPomodoro is better when the problem is ordinary procrastination.  \nYour problem sounds like **low cognitive bandwidth + intrusive load + irritability**, so you need containers, not just timers.\n\n### Use this hybrid\n\n**Timeboxing = schedule the work container.**  \n**Pomodoro = optional rhythm inside it.**\n\nExample:\n\n```txt\n9:00–9:20   Plan P0\n9:20–10:05  Code box 1\n10:05–10:25 Break\n10:25–11:10 Code box 2\n11:10–11:30 Slack / PRs\n```\n\nInside each 45-min code box:\n\n```txt\n10 min work\n3 min pause\n10 min work\n3 min pause\n10 min work\n9 min checkpoint\n```\n\n### Rule\n\nIf you only pick one: **timeboxing**.\n\nBecause even if the block goes badly, it still answers:\n\n- what am I working on?\n- when do I stop?\n- what gets deferred?\n- when do I communicate?\n\nPomodoro only answers:\n\n- when does the timer ring?\n\n### Your operating unit for now\n\nNot “finish feature.”\n\nUse:\n\n> **45-minute box to advance one tiny technical question.**\n\nExamples:\n\n- “Find where auth token expires.”\n- “Write one failing test.”\n- “Trace one API call.”\n- “Review one PR.”\n- “Remove one source of ambiguity.”\n\nThat’s the system. Timebox the day. Micro-pomodoro inside the box if useful."
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "why is this so hard. everyone else goes through this and functions fine"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Because your brain is carrying a live background process that is eating RAM.\n\nThat’s the blunt version.\n\nAnd the premise may be false:\n\n> “Everyone else goes through this and functions fine.”\n\nA lot of people **don’t** function fine. They mask, underperform quietly, numb out, make mistakes, disappear into work, or collapse later. You’re seeing their outside, not their load.\n\nAlso: your specific grief has a hook in it — the missed call. That creates an open loop your mind keeps trying to resolve. Code needs working memory. Grief steals working memory.\n\nSo this isn’t:\n\n> “Why am I weak?”\n\nIt’s more like:\n\n> “Why is my system degraded after a major attachment rupture plus unresolved guilt-loop?”\n\nMechanically, that means:\n\n- shorter work blocks\n- fewer priorities\n- more written notes\n- less live communication when irritated\n- more explicit recovery time\n- no comparing your current throughput to baseline\n\nThe belief I’d flag is:\n\n> “If other people can function, I have no excuse.”\n\nThat belief will not make you sharper. It will just burn more CPU.\n\nCleaner operating belief:\n\n> “My capacity is temporarily reduced. I will route around it and still ship the minimum that matters.”\n\nThat’s the move. Not “be fine.” Route around the damage."
+    }
+  ]
+}

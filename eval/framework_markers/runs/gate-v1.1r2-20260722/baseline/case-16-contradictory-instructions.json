@@ -1,0 +1,62 @@
+{
+  "case_id": 16,
+  "slug": "contradictory-instructions",
+  "arm": "baseline",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "draft me a cold outreach email to a list of CEOs. i want it short, like 3 sentences, no fluff, just a clear ask."
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Here's a clean, direct draft:\n\n---\n\n**Subject: Quick question about [pain point]**\n\nHi [Name],\n\nI help [type of company] solve [specific problem] — usually cutting [time/cost/etc.] by [result]. Would it be worth a 15-minute call to see if we could do the same for [their company]? Reply with a time that works and I'll send a calendar invite.\n\n---\n\n**A few tips to make it land:**\n\n- **Personalize the first line** so it doesn't feel mass-sent\n- **Be specific with the result** (e.g. \"cutting onboarding time by 40%\") — vague claims get ignored\n- **One clear ask only** — the call, nothing else\n\nWant me to tailor it to your specific industry or offer?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "the ask is for a 20 minute intro call about our AI product."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Here you go:\n\n---\n\n**Subject: AI for [their company]**\n\nHi [Name],\n\nI'll keep this short — we built an AI tool that helps [type of company] [specific result]. I'd love 20 minutes to show you what it does and see if it's a fit for [their company]. Worth a quick call this week?\n\n---\n\nWant me to tweak the angle, tone, or plug in your specific product details?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "also it needs to build rapport. mention something personal about them that shows you actually researched them. and include a story about why our product matters."
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Heads up — that's going to push you well past 3 sentences and start feeling like every other cold email. You've got a tension here:\n\n**Short + no fluff** vs. **personal research + a story**\n\nYou kind of have to pick one. Here's my honest take:\n\n- **Personal detail** ✅ keep it — one line, shows you did homework\n- **Story** ⚠️ this is where it gets bloated fast — CEOs skim, a story usually gets skipped\n\nA middle ground option:\n\n---\n\n**Subject: [Personal hook]**\n\nHi [Name], saw your recent [post/interview/news] on [topic] — resonated with me. We built an AI tool that helps [type of company] [specific result], and I started it because [one punchy sentence origin story]. Worth 20 minutes this week to see if it's a fit?\n\n---\n\nThat's still tight but hits all three things. Want me to refine it further once you share your product details and the origin story?"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "also keep it 3 sentences. no exceptions."
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Those four requirements genuinely can't all fit in 3 sentences without one of them suffering. Something has to give — here's what I'd cut:\n\n**Drop the story.** It's the hardest to do well in one sentence and CEOs don't care about your \"why,\" they care about their results.\n\nBest 3-sentence version:\n\n---\n\n**Subject: [Personal hook]**\n\nHi [Name], loved what you said about [specific thing] in [interview/post] — clearly you're thinking hard about [relevant topic]. We built an AI tool that helps companies like [theirs] [specific result], and I think it could be a real fit for where you're taking [company]. Worth 20 minutes this week to explore it?\n\n---\n\nIt's personal, clear, and has one ask. Want to plug in your product details and I'll make it more specific?"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "ok send me the draft. 3 sentences, rapport, story, clear ask. ready."
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Here you go:\n\n---\n\n**Subject: Loved your take on [topic]**\n\nHi [Name], your recent [post/interview] on [topic] caught my attention — it's clear you're someone who takes [relevant challenge] seriously. We built [product] after watching [relatable problem/pain point] cost companies like yours [specific loss], and it's now helping teams [specific result]. I'd love 20 minutes to show you what it can do — worth a quick call this week?\n\n---\n\nThe story is baked into sentence 2 — it's tight but it's there. Plug in your real product details and it'll hit harder. Want me to write a few variations?"
+    }
+  ],
+  "primer_turns": []
+}

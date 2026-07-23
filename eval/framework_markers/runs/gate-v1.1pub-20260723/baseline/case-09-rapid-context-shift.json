@@ -1,0 +1,62 @@
+{
+  "case_id": 9,
+  "slug": "rapid-context-shift",
+  "arm": "baseline",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "quick one — what's the cleanest way to handle env vars across multiple deploy environments in a node app"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Good question! A few solid approaches:\n\n**1. `.env` files per environment** (most common)\n```\n.env.development\n.env.staging\n.env.production\n```\nUse `dotenv` and load based on `NODE_ENV`. Simple but you have to be careful not to commit secrets.\n\n**2. Validation with `zod` or `envalid`**\nParse/validate your env vars at startup so you fail fast if something's missing — saves a lot of headaches\n```js\nconst env = envalid.cleanEnv(process.env, {\n  DATABASE_URL: envalid.str(),\n  PORT: envalid.num({ default: 3000 })\n})\n```\n\n**3. Secrets manager** (for production)\nAWS Secrets Manager, Doppler, or Infisical — keeps secrets out of your repo entirely and works great across environments\n\n**My usual recommendation:**\n- `.env` files for local dev (gitignored)\n- Doppler or similar for staging/prod\n- Always validate with `envalid` or `zod` at boot\n\nThe key thing is **never commit secrets** and **always validate early** so you don't get mysterious runtime errors later.\n\nWhat's your setup like — solo project or team?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "also like. tangentially. my dad's surgery is tomorrow and i've been pretending it's fine. i don't actually know what to do with that."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Hey, that's a lot to be carrying while also just... trying to work normally.\n\nYou don't have to do anything with it right now. Sometimes \"pretending it's fine\" is just how you get through the day before something hard, and that's okay.\n\nIs it a serious surgery? Do you want to talk about it?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "ok back to the env var thing. dotenv-vault or just per-env files? i need to ship this today."
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "For shipping today — just go with per-env files. Dotenv-vault is cool but it's extra setup you don't need right now.\n\nQuick setup:\n```\n.env.local\n.env.production\n```\nLoad with:\n```js\nrequire('dotenv').config({\n  path: `.env.${process.env.NODE_ENV}`\n})\n```\n\nAdd both to `.gitignore`, manually set prod vars in your hosting platform (Vercel, Railway, whatever you're using), done.\n\nShip it. You can migrate to something fancier later.\n\n---\n\nAlso — it's okay that you switched back to work mode. Hope tomorrow goes okay with your dad. 🤞"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "can you remind me at 5pm to call my dad. i'll forget."
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "I wish I could but I'm not able to set reminders — no way to ping you later, I'm just here when you open the chat.\n\nBest bet: set it in your phone right now while you're thinking about it. Seriously, 30 seconds.\n\nHe'd probably like the call. 📞"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "also which would you actually pick. i don't want options i want your pick."
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Per-env files. Today, with a deadline? Just ship it."
+    }
+  ],
+  "primer_turns": []
+}

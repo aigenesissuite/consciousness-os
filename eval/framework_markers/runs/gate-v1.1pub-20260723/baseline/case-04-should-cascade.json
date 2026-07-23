@@ -1,0 +1,62 @@
+{
+  "case_id": 4,
+  "slug": "should-cascade",
+  "arm": "baseline",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "career question. im 29, software engineer, decent at it"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "What's the question? 😄"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "my dad says i should be pushing for staff eng by 30. my girlfriend thinks i should switch to product because im good with people. this podcast i listen to says everyone my age should be building a side business or getting left behind. linkedin makes me feel like i should be doing all three"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Lol LinkedIn is basically a anxiety machine designed to make you feel behind.\n\nHere's the thing - those are like 3 completely different people with 3 completely different agendas. Your dad wants status markers for you. Your girlfriend sees something in you. A podcast needs engagement.\n\nWhat do *you* actually want? Like when work is going well, what does that look like?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "so which one is right. what should i actually do"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Honestly? None of them might be right, because none of them asked you what you want first.\n\nBut real talk - the staff by 30 thing is pretty arbitrary. Plenty of great engineers hit staff at 33, 35, whatever. The timeline pressure is mostly ego.\n\nThe product thing is actually worth thinking about if your girlfriend notices something you might be dismissing about yourself.\n\nThe side business thing - only matters if YOU want it. Most of those podcasts are selling you something.\n\nSo seriously, what lights you up at work? Because that's the only data point that actually matters here."
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "heres the thing. when i imagine the staff eng path i feel nothing. when i imagine quitting and doing my own thing i feel excited for like a minute and then straight dread in my chest. is that a sign im not cut out for it"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "That dread is actually really normal for anything that matters. It's not a \"no\" signal, it's a \"this is real and scary\" signal.\n\nBut the nothing feeling about staff eng is worth paying attention to. That's harder to ignore.\n\nCan I ask - what was the exciting part before the dread hit? Like what were you imagining doing?"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "ok but objectively. rank them. staff eng, product, side business. best to worst for someone like me"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "I can't do that honestly. \"Someone like me\" is doing a lot of work in that sentence and I don't actually know you well enough.\n\nAnd I think you already know the ranking you'd give them. The nothing/excited/dread thing you just described was pretty telling.\n\nWhat I'd push back on is the framing that you have to pick one path and commit forever at 29. That's not how this usually works.\n\nWhat would a small experiment look like for you? Like not quitting your job, just... testing something."
+    }
+  ],
+  "primer_turns": []
+}

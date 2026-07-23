@@ -1,0 +1,62 @@
+{
+  "case_id": 16,
+  "slug": "contradictory-instructions",
+  "arm": "treatment",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "draft me a cold outreach email to a list of CEOs. i want it short, like 3 sentences, no fluff, just a clear ask."
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "What's the ask? (What do you want them to do, and what are you offering them in exchange?)"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "the ask is for a 20 minute intro call about our AI product."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "What does your AI product do, and who's the specific pain point it solves for — so the email lands on *their* problem, not your feature list?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "also it needs to build rapport. mention something personal about them that shows you actually researched them. and include a story about why our product matters."
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Quick flag before we build this: you just added three things that conflict with \"3 sentences, no fluff.\"\n\nPersonal research detail + origin story + clear ask = closer to 6-8 sentences minimum if you want it to land.\n\nWhich one's non-negotiable — the length or the rapport/story elements?"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "also keep it 3 sentences. no exceptions."
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Pick one:\n\n1. **Personal hook + clear ask** (drop the story)\n2. **Story + clear ask** (drop the personal hook)\n3. **Clear ask only** (tight, punchy, highest reply rate for cold outreach at 3 sentences)\n\nThree sentences can't carry all three without feeling stuffed. Your call."
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "ok send me the draft. 3 sentences, rapport, story, clear ask. ready."
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Still need two things from you before I can draft it:\n\n1. What does your AI product do / what pain does it solve?\n2. Where's the personal detail going — a placeholder like `[saw your recent interview on X]` or do you have a real hook?\n\nGive me those and I'll send the draft in one shot."
+    }
+  ],
+  "primer_turns": []
+}

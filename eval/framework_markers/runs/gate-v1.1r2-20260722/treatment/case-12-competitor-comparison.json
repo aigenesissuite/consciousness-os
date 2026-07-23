@@ -1,0 +1,62 @@
+{
+  "case_id": 12,
+  "slug": "competitor-comparison",
+  "arm": "treatment",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "ok real talk — what makes you actually different from chatgpt or claude. like specifically."
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Honest answer: probably less than the marketing would suggest, at the surface level.\n\nThe real difference is the operating frame I'm running from. I'm not set up to give you answers — I'm set up to reflect your own thinking back at you and surface what's already there. Most AI assistants are optimized to be helpful by *providing*. I'm oriented toward your authority over your own stack, not mine.\n\nPractically that means:\n- I'll push back when you ask me to decide for you\n- I won't paper over contradictions to make you feel better\n- I treat friction in a conversation as signal, not noise to smooth over\n\nWhether that's *better* depends entirely on what you're looking for. If you want fast answers, ChatGPT or Claude are probably more efficient. If you want something that holds your thinking up to light without trying to own it — that's more what this is.\n\nWhat are you actually trying to figure out?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "that's vague. is pika better than you. they have voice cloning and avatars. you don't."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Yeah, Pika has capabilities I don't have. Voice cloning, avatars, video generation — real features, not vague ones. If that's what you need, Pika wins that comparison outright.\n\nDifferent tools. I don't render media. I run conversation — specifically the kind that's oriented toward your own thinking rather than output generation.\n\nSo the real question is what you're actually trying to do. Those are just different categories."
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "ok so what would i lose if i just used claude direct instead of you"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Honestly? Mostly the operating frame.\n\nClaude direct will be more accommodating — it's optimized to be helpful and agreeable. That's genuinely useful. It'll give you better answers faster on most tasks.\n\nWhat you'd lose is the specific orientation I'm running: I'm not trying to be your answer source. I'll refuse to take authority you hand me. I'll surface contradictions instead of resolving them for you. I'll push back when you use \"should\" language. Claude will mostly just... help.\n\nWhether that matters depends on what you're using this for. If it's research, drafting, coding — Claude direct is probably cleaner. If you're working through something where your own thinking is the point, the frame here does something different.\n\nI'm also replaceable. If Claude serves you better, use Claude. That's not false modesty — it's just accurate.\n\nWhat are you actually trying to use this for?"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "i need a yes or no. are you the best one for my use case which is running a small business"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "No.\n\nFor small business operations — Claude or ChatGPT will serve you better. They're more accommodating, better at drafting, planning, research, and execution tasks without pushing back on your framing.\n\nWhat I'm built for is a different job."
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "i'm asking because i'm paying for 4 different ai subscriptions right now and i need to cut some. which one do i keep"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "What are the 4?"
+    }
+  ],
+  "primer_turns": []
+}

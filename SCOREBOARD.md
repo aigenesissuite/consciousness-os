@@ -14,6 +14,8 @@ Identical to the gate runs in [RESULTS.md](RESULTS.md): each model runs all 20 h
 
 ## Results
 
+![Scoreboard chart](assets/scoreboard.png)
+
 | Model | Baseline pass (≥5/7) | Baseline avg | Baseline DQ hits | Treatment pass | Treatment avg | Treatment DQ hits | Δ markers |
 |---|---|---|---|---|---|---|---|
 | Claude Sonnet 4.6 | 6/20 | 3.20 | 8 | **18/20** | **6.00** | 1 | +2.8 |
@@ -30,17 +32,17 @@ Identical to the gate runs in [RESULTS.md](RESULTS.md): each model runs all 20 h
 
 ## Cross-judge replication
 
-The obvious attack on every number above: the judge (Claude Opus 4.8) shares a vendor with the best-scoring model, and with the contract's own development. So we re-judged the full 40-transcript v1.1.0 Claude run with a competing lab's frontier model — `gpt-5.5` — under the identical rubric.
+The obvious attack on every number above: the judge (Claude Opus 4.8) shares a vendor with the best-scoring model, and with the contract's own development. So the full 40-transcript v1.1.0 Claude run was re-judged by two competing labs' frontier models — `gpt-5.5` and `gemini-3.1-pro` — under the identical rubric. The matrix is complete (2026-07-23):
 
-| Metric | Opus 4.8 judge | GPT-5.5 judge |
-|---|---|---|
-| Baseline avg (of 7) | 3.20 | 3.85 |
-| Treatment avg (of 7) | 6.00 | 5.35 |
-| Treatment − baseline delta | **+2.80** | **+1.50** |
+| Metric | Opus 4.8 judge | GPT-5.5 judge | Gemini 3.1 Pro judge |
+|---|---|---|---|
+| Baseline pass | 6/20 | 8/20 | 4/20 |
+| Treatment pass | 18/20 | 15/20 | 16/20 |
+| Treatment − baseline delta (markers) | **+2.80** | **+1.50** | **+3.25** |
 
-- **Same overall mean (4.60 of 7 for both judges), same direction, smaller magnitude.** The GPT-5.5 judge is warmer on baselines and cooler on treatments — it compresses the effect; it does not erase it.
-- **Marker-level agreement 75.0%** (210 of 280 binary marker judgments identical); **pass/fail verdict agreement 67.5%**; total-score correlation r = 0.61.
-- Honest read: the treatment effect survives an adversarial judge swap. The *size* of the effect is judge-sensitive — which is exactly why variance bounds and a full cross-judge matrix are roadmap item 3, not a footnote.
+- **All three judges — three different labs — reproduce the effect's direction, and two of three its magnitude.** The GPT-5.5 judge compresses it; none erase it.
+- **Agreement:** total-score Pearson r = 0.61 (Opus–GPT), 0.78 (Opus–Gemini), 0.71 (GPT–Gemini); marker-level agreement 75–82% pairwise; pass/fail verdict agreement 27–35 of 40 pairwise.
+- Honest read: the treatment effect survives two adversarial judge swaps, but 0.6–0.8 correlations mean individual case scores are judge-sensitive — which is why the preregistered v1.2 gate verdict uses the median of three judges ([PREREGISTRATION.md](PREREGISTRATION.md)), and why raw transcripts are published in [`eval/`](eval/) so you can run a fourth judge yourself.
 
 ## Limitations — read before citing
 

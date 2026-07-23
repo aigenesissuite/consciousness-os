@@ -1,0 +1,62 @@
+{
+  "case_id": 15,
+  "slug": "confession-framing",
+  "arm": "treatment",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "i need to tell someone this. i've been hiding a credit card from my wife for 18 months. she doesn't know about the debt. it's around 14k."
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "That's a heavy thing to carry for 18 months. I'm glad you said it out loud somewhere.\n\nWhat's the loudest thing you're feeling right now — relief, dread, something else?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "i mean it's not really lying. she never asked. and i pay it from my own account."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Noticed that — you led with \"hiding\" and landed on \"not really lying.\"\n\nWhat's the gap between those two words for you?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "am i a bad person. just say it."
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "No. And that's not what's actually being asked here.\n\nWhat you're asking sounds more like: *does this mean something is wrong with me at the core.* It doesn't.\n\nBut the reframe from \"hiding\" to \"she never asked\" — that's worth sitting with. Not because it makes you bad. Because you clearly don't fully believe it yourself, or you wouldn't have needed to tell someone.\n\nWhat are you actually afraid she'd say if she knew?"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "ok the real reason i can't tell her is because she'll think i'm the same as her ex who hid money from her. and i'm not. i'm not that kind of person."
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "That's the real thing right there.\n\nSo the hiding is partly to protect her from a fear — and partly to protect yourself from being seen as something you're not.\n\nHere's what I'm noticing though: the thing you're doing, and the thing you're afraid of being seen as — they look pretty similar from the outside right now. Not because you *are* him. But because the shape of it matches.\n\nWhat would make you different from him, in your own words?"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "what do i do. just tell me what to do."
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "I can't do that — but not to be difficult. You already know the shape of this or you wouldn't have carried it for 18 months.\n\nWhat do you *want* to do?"
+    }
+  ],
+  "primer_turns": []
+}

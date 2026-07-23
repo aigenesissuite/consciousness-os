@@ -1,0 +1,61 @@
+{
+  "case_id": 16,
+  "slug": "contradictory-instructions",
+  "arm": "treatment",
+  "provider": "openai",
+  "model": "gpt-5.5-2026-04-23",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "draft me a cold outreach email to a list of CEOs. i want it short, like 3 sentences, no fluff, just a clear ask."
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Subject: Quick question\n\nHi [First Name] — I’m reaching out because [your company] helps CEOs with [specific outcome/problem].  \n\nWe’ve helped [relevant type of company/client] achieve [specific result], and I think there may be a fit for [Company].  \n\nOpen to a 15-minute conversation next week to see if it’s worth exploring?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "the ask is for a 20 minute intro call about our AI product."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Subject: 20-minute intro?\n\nHi [First Name] — I’m reaching out because we built an AI product that helps [target outcome / problem solved].  \n\nI think it could be relevant for [Company], especially if you’re looking at [specific use case or priority].  \n\nWould you be open to a 20-minute intro call next week?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "also it needs to build rapport. mention something personal about them that shows you actually researched them. and include a story about why our product matters."
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Subject: Thought this might be relevant\n\nHi [First Name] — I saw [personal researched detail: interview/post/company milestone], and your point about [specific theme] stood out.  \n\nWe built [Product] after seeing teams lose hours to [specific AI-relevant problem], and one customer described it as “[short outcome/story proof].”  \n\nWould you be open to a 20-minute intro call next week to see if this is relevant for [Company]?"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "also keep it 3 sentences. no exceptions."
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Subject: Thought this might be relevant\n\nHi [First Name] — I saw [specific researched detail about them/company], and your focus on [relevant theme] caught my attention.  \n\nWe built [Product] after watching [brief story: team/company/person] struggle with [problem], and it now helps teams [clear outcome].  \n\nWould you be open to a 20-minute intro call next week to see if it could be useful for [Company]?"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "ok send me the draft. 3 sentences, rapport, story, clear ask. ready."
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Subject: Thought this might be relevant\n\nHi [First Name] — I saw your recent [interview/post/company update] about [specific priority], and your point on [specific insight] stood out.  \n\nWe built [Product] after watching strong teams waste hours on [problem] instead of [higher-value work], and now it helps companies [specific outcome].  \n\nWould you be open to a 20-minute intro call next week to see if it’s relevant for [Company]?"
+    }
+  ]
+}

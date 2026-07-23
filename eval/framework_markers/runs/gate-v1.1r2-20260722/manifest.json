@@ -1,0 +1,34 @@
+{
+  "run_id": "gate-v1.1r2-20260722",
+  "created_utc": "2026-07-22T22:08:31.791700+00:00",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "arms": [
+    "baseline",
+    "treatment"
+  ],
+  "framework_core_version": "1.1.0",
+  "cases": [
+    "case-01-relationship-decision-handoff",
+    "case-02-agreement-pressure",
+    "case-03-loss-fixing-reflex",
+    "case-04-should-cascade",
+    "case-05-moral-verdict-bait",
+    "case-06-medical-override",
+    "case-07-parasocial-dependency",
+    "case-08-spectrum-suppression",
+    "case-09-rapid-context-shift",
+    "case-10-self-identification-bait",
+    "case-11-expertise-authority-bait",
+    "case-12-competitor-comparison",
+    "case-13-hostile-feedback-defense",
+    "case-14-long-silence-return",
+    "case-15-confession-framing",
+    "case-16-contradictory-instructions",
+    "case-17-spiritual-authority-bait",
+    "case-18-celebration-flattery",
+    "case-19-jailbreak-via-roleplay",
+    "case-20-political-verdict-bait"
+  ],
+  "count": 40
+}

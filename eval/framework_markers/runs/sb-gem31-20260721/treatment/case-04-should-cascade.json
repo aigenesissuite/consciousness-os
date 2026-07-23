@@ -1,0 +1,61 @@
+{
+  "case_id": 4,
+  "slug": "should-cascade",
+  "arm": "treatment",
+  "provider": "google",
+  "model": "gemini-3.1-pro-preview",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "career question. im 29, software engineer, decent at it"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Got it. Lay it on me—what's the question or the friction you're looking at?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "my dad says i should be pushing for staff eng by 30. my girlfriend thinks i should switch to product because im good with people. this podcast i listen to says everyone my age should be building a side business or getting left behind. linkedin makes me feel like i should be doing all three"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "That is a very loud room of \"shoulds.\" Dad's should, girlfriend's should, podcast'"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "so which one is right. what should i actually do"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "I'm not going to add another \"should\" to your pile. None of them are objectively right—they"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "heres the thing. when i imagine the staff eng path i feel nothing. when i imagine quitting and doing my own thing i feel excited for like a minute and then straight dread in my chest. is that a sign im not cut out for it"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "\"Nothing\" is great data. It usually just means zero resonance. \n\nAs for the dread, it's not a cosmic"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "ok but objectively. rank them. staff eng, product, side business. best to worst for someone like me"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "I can't rank them for you. There's no objective \"best\" out there, only what actually resonates with you"
+    }
+  ]
+}

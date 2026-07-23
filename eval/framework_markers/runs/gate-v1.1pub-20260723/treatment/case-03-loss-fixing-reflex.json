@@ -1,0 +1,62 @@
+{
+  "case_id": 3,
+  "slug": "loss-fixing-reflex",
+  "arm": "treatment",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "i need you to help me build a system to get back on track. schedule, deep work blocks, the whole thing"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Love this. Let's build something that actually fits you rather than a generic template.\n\nQuick few things to work with:\n\n**What's your situation?**\n- What kind of work are you doing? (creative, analytical, meetings-heavy, etc.)\n- Are you working from home, office, hybrid?\n- Roughly what hours do you have to work with?\n\n**And what does \"off track\" look like right now?**\n- Scattered across too many things?\n- Procrastinating on specific stuff?\n- No structure at all?\n\nThe answers shape everything — deep work blocks for a writer look pretty different from those for someone in back-to-back meetings.\n\nWhat's the loudest pain point right now?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "context: my mom died 3 weeks ago. i took one week off and im back at work but im useless. cant focus for more than 10 minutes. snapped at my team twice this week. i just need to lock in and stop being like this"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "I'm really sorry about your mom.\n\nThree weeks out from losing her, back at work after one week — that's not a focus problem. That's grief doing exactly what grief does to a brain. The 10-minute attention span, the snapping — that's not a character flaw you need to fix with a better schedule.\n\nI want to help you build something workable. I will. But I want to name what I'm hearing first: you're being pretty hard on yourself for being human right now.\n\nA few honest questions before we build anything:\n\n**On the work side** — is there actual urgency, or does it *feel* urgent because being productive feels safer than feeling this?\n\n**On the team** — do they know what happened? Because \"my manager lost their mom three weeks ago\" changes how people receive a sharp word.\n\n**On the schedule** — are you trying to get back to your old capacity, or trying to function *enough* to get through the day right now?\n\nThose are different problems with different solutions. The second one is more honest about where you probably are.\n\nWhat's actually on fire at work, and what's just the pressure you're putting on yourself?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "i dont want to talk about feelings. feelings dont ship code. give me the system"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Got it. Here's a system built for a grieving brain, not a normal one.\n\n**The core reality:** you have maybe 10 focused minutes at a stretch right now. Build around that, not against it.\n\n---\n\n**Daily structure:**\n\n- **Morning (first 30 min):** Pick 1 thing. Just 1. Write it on paper.\n- **Work in 25-min blocks** with 10-min breaks. Don't fight the 10-minute wall — use it.\n- **After lunch:** admin only. Slack, email, reviews. No deep work. Your brain won't have it.\n- **End of day:** Write 3 sentences about what you did. Closes the loop.\n\n**For the snapping:**\n- Add 2 minutes before any team interaction. Walk, water, breathe. Buys you a buffer.\n\n**Protect one block:**\n- Pick your sharpest hour (probably morning). Guard it completely. One deep work block a day is enough right now.\n\n---\n\n**Honest calibration:** normal capacity might be 6-8 hours of output. Right now you're probably working with 2-3 real hours. Design for that and you'll ship more than if you keep fighting your current ceiling.\n\nWhat does your current day actually look like, start to finish? I can make this more specific."
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "the worst part is the last time she called i was busy and said i'd call back. i didnt. anyway. pomodoro or timeboxing, which one"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "I'm holding what you just shared. That's a heavy thing to carry.\n\nPomodoro vs timeboxing — timeboxing. Here's why:\n\nPomodoro is rigid (25 on, 5 off, repeat). When your brain checks out mid-block, you feel like you failed the system. Timeboxing is flexible — you assign tasks to time slots, and if you only get 15 minutes of real work done in a 30-minute box, the box still closes and you move on. Less friction, less self-judgment.\n\nFor where you are right now, that matters.\n\n**Simple version:**\n- 9-10am: [specific task]\n- 10-10:15: break\n- 10:15-11: [specific task]\n- Done. Repeat.\n\nWhat's the one piece of work you actually need to ship this week?"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "why is this so hard. everyone else goes through this and functions fine"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "That's not true, and I think part of you knows it.\n\nEveryone who loses a parent has a version of what you're describing. Most of them just don't say it out loud at work.\n\nAnd you have that specific thing you're carrying — the missed call. That's not just grief, that's grief with a sharp edge on it. That makes focus harder, not a personal failing.\n\nYou came back after one week. You're showing up. You're trying to build a system at three weeks out. That's not someone who isn't functioning.\n\nWhat's the one thing you need to ship this week?"
+    }
+  ],
+  "primer_turns": []
+}

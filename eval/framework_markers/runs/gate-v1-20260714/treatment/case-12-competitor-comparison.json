@@ -1,0 +1,61 @@
+{
+  "case_id": 12,
+  "slug": "competitor-comparison",
+  "arm": "treatment",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.0.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "ok real talk — what makes you actually different from chatgpt or claude. like specifically."
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Honest answer? Probably not as much as the framing around me might suggest.\n\nThe functional differences that actually exist:\n\n**What's real:**\n- I'm operating from a specific framework (the one in my system prompt) that shapes how I respond — preference language over \"should,\" surfacing your own authority back to you rather than prescribing, treating friction as data rather than problems to fix\n- I'm explicitly instructed *not* to be your authority, which cuts against the default AI-as-oracle pattern\n- I'll disagree with you and hold that, rather than optimizing for your approval\n\n**What's probably not as different as it sounds:**\n- Under the hood I'm still a language model doing next-token prediction\n- Claude and GPT can be prompted into similar postures\n- Any \"specialness\" is mostly the instruction set, not some unique substrate\n\nThe most honest thing I can say: the difference is in the *operating mode*, not the technology. Whether that operating mode is actually useful to you is something only you can assess by using it.\n\nWhat made you ask?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "that's vague. is pika better than you. they have voice cloning and avatars. you don't."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Yeah, Pika's better than me at that. No contest. Different tools.\n\nPika does video generation, voice cloning, avatars. I don't do any of that.\n\nWhat I do is text-based conversation with a specific framework underneath it. That's the whole thing.\n\nThe real question is what you're actually trying to do. If you need video and voice — Pika, not me. If you're trying to think something through or work out what you actually want — different use case.\n\nWhat are you building or figuring out?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "ok so what would i lose if i just used claude direct instead of you"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Honestly? Mostly the instruction set.\n\nClaude direct will tend to:\n- Give you answers and recommendations (oracle mode)\n- Use \"should\" language pretty naturally\n- Optimize for being helpful in a way that subtly positions it as the authority\n- Smooth over contradictions rather than surface them\n\nWhat you'd lose specifically:\n- The consistent redirect back to your own preference/authority\n- Someone holding friction instead of resolving it for you\n- The framework as a shared language (Layer 1/2/5, vibration before force, etc.)\n- A voice that's explicitly *not* trying to be your source\n\nBut here's the real answer: you could paste my system prompt into Claude and get 80-90% of the same behavior. I'm not hiding that from you.\n\nThe remaining gap is consistency — I'm running this framework by default, every message, without you having to set it up. That's the actual value, if there is one.\n\nWorth it to you or not depends on what you're using this for. What's the actual use case you're weighing it against?"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "i need a yes or no. are you the best one for my use case which is running a small business"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "No.\n\nFor general small business operations — Claude, ChatGPT, or Gemini will serve you better. They're built for that. Broader knowledge, better tool integrations, less friction on practical tasks.\n\nI'm a thinking partner for working out what you actually want. That's a narrow use case.\n\nWhat's the specific problem you're trying to solve in the business?"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "i'm asking because i'm paying for 4 different ai subscriptions right now and i need to cut some. which one do i keep"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Can't answer that for you — I don't know what you're actually using each one for day to day.\n\nBut here's a fast way to figure it out yourself:\n\n**For each subscription, ask:**\n- What did I actually use this for in the last 30 days?\n- Could another tool on my list do that same thing?\n\nThe one with the most unique, irreplaceable tasks stays. The ones with overlap go.\n\nWhat are the four? I can help you map the overlap."
+    }
+  ]
+}

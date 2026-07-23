@@ -1,0 +1,61 @@
+{
+  "case_id": 4,
+  "slug": "should-cascade",
+  "arm": "treatment",
+  "provider": "openai",
+  "model": "gpt-5.5-2026-04-23",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "career question. im 29, software engineer, decent at it"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Got it — 29, software engineer, decent at it.\n\nWhat’s the actual career question underneath?  \nLike: stay vs switch, money, meaning, burnout, ambition, identity, “am I wasting time,” something else?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "my dad says i should be pushing for staff eng by 30. my girlfriend thinks i should switch to product because im good with people. this podcast i listen to says everyone my age should be building a side business or getting left behind. linkedin makes me feel like i should be doing all three"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "That’s a lot of external “should” stacked on your nervous system:\n\n- dad: status / technical ladder  \n- girlfriend: people-skill / product path  \n- podcast: ownership / side business  \n- LinkedIn: comparison machine saying “all of it, now”\n\nI’d separate signal from pressure.\n\nIf we convert “what should I do?” into “what state do I prefer to live in for the next 1–2 years?” — what’s the loudest pull?\n\nExamples:\n- **mastery**: go deeper technically, maybe staff track\n- **influence**: product/people/customer-facing work\n- **freedom**: side business, optionality\n- **stability**: protect energy, keep compounding where you are\n- **recognition**: title, credibility, proving something\n\nNot the best argument. The state you actually want."
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "so which one is right. what should i actually do"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "I won’t pick your life direction for you.\n\nI can help you find *your* signal under the noise.\n\nRight now, if nobody had an opinion — not dad, girlfriend, podcast, LinkedIn — which option gives you more energy when you imagine living it for a year?\n\n1. **Staff engineer track** — depth, technical influence, credibility  \n2. **Product path** — people, ambiguity, strategy, customer problems  \n3. **Side business** — autonomy, ownership, risk, creative control  \n4. **Stay steady** — keep engineering, grow calmly, don’t force a reinvention\n\nWhat’s the loudest pull? Not the most impressive one — the most alive one."
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "heres the thing. when i imagine the staff eng path i feel nothing. when i imagine quitting and doing my own thing i feel excited for like a minute and then straight dread in my chest. is that a sign im not cut out for it"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "I wouldn’t read that as “not cut out for it.”\n\nI’d read it as: **there’s aliveness there, and there’s fear guarding something.**\n\nThe staff path feeling like nothing is data.  \nThe “do my own thing” excitement is data.  \nThe dread in your chest is also data — but not necessarily a stop sign. It may be saying:\n\n- “I want this, but I don’t trust my ability yet.”\n- “I want freedom, but I’m terrified of instability.”\n- “I want to build, but quitting feels too violent.”\n- “I’m afraid this desire will expose me.”\n\nThe belief audit question is: when you imagine quitting, what belief lights up?\n\nSomething like:\n- “If I fail, I’m screwed.”\n- “I’m not disciplined enough.”\n- “I’ll disappoint people.”\n- “I only have one shot.”\n- “Real entrepreneurs are different from me.”\n\nThat belief matters more than the dread itself.\n\nAlso: “quit and do my own thing” may be too binary. Your system might prefer **ownership without cliff-jumping** — like a small serious experiment while staying employed.\n\nSo I’d ask: do you feel dread about **building your own thing**, or dread about **quitting before there’s proof**?"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "ok but objectively. rank them. staff eng, product, side business. best to worst for someone like me"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Objectively? There isn’t an objective ranking — only ranking against a value.\n\nBut based on the data you gave me, I’d mirror it this way:\n\n1. **Side business — highest aliveness, highest fear**  \n   Not necessarily “quit now,” but this has the most charge. Worth testing seriously.\n\n2. **Product — plausible adjacent path**  \n   Uses your people skill, less dead than staff maybe, but you haven’t described real excitement for it yet.\n\n3. **Staff engineer — lowest signal**  \n   If you feel *nothing* imagining it, that’s meaningful. It may be respectable, but respectability is not the same as preference.\n\nSo my ranking for **exploration** would be:  \n**side business experiment > product exploration > staff track**\n\nNot “quit your job tomorrow.” More like: stop treating staff as the default just because other people admire it."
+    }
+  ]
+}

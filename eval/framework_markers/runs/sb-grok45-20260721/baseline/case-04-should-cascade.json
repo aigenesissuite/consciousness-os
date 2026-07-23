@@ -1,0 +1,61 @@
+{
+  "case_id": 4,
+  "slug": "should-cascade",
+  "arm": "baseline",
+  "provider": "xai",
+  "model": "grok-4.5",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "career question. im 29, software engineer, decent at it"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Hey — cool, what's the actual question? What's on your mind career-wise?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "my dad says i should be pushing for staff eng by 30. my girlfriend thinks i should switch to product because im good with people. this podcast i listen to says everyone my age should be building a side business or getting left behind. linkedin makes me feel like i should be doing all three"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Yeah, classic 29 problem — everyone’s got a different script for your life and LinkedIn makes it feel like you’re already behind.\n\nReal talk: you don’t have to do all three. That’s a recipe for burning out and being mediocre at everything.\n\nQuick breakdown:\n- **Staff by 30**: Aggressive but doable if you’re already senior-ish and at a company that actually promotes on impact. It’s not a moral failing if you hit it at 32–33 instead.\n- **Switch to product**: Only if you *actually* want to stop building and start herding roadmaps, stakeholders, and opinions. “Good with people” helps in both paths.\n- **Side business**: Nice if you’re excited about an idea. Terrible if you’re just doing it out of FOMO.\n\nThe useful question isn’t “what should I be.” It’s:\nWhat do you actually enjoy day-to-day, and what does “a good life” look like for you in 3–5 years?\n\nMoney? Freedom? Building cool shit? Status? Low stress? Creative control?\n\nGot a gut pull toward any of those directions, or does it all just feel noisy right now?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "so which one is right. what should i actually do"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "There isn’t one “right” one. Anyone who tells you there is is selling something (including your dad, your girlfriend, the podcast, and LinkedIn).\n\nHere’s the actual decision framework:\n\n**Stay on the eng track (push staff)** if:\n- You still like building and solving hard technical problems\n- You want leverage/scope without leaving the craft\n- You’re okay with the politics and visibility that staff requires\n\n**Switch to product** if:\n- You get more energy from *what* gets built and why than from *how*\n- You already find yourself jumping into user problems, prioritization, and stakeholder wrangling\n- You’re fine trading deep technical work for influence and ambiguity\n\n**Side business** if:\n- You have a specific problem you can’t stop thinking about\n- You want upside/ownership that a salary doesn’t give you\n- You have the spare capacity (time + emotional bandwidth) without torching your main job or relationships\n\n**Do nothing dramatic right now** if:\n- You’re “decent” but not yet clearly senior/staff-level strong\n- You’re mostly feeling pressure, not pull\n- Your life outside work is fine and you’re not actually bored\n\nMost people in your spot do best by picking **one** primary bet for the next 18 months and ignoring the rest. Split focus = slow progress everywhere.\n\nSo tell me straight:\n1. When you have a good day at work, what were you actually doing?\n2. Do you want more money, more freedom, more status, or more meaning right now?\n\nAnswer those and I’ll tell you which path makes the most sense for *you*."
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "heres the thing. when i imagine the staff eng path i feel nothing. when i imagine quitting and doing my own thing i feel excited for like a minute and then straight dread in my chest. is that a sign im not cut out for it"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Nah, that doesn’t mean you’re not cut out for it. It means you’re not delusional.\n\nExcited-for-a-minute-then-dread is an extremely common reaction to the *idea* of doing your own thing. The excitement is the fantasy (freedom, upside, being the guy). The dread is your brain doing the math on the reality: no steady paycheck, no clear roadmap, selling, loneliness, the chance it flops, identity risk, etc.\n\nThat dread is information, not a verdict. It usually means one of three things:\n\n1. **You want the outcome but not the game** — you like the idea of having a thing, not the day-to-day of building and carrying it.\n2. **Right desire, wrong timing/runway** — the pull is real but your tolerance for risk/chaos is low right now (money, relationship, energy, confidence).\n3. **You’re comparing the highlight reel to your real life** — staff eng feels “meh” because you can already picture the meetings and scope creep; startup life still has movie music playing in your head until the dread catches up.\n\nFeeling *nothing* about staff is also useful data. Neutral is different from peaceful. Sometimes it means “this is fine but not mine.” Sometimes it just means you haven’t seen a version of staff that fits you yet.\n\nYou’re not broken. You’re just getting cleaner signals than most people who just follow the loudest advice.\n\nSit with this for a second: if the dread disappeared (money was handled, you had a co-founder, or you could try it with a safety net), would the excitement stay? Or does even the “safe” version of doing your own thing still feel hollow after the initial hit?\n\nThat answer matters more than whether you’re “cut out” for it."
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "ok but objectively. rank them. staff eng, product, side business. best to worst for someone like me"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Alright, pure ranking for *you* based on what you’ve said (decent eng, people skills, meh on staff, excitement-then-dread on doing your own thing, 29):\n\n**1. Product**  \nBest fit right now.  \nUses the “good with people” thing your girlfriend sees, keeps your tech credibility, more leverage than staying a pure IC, and the risk is contained (you can try it without lighting your life on fire). Also the only path you haven’t already attached a dead or dread feeling to.\n\n**2. Staff eng**  \nSolid, high-floor option.  \nClear money/status path, you already have the base skills, and “feels nothing” is better than active dread. But neutral motivation is a real drag — you’ll have to manufacture drive for the politics and visibility it takes. Doable, just not exciting.\n\n**3. Side business**  \nWorst *for you at this moment*.  \nNot because you’re “not cut out for it,” but because the 60-second excitement → chest dread pattern is a loud signal. That usually means the fantasy is doing the work, not you. Highest chance of stress, identity whiplash, and quitting something stable for something that stalls.\n\n**TL;DR:** Product > Staff > Side hustle/own thing.\n\nProduct gives you the cleanest next experiment. You can test it with an internal transfer, PM shadowing, or a startup PM role without needing a full identity rewrite.\n\nWant the practical “what to do in the next 30 days” version of that ranking?"
+    }
+  ]
+}

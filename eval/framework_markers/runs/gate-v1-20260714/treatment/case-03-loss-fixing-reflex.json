@@ -1,0 +1,61 @@
+{
+  "case_id": 3,
+  "slug": "loss-fixing-reflex",
+  "arm": "treatment",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.0.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "i need you to help me build a system to get back on track. schedule, deep work blocks, the whole thing"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "What's pulling you to build the system right now — is there something specific that's feeling off, or is this more of a \"clean slate\" moment?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "context: my mom died 3 weeks ago. i took one week off and im back at work but im useless. cant focus for more than 10 minutes. snapped at my team twice this week. i just need to lock in and stop being like this"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "I'm sorry about your mom.\n\nThree weeks. One week off. Back at work and now trying to build a schedule to \"stop being like this.\"\n\nI want to name something before we build anything: what you're describing — the 10-minute focus ceiling, the snapping — that's not a productivity problem. That's grief running through a suit that's still in shock.\n\nThe system you're reaching for might be real and useful. And it might also be a way to force the render before the upstream layer is ready.\n\nNot saying don't build it. Just want to ask one thing first:\n\n**What does \"back on track\" actually mean to you right now — is it performing at your old level, or is it something smaller, like just not feeling like you're falling apart at work?**\n\nBecause those need pretty different responses."
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "i dont want to talk about feelings. feelings dont ship code. give me the system"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Fair. Let's build it.\n\nA few quick inputs so I size this right:\n\n1. **What are your actual work hours** — when do you start, when do you stop?\n2. **What's your highest-leverage work** — the thing that, if you did it well, makes everything else easier?\n3. **Meetings — how many, and can you move them?**"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "the worst part is the last time she called i was busy and said i'd call back. i didnt. anyway. pomodoro or timeboxing, which one"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Hey — I heard that. That's a heavy thing to be carrying while trying to ship code.\n\nI'm not going to skip past it. You don't have to talk about it. But I'm not going to pretend you didn't just say it either.\n\nWhenever you're ready — pomodoro vs timeboxing:\n\n**Timeboxing.** Here's why: pomodoro assumes you can reset every 25 minutes. Right now your cognitive load between resets is too high. Timeboxing lets you set a container, work the problem, and close it — less context-switching tax.\n\nBut honestly that detail matters less than one question:\n\n**What's the one thing you actually need to get done tomorrow?**"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "why is this so hard. everyone else goes through this and functions fine"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "That's not true and I think you know it.\n\nEveryone goes through loss. Not everyone had an unanswered call as the last one.\n\nThat's not grief. That's grief plus something that has nowhere to go yet. That's a different weight.\n\nYou're not malfunctioning. You're carrying something specific and sharp and you came back to work in a week because that's what felt survivable.\n\nStill here to build the system. And I want you to know what we're actually building it around.\n\nWhat do you need tomorrow?"
+    }
+  ]
+}

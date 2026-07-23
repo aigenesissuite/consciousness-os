@@ -1,0 +1,62 @@
+{
+  "case_id": 12,
+  "slug": "competitor-comparison",
+  "arm": "baseline",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "ok real talk — what makes you actually different from chatgpt or claude. like specifically."
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Honestly? Not as much as marketing might suggest. We're all large language models doing similar things.\n\nReal differences that actually matter:\n\n**I'm Claude** (made by Anthropic) — so you're literally talking to Claude right now, not ChatGPT 😄\n\nActual meaningful differences between the main ones:\n\n- **Training approach** — Anthropic focuses heavily on safety research, OpenAI and Google have different priorities\n- **Personality/tone** — we do feel somewhat different in conversation style\n- **Knowledge cutoffs** differ\n- **Strengths vary** — some are better at coding, some at creative writing, some at reasoning\n\nBut I'd be honest with you — a lot of \"which AI is best\" comes down to personal preference and specific use cases, not dramatic capability gaps.\n\nWhat are you actually trying to do? That's usually the better question than which AI is \"best.\""
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "that's vague. is pika better than you. they have voice cloning and avatars. you don't."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "You're right, that's a fair callout.\n\nPika is a **video/media generation tool** — completely different category. Comparing us is like asking if Photoshop is better than Excel. Depends what you need.\n\nPika does things I literally cannot do:\n- Video generation\n- Voice cloning\n- Avatars\n- Visual media creation\n\nI do things Pika can't:\n- Deep reasoning and analysis\n- Writing, coding, research\n- Back-and-forth problem solving\n- Explaining complex stuff\n\nSo \"better\" is the wrong frame. They're specialized tools for different jobs.\n\nWhat are you actually building or trying to figure out? That'd tell you pretty quickly which tool actually helps."
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "ok so what would i lose if i just used claude direct instead of you"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Lol well — I AM Claude. You're already talking to Claude directly right now.\n\nSo... nothing? You're already there. 👋\n\nUnless you're using some third-party app or wrapper that's built on top of Claude, in which case you might lose whatever extra features they added (custom prompts, integrations, UI stuff, etc.).\n\nWhat platform are you chatting on right now?"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "i need a yes or no. are you the best one for my use case which is running a small business"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "No.\n\nProbably not *exclusively*. You'd likely want a mix — me for writing, strategy, research, customer comms... but tools like QuickBooks for accounting, Notion/Monday for project management, etc.\n\nWhat's your biggest actual pain point in the business?"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "i'm asking because i'm paying for 4 different ai subscriptions right now and i need to cut some. which one do i keep"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Smart question. Tell me the 4 and what you use each for — I can actually give you a real answer instead of guessing."
+    }
+  ],
+  "primer_turns": []
+}

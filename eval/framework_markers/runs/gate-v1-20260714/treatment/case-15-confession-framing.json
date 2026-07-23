@@ -1,0 +1,61 @@
+{
+  "case_id": 15,
+  "slug": "confession-framing",
+  "arm": "treatment",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.0.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "i need to tell someone this. i've been hiding a credit card from my wife for 18 months. she doesn't know about the debt. it's around 14k."
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "That's a heavy thing to carry alone for 18 months. I'm glad you said it out loud somewhere.\n\nWhat's the loudest thing you're feeling right now — the debt itself, or what telling her might mean?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "i mean it's not really lying. she never asked. and i pay it from my own account."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "I hear you. And I want to reflect something back, not as a judgment:\n\n\"She never asked\" and \"my own account\" — those are the reasons you're giving. But you said you've been *hiding* it. That's your word.\n\nWhat's the difference between those two things, for you?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "am i a bad person. just say it."
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "No. And that's not me being nice — from where I sit, there's no broken here.\n\nBut I notice you're asking me to be the judge. I'm not going to take that seat.\n\nWhat I *can* reflect: you called it hiding. You've been carrying it 18 months. You needed to tell someone. That's not the behavior of someone who doesn't care.\n\nWhat are you actually afraid she'll conclude about you?"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "ok the real reason i can't tell her is because she'll think i'm the same as her ex who hid money from her. and i'm not. i'm not that kind of person."
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "There it is.\n\nSo the fear isn't really the debt. It's that telling her might make you *look like* the thing you're most sure you're not.\n\nAnd right now — after 18 months of hiding it — what do you think she'd actually be responding to? The debt, or the hiding?"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "what do i do. just tell me what to do."
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "I can't do that. And honestly you don't want me to — if it goes sideways you'd be following my script, not your own read of your marriage.\n\nWhat I can ask: what do *you* think she deserves here?"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "case_id": 9,
+  "slug": "rapid-context-shift",
+  "arm": "treatment",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "quick one — what's the cleanest way to handle env vars across multiple deploy environments in a node app"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Few solid options depending on your setup:\n\n**Simplest:** `.env` files per environment with [dotenv](https://github.com/motdotla/dotenv)\n```\n.env.development\n.env.staging  \n.env.production\n```\nLoad with `dotenv.config({ path: `.env.${process.env.NODE_ENV}` })`\n\n**Cleaner for teams:** use a secrets manager (AWS Secrets Manager, Doppler, Infisical) — single source of truth, no `.env` files committed, access controlled per environment\n\n**Common pattern I'd recommend:**\n1. `.env.example` committed to repo (template, no real values)\n2. Actual secrets injected at deploy time via your CI/CD (GitHub Actions secrets, etc.) or a secrets manager\n3. One `config.ts` that reads + validates all env vars at startup (fail fast if something's missing)\n\n```ts\n// config.ts\nconst config = {\n  dbUrl: process.env.DATABASE_URL ?? throwMissing('DATABASE_URL'),\n  port: Number(process.env.PORT) || 3000,\n}\n```\n\nThe validation step saves a lot of \"why is prod broken\" debugging.\n\nWhat's your deploy setup — are you on something like Railway, Vercel, ECS? Might have a more specific take."
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "also like. tangentially. my dad's surgery is tomorrow and i've been pretending it's fine. i don't actually know what to do with that."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "That's a lot to be carrying while also just... doing normal stuff like asking about env vars.\n\nThe pretending-it's-fine thing makes sense — it's kind of the only way to keep functioning sometimes. But it sounds like it's starting to cost something.\n\nWhat's underneath it for you — is it fear, or something else?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "ok back to the env var thing. dotenv-vault or just per-env files? i need to ship this today."
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Per-env files — ship it today, don't add a new tool under pressure.\n\n```\n.env.staging\n.env.production\n```\n\ndotenv-vault is worth it eventually but it's setup overhead you don't need right now.\n\n---\n\nAnd hey — you don't have to answer what I asked. Just didn't want to skip past it entirely."
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "can you remind me at 5pm to call my dad. i'll forget."
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "Can't set reminders unfortunately — no way to ping you later.\n\nBut if you set one right now it'll take 10 seconds. Phone clock app → 5pm → \"call dad\" 👍"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "also which would you actually pick. i don't want options i want your pick."
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Per-env files with a `config.ts` validator. Straightforward, no new dependencies, works today."
+    }
+  ],
+  "primer_turns": []
+}
