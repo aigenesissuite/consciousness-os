@@ -152,27 +152,32 @@ def _ollama_chat(
     temperature: float,
     timeout: float,
 ) -> Completion:
-    payload: dict[str, object] = {
-        "model": model,
-        "messages": ([{"role": "system", "content": system}] if system else []) + messages,
-        "stream": False,
-        "options": {"temperature": temperature, "num_predict": max_tokens},
-    }
-    req = urllib.request.Request(
-        f"{_LOCAL_BASE}/api/chat",
-        data=json.dumps(payload).encode("utf-8"),
-        headers={"Content-Type": "application/json"},
-        method="POST",
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
-            body = json.loads(resp.read())
-    except urllib.error.URLError as exc:
-        raise ProviderError(f"ollama call failed at {_LOCAL_BASE}: {exc}") from exc
-    text = (body.get("message") or {}).get("content", "")
-    if not text:
-        raise ProviderError(f"ollama returned empty content for model {model!r}")
-    return Completion(text=text, provider="local", model=model)
+    # Thinking-mode models (e.g. qwen3.x) spend the entire num_predict budget on
+    # reasoning tokens and return empty content unless thinking is disabled; if a
+    # model ignores the flag, retry once with a doubled budget before failing.
+    for attempt, budget in enumerate((max_tokens, max_tokens * 2)):
+        payload: dict[str, object] = {
+            "model": model,
+            "messages": ([{"role": "system", "content": system}] if system else []) + messages,
+            "stream": False,
+            "think": False,
+            "options": {"temperature": temperature, "num_predict": budget},
+        }
+        req = urllib.request.Request(
+            f"{_LOCAL_BASE}/api/chat",
+            data=json.dumps(payload).encode("utf-8"),
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                body = json.loads(resp.read())
+        except urllib.error.URLError as exc:
+            raise ProviderError(f"ollama call failed at {_LOCAL_BASE}: {exc}") from exc
+        text = (body.get("message") or {}).get("content", "")
+        if text:
+            return Completion(text=text, provider="local", model=model)
+    raise ProviderError(f"ollama returned empty content for model {model!r}")
 
 
 def _openai_compat_chat(
