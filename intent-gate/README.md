@@ -89,3 +89,11 @@ This is the same principle enforced at the level of what an agent is allowed to
 **do**: the human principal, present and authenticated, remains the sole source of
 authorization for any irreversible act. Published under this repo's license as a
 reference primitive — copy it, break it, harden it.
+
+## Production status
+
+This is not only a reference implementation. The gate pattern and an ambient
+intent-detection rung are deployed in a live commercial assistant under a
+staged pilot, with the biometric-privacy posture published as a public
+retention policy. Deployment details, invariants, and what gets measured
+next: [FIELD-NOTES.md](FIELD-NOTES.md).
