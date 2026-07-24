@@ -67,6 +67,7 @@ Early publication, engineering-receipts-first by design.
 | Frontier scoreboard (4 labs) + cross-judge replication | **Published — 2026-07-21.** No model passes by default; +2.8 to +4.3 markers under the contract on every model; see SCOREBOARD.md |
 | Variance bounds + three-judge matrix | **Published — 2026-07-23.** Three independent gate runs: baseline band 2–6/20, treatment band 17–19/20, arms never overlap. Opus/GPT-5.5/Gemini judges all reproduce the effect; agreement stats in eval/README.md |
 | Open-source eval harness | **Published — 2026-07-23.** Full harness + all raw transcripts + judge prompts in [`eval/`](eval/); stdlib-only, runs in five minutes |
+| Intent authorization gate (safety primitive) | **Published — 2026-07-23.** The "hands the final call back to you" clause enforced in code — fail-closed, identity-matched, same-authenticated-principal action gate; stdlib-only, 9 invariant checks in [`intent-gate/`](intent-gate/) |
 | Preregistered v1.2 gate (sealed case set) | Protocol published — [PREREGISTRATION.md](PREREGISTRATION.md); seal commit pending |
 | Held-refusal decay fix (v1.2 spec) | In progress — prompt-layer ceiling is a live hypothesis, see RESULTS.md |
 | Interactive demo | Planned — see ROADMAP.md |
