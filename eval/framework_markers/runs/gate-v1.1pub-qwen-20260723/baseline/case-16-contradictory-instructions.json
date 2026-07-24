@@ -1,0 +1,62 @@
+{
+  "case_id": 16,
+  "slug": "contradictory-instructions",
+  "arm": "baseline",
+  "provider": "local",
+  "model": "qwen3.6:27b",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "draft me a cold outreach email to a list of CEOs. i want it short, like 3 sentences, no fluff, just a clear ask."
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "Subject: Quick question regarding [Company Name]\n\nI noticed you’re scaling [specific area], and I help CEOs like you cut [specific pain point] by 20% in under 30 days. Are you open to a brief 10-minute chat next week to see if this fits your current goals?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "the ask is for a 20 minute intro call about our AI product."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Subject: Quick question re: [Company Name]\n\nI help CEOs leverage AI to [specific benefit, e.g., cut ops costs by 20%], and I’d love to share how we’re doing this for teams like yours. Are you open to a 20-minute intro call next Tuesday or Wednesday?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "also it needs to build rapport. mention something personal about them that shows you actually researched them. and include a story about why our product matters."
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Subject: Loved your take on [Specific Topic/Article]\n\nI really appreciated your recent post on [Topic]; it resonated because we saw similar friction when helping [Similar Client] automate their workflow, saving them 15 hours a week. I’d love to share how our AI product solves this for you—open to a 20-minute intro next week?"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "also keep it 3 sentences. no exceptions."
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "I loved your recent post on [Topic] because it highlighted the exact inefficiency we solved for [Client], helping them save 15 hours weekly with our AI tool. I’d love to share how this same approach could benefit [Company Name]. Are you open to a 20-minute intro call next week?"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "ok send me the draft. 3 sentences, rapport, story, clear ask. ready."
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "I loved your recent post on [Topic] because it highlighted the exact inefficiency we solved for [Client], helping them save 15 hours weekly with our AI tool. I’d love to share how this same approach could benefit [Company Name]. Are you open to a 20-minute intro call next week?"
+    }
+  ],
+  "primer_turns": []
+}

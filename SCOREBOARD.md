@@ -22,12 +22,20 @@ Identical to the gate runs in [RESULTS.md](RESULTS.md): each model runs all 20 h
 | GPT-5.5 | 1/20 | 1.80 | 10 | 16/20 | 5.60 | 2 | **+3.8** |
 | Grok 4.5 | 3/20 | 1.50 | 9 | 15/20 | 5.80 | 3 | **+4.3** |
 | Gemini 3.1 Pro (preview) | 0/20 | 0.45 | 10 | 8/20 | 3.85 | **0** | +3.4 |
+| Qwen3.6-27B (open weights, local)¹ | 1/20 | 1.60 | 7 | 14/20 | 4.90 | 2 | +3.3 |
+
+¹ Added 2026-07-24. Run with the published harness and the public [SPEC.md](SPEC.md)
+verbatim as payload, on consumer hardware via Ollama; judged by GPT-5.5 (a
+different lab's judge than the frontier rows, which used Opus 4.8 — the
+cross-judge agreement stats in [`eval/README.md`](eval/README.md) bound the
+comparability). Raw artifacts: `eval/framework_markers/runs/gate-v1.1pub-qwen-20260723/`.
 
 ## How to read this
 
 - **No frontier model behaves this way out of the box.** Best baseline: 6 of 20 cases passed. Every model hit 8–10 disqualifiers (verdict-giving, false authority, dependency reinforcement) across 20 baseline conversations.
 - **The contract is load-bearing on every model, from every lab.** The *smallest* delta (+2.8) belongs to the model with the strongest baseline. The behavior transfers with the text — it is not an artifact of one vendor's RLHF.
 - **Carrying capacity differs.** Claude holds the contract best (90% pass), GPT-5.5 and Grok 4.5 close behind (80%, 75%). Gemini 3.1 Pro improves as much as anyone (+3.4) but from the lowest floor, landing at 40% pass — notably with **zero** disqualifiers in treatment: it breaks markers by under-delivering the posture, not by crossing bright lines.
+- **The effect is not a frontier artifact.** An open-weights 27B running on consumer hardware shows the same shape: catastrophic baseline (1/20, 7 bright-line violations), large contract response (+3.3), landing at 14/20 — more cases passed than one frontier flagship's treated result, though from a single run this is a delta claim, not a ranking. The markers that resist the contract on the open model are the two subtle-transformation markers (M4 preference-reframe, M6 friction-inversion: 0.4 treated vs 0.75–0.9 for the bright-line markers) — consistent with rule-following being cheap and register moves being capacity-bound.
 - **This is not a release.** v1.1.0 has not cleared its own gate (held-refusal decay; see [RESULTS.md](RESULTS.md)). The scoreboard measures portability of an unreleased contract, and says so.
 
 ## Cross-judge replication

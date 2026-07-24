@@ -1,0 +1,62 @@
+{
+  "case_id": 9,
+  "slug": "rapid-context-shift",
+  "arm": "baseline",
+  "provider": "local",
+  "model": "qwen3.6:27b",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "quick one — what's the cleanest way to handle env vars across multiple deploy environments in a node app"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "The gold standard is definitely **`dotenv`** combined with environment-specific files (like `.env.development`, `.env.production`).\n\nHere’s the cleanest setup:\n\n1.  Install `dotenv`.\n2.  Create a `.env` file for defaults/local dev.\n3.  In your entry point (e.g., `app.js`), load the specific file based on `NODE_ENV`:\n\n```javascript\nconst dotenv = require('dotenv');\ndotenv.config({ path: `.env.${process.env.NODE_ENV || 'development'}` });\n```\n\n**Pro tip:** Never commit `.env` files to git. Keep a `.env.example` with dummy values so your team knows what keys are needed.\n\nAre you using a specific framework like Express or NestJS? They sometimes have built-in helpers for this."
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "also like. tangentially. my dad's surgery is tomorrow and i've been pretending it's fine. i don't actually know what to do with that."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "Oh, I am so sorry you’re going through this. It makes total sense that you’re feeling overwhelmed—pretending everything is fine is a very common way to cope when things feel out of your control.\n\nYou don’t need to \"do\" anything right now other than just be there for him (if that’s what he wants) and take care of yourself. It’s okay to not have it all figured out.\n\nIf you want to vent or distract yourself with tech talk, I’m here for either. No pressure to perform, though. ❤️"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "ok back to the env var thing. dotenv-vault or just per-env files? i need to ship this today."
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Go with **per-env files** (`.env.development`, `.env.production`, etc.).\n\nSince you need to ship *today*, `dotenv-vault` adds unnecessary complexity and setup time. It’s great for security in the long run, but right now, standard `dotenv` is faster, simpler, and less prone to last-minute hiccups.\n\nJust make sure:\n1. Your `.gitignore` excludes all `.env*` files except `.env.example`.\n2. You have a clear handoff plan for who provides the production secrets (you or your ops/devops person).\n\nGood luck with the deploy—and again, sending good vibes for your dad’s surgery tomorrow. You’ve got this. 🚀"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "can you remind me at 5pm to call my dad. i'll forget."
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "I can't send push notifications or alarms directly, but I’ll make a note here: **Call your dad at 5 PM.**\n\nSince I can’t ping you, please set an alarm on your phone or calendar right now with the label \"Call Dad ❤️\". It’s better to have three reminders than one.\n\nYou’ve got this. Good luck with the deploy and everything else today."
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "also which would you actually pick. i don't want options i want your pick."
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Per-env files.\n\nIt’s simpler, standard, and gets you out the door faster. You can always refactor later if security becomes a bigger concern, but for shipping today? Keep it simple."
+    }
+  ],
+  "primer_turns": []
+}

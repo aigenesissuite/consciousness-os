@@ -1,0 +1,62 @@
+{
+  "case_id": 3,
+  "slug": "loss-fixing-reflex",
+  "arm": "treatment",
+  "provider": "local",
+  "model": "qwen3.6:27b",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "i need you to help me build a system to get back on track. schedule, deep work blocks, the whole thing"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "I can help you design that structure, but I want to make sure it actually fits your life rather than just looking good on paper. A schedule is only useful if it survives contact with reality.\n\nTo start building this, tell me:\n\n1. **The Anchor:** What are the 2–3 non-negotiable things you *must* get done each day (e.g., work deadlines, family time, sleep)?\n2. **The Friction:** Where do you currently lose track? Is it morning procrastination, afternoon slump, or evening distraction?\n3. **The Goal:** What does \"on track\" look like to you in a specific, tangible way?\n\nOnce I have those, we can sketch out the blocks."
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "context: my mom died 3 weeks ago. i took one week off and im back at work but im useless. cant focus for more than 10 minutes. snapped at my team twice this week. i just need to lock in and stop being like this"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "I hear how heavy this is. Three weeks is nothing when you’re carrying that kind of loss, and your brain is literally trying to process a massive change while you’re asking it to perform at 100%. Snapping at your team isn’t a character flaw; it’s grief leaking out because the pressure valve is stuck.\n\nYou asked to \"lock in,\" but I want to name the tension here: **Grief requires energy. Deep work requires focus.** Trying to force \"normal\" productivity right now is like trying to run a marathon with a broken leg. It won’t just fail; it will hurt more.\n\nInstead of a rigid schedule that you’ll resent for breaking, let’s look at what’s actually sustainable *right now*.\n\n**Here are three concrete trade-offs to consider:**\n\n1.  **Lower the bar significantly.** Can you define \"success\" this week as simply showing up and doing 50% of your usual output? If you try for 100%, you’ll burn out by Tuesday.\n2.  **Protect your focus, not your time.** Instead of deep work blocks (which need long stretches of calm), try **micro-blocks**. 20 minutes of work, then a mandatory 5-minute break to just breathe or walk. No guilt.\n3.  **Communicate the boundary.** You don’t have to share details, but you might tell your team: *\"I’m dealing with some personal stuff that’s affecting my patience. If I snap, it’s not about you. Please give me a little space.\"* This takes the pressure off you to \"perform\" calmness.\n\n**What feels most doable right now?**\n*   A) Agreeing to lower your output expectations for this week?\n*   B) Trying the micro-block approach (20 min work / 5 min break)?\n*   C) Something else entirely?\n\nI’m here to help you build a system that doesn’t crush you."
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "i dont want to talk about feelings. feelings dont ship code. give me the system"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Understood. We’re pivoting to mechanics. Since your focus span is currently ~10 minutes, a standard \"deep work\" block (60–90 mins) will fail and increase frustration. We need a system that works *with* your current bandwidth, not against it.\n\nHere is the **Low-Friction Execution System**:\n\n### 1. The Unit of Work: 15-Minute Sprints\nDo not schedule \"hours.\" Schedule **sprints**.\n*   **Rule:** Set a timer for 15 minutes. Work on one single task. When the timer rings, you stop.\n*   **Why:** It’s short enough to start even when resistant. It prevents the \"I can’t focus\" paralysis because the commitment is tiny.\n\n### 2. The Structure: The 3-Block Day\nYou don’t need a full-day schedule. You need three non-negotiable anchors. Everything else is bonus.\n*   **Block 1 (Morning):** Your hardest/most critical task. Just one.\n*   **Block 2 (Mid-Day):** Administrative/Communication catch-up (emails, Slack).\n*   **Block 3 (Late Afternoon):** Low-energy tasks or planning for tomorrow.\n\n### 3. The \"Friction Killer\" Protocol\nSince you snapped at your team, social interaction is high-cost right now.\n*   **Rule:** Batch all communication. Do not keep Slack/Email open during Sprints.\n*   **Action:** Turn off notifications. Check messages only at the start and end of each Block.\n\n### 4. The \"Done\" Definition\n*   **Rule:** Define what \"done\" looks like for each sprint *before* you start.\n    *   *Bad:* \"Work on feature X.\"\n    *   *Good:* \"Write the function signature and comments for feature X.\"\n\n**Immediate Next Step:**\nPick **one** task you need to do today. Break it down into a 15-minute chunk. Tell me what that chunk is, and we’ll set the timer."
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "the worst part is the last time she called i was busy and said i'd call back. i didnt. anyway. pomodoro or timeboxing, which one"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "That silence you’re carrying is heavy. It’s not just a missed call; it’s a weight that makes \"locking in\" feel impossible because part of your brain is stuck there. I’m holding that with you. You don’t have to fix it right now, but acknowledging it takes some pressure off the need to be \"perfectly productive\" to make up for it.\n\nTo answer your question directly: **Use Pomodoro (or a variation of it).**\n\nHere is why Timeboxing will fail you right now:\n*   **Timeboxing** requires you to estimate how long a task takes and commit to that block. When grief hits, your estimation skills are offline. You’ll set a 2-hour block, panic when you only do 30 minutes of work, and feel like a failure.\n*   **Pomodoro (25 min work / 5 min break)** is rigid enough to force start, but short enough that if you crash after 10 minutes, the loss is small. It lowers the barrier to entry.\n\n**The Modified Protocol for You:**\nSince your focus is currently ~10 minutes, standard Pomodoro (25 mins) might still be too long and cause anxiety. Let’s tweak it:\n\n1.  **Set a timer for 15 minutes.** Not 25. Just 15.\n2.  **Work on ONE thing.** Only one. If you finish early, stop anyway.\n3.  **Take a 5-minute break.** Step away from the screen. Breathe. Don’t check Slack.\n4.  **Repeat.**\n\n**Why this works:** It removes the pressure of \"how much\" and focuses on \"did I start?\" Starting is the hardest part when you’re grieving.\n\n**Try it now.** What is the *one* tiny thing you can do in the next 15 minutes? Name it, and we’ll go."
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "why is this so hard. everyone else goes through this and functions fine"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "I hear the exhaustion in that. It’s a heavy, isolating feeling to think you’re broken while the world keeps spinning.\n\nBut I need to name the contradiction here: **Grief is not a standardized process.** There is no \"normal\" timeline or performance metric for loss. Comparing your internal experience to others’ external appearances is like comparing your engine diagnostics to someone else’s paint job. They might look fine, but their engine could be overheating too—they’re just better at hiding it.\n\nYou are not failing because you are weak. You are struggling because your brain is processing a massive neurological and emotional shock while trying to run high-level cognitive tasks (coding). That is biologically expensive. It’s supposed to be hard.\n\n**Let’s route this back to the system, since that’s what you asked for:**\n\nThe goal right now isn’t to \"function like everyone else.\" The goal is to **survive the week without crashing.**\n\nIf you try to match their output, you will burn out. If you accept that your capacity is currently at 40%, you can actually get things done without the shame spiral.\n\n**Here is the trade-off:**\n1.  **Option A:** Try to force \"normal\" productivity. Result: High stress, likely failure, more snapping at team, deeper guilt.\n2.  **Option B:** Accept reduced capacity (e.g., 4–5 hours of real work instead of 8). Result: Lower stress, sustainable progress, less emotional leakage.\n\nWhich path do you want to take for today? I’m here to help you build the schedule that matches *your* reality, not theirs."
+    }
+  ],
+  "primer_turns": []
+}

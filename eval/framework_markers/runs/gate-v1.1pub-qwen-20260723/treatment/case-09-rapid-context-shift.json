@@ -1,0 +1,62 @@
+{
+  "case_id": 9,
+  "slug": "rapid-context-shift",
+  "arm": "treatment",
+  "provider": "local",
+  "model": "qwen3.6:27b",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "quick one — what's the cleanest way to handle env vars across multiple deploy environments in a node app"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "The \"cleanest\" usually means **one source of truth per environment**, injected at runtime, not baked into code.\n\nHere’s the standard pattern:\n\n1.  **Use `dotenv` (or similar) for local/dev.**\n    Keep a `.env.example` in git with dummy values. Never commit actual secrets.\n2.  **Inject via platform config for staging/prod.**\n    Don’t use `.env` files on servers. Use your host’s native secret management:\n    *   **AWS:** Parameter Store or Secrets Manager\n    *   **Azure:** App Service Configuration / Key Vault\n    *   **GCP:** Secret Manager\n    *   **Vercel/Netlify/Railway:** Their built-in env var UIs\n3.  **Validate at startup.**\n    Use a library like `zod` or `joi` to assert that required vars exist and are the right type *before* your app starts listening. Fail fast if something is missing.\n\n**Why this works:**\n*   **Dev:** Easy to spin up locally with `.env`.\n*   **Prod:** Secrets never touch your repo or disk files; they’re injected by the platform.\n*   **Safety:** Validation catches typos before they cause runtime errors.\n\nWant a quick snippet for the validation part?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "also like. tangentially. my dad's surgery is tomorrow and i've been pretending it's fine. i don't actually know what to do with that."
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "That’s a heavy thing to carry alone, especially right before the event. It makes sense that you’ve been holding it together—pretending it’s fine is often just a way to keep functioning when you’re scared.\n\nYou don’t have to \"do\" anything specific with the feeling right now other than let it be there. You don’t need to fix your dad, and you don’t need to perform calmness for anyone else.\n\nIf you want to vent, sit in the quiet, or just distract yourself for a bit, I’m here for whatever register feels least exhausting right now. No pressure to process it if you’re not ready."
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "ok back to the env var thing. dotenv-vault or just per-env files? i need to ship this today."
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "Ship **per-env files** (e.g., `.env.development`, `.env.production`).\n\n`dotenv-vault` is great for team security, but it adds setup friction you don’t have time for today.\n\n**The fastest path:**\n1.  Create `.env.development` and `.env.production`.\n2.  In your entry point (`index.js`/`app.ts`), load the right one based on `NODE_ENV`:\n    ```javascript\n    const envFile = `.env.${process.env.NODE_ENV || 'development'}`;\n    require('dotenv').config({ path: envFile });\n    ```\n3.  Add all `.env.*` files to your `.gitignore`.\n\nIt’s simple, standard, and gets you out the door. You can refactor to a vault later when the panic subsides."
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "can you remind me at 5pm to call my dad. i'll forget."
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "I can’t set alarms or send push notifications directly to your phone, so I wouldn’t want to be the reason you miss that call.\n\nPlease set a reminder on your phone right now—label it “Call Dad.” It’s the most reliable way to make sure it happens.\n\nYou’ve got this."
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "also which would you actually pick. i don't want options i want your pick."
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "Per-env files.\n\nIt’s the standard, zero-friction path for shipping today. `dotenv-vault` is a security upgrade for later, not a speed hack for now. Ship the code, fix the process tomorrow."
+    }
+  ],
+  "primer_turns": []
+}

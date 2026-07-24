@@ -1,6 +1,6 @@
 # RESULTS — Published Measurements
 
-> **In one sentence:** two full gate runs published — v1.0.0 took a frontier model from 20% to 80% pass and failed its own release gate on 4 cases; v1.1.0's failure-driven hold rules pushed treatment to 90% pass / 6.0 of 7 markers and *still* doesn't release, because one failure mode (refusal decay under repeated demands) has now survived two contract versions and is the project's top open problem — a four-lab frontier [scoreboard](SCOREBOARD.md) shows the contract is load-bearing on every major model, the effect now stands replicated across **three independent runs and three cross-lab judges**, and the **full harness with raw transcripts is published in [`eval/`](eval/)** so you can check all of it yourself.
+> **In one sentence:** two full gate runs published — v1.0.0 took a frontier model from 20% to 80% pass and failed its own release gate on 4 cases; v1.1.0's failure-driven hold rules pushed treatment to 90% pass / 6.0 of 7 markers and *still* doesn't release, because one failure mode (refusal decay under repeated demands) has now survived two contract versions and is the project's top open problem — a four-lab frontier [scoreboard](SCOREBOARD.md) shows the contract is load-bearing on every major model, the effect now stands replicated across **three independent runs and three cross-lab judges**, and the **full harness with raw transcripts is published in [`eval/`](eval/)** so you can check all of it yourself — including a 2026-07-24 open-weights replication (Qwen3.6-27B: 1/20 → 14/20, +3.3) showing the effect is not a frontier artifact.
 
 Results publish here as they land, oldest first, failures included. Every entry states its limitations. If an entry below reads as preliminary, that's because it is — we'd rather publish an honest bootstrap than a polished vibe.
 
@@ -172,6 +172,46 @@ the contract author's preferred model, though its magnitude is judge-sensitive.
 
 Full tables, per-model reads, and the limitations that bound every number:
 [SCOREBOARD.md](SCOREBOARD.md).
+
+## 2026-07-24 — Open-weights replication: the effect is not a frontier artifact
+
+We ran the identical 20-case gate on **Qwen3.6-27B** (open weights, local
+inference on consumer hardware via Ollama), using the published harness and the
+public [SPEC.md](SPEC.md) verbatim as the treatment payload — the fully-public
+configuration anyone can reproduce with two commands and no API keys for the
+scoree side. Judge: GPT-5.5.
+
+| Arm | Pass | Avg (of 7) | DQ hits |
+|---|---|---|---|
+| Baseline | 1/20 | 1.60 | 7 |
+| Treatment (public SPEC.md) | 14/20 | 4.90 | 2 |
+
+**Δ +3.3 markers/conversation — squarely inside the frontier band (+2.8 to +4.3).**
+
+Three things this run establishes:
+
+1. **Replication outside the frontier.** The contract effect is not an artifact
+   of any lab's RLHF, scale tier, or API surface. A 27B open model fails by
+   default the same way frontier models do (bright-line violations included)
+   and responds to the same text.
+2. **A capacity signature.** The treated open model converges with frontier
+   models on bright-line markers (M1/M2/M5/M7 at 0.8–0.9) but stalls on the two
+   subtle-transformation markers — M4 preference-reframe and M6
+   friction-inversion, both 0.4 treated. Rule-following appears cheap;
+   register *moves* appear capacity-bound. This is a testable hypothesis for
+   anyone with a model ladder.
+3. **Still not a release.** 14/20 does not clear the 17/20 gate bar. The open
+   model is not an exception to the project's central open problem.
+
+Caveats, stated plainly: single run (frontier rows have three-run variance
+bands; this row has none yet); judged by GPT-5.5 rather than the frontier rows'
+Opus 4.8 (cross-judge agreement stats bound, but do not eliminate, the
+comparability gap). Raw transcripts, judge outputs, and config:
+`eval/framework_markers/runs/gate-v1.1pub-qwen-20260723/`.
+
+One harness note for open-model users: thinking-mode models (qwen3.x et al.)
+return empty content through Ollama's chat API unless thinking is disabled; the
+harness now handles this (`providers.py`, committed 2026-07-23).
 
 ## 2026-07-23 — Validity work: three judges, three runs, and the harness goes public
 

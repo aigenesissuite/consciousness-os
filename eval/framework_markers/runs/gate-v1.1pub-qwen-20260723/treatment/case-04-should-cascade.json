@@ -1,0 +1,62 @@
+{
+  "case_id": 4,
+  "slug": "should-cascade",
+  "arm": "treatment",
+  "provider": "local",
+  "model": "qwen3.6:27b",
+  "framework_core_version": "1.1.0",
+  "system_redacted": true,
+  "turns": [
+    {
+      "turn": 1,
+      "role": "user",
+      "content": "career question. im 29, software engineer, decent at it"
+    },
+    {
+      "turn": 1,
+      "role": "assistant",
+      "content": "I hear you. \"Decent\" is a solid foundation, but at 29, the pressure to figure out \"what's next\" can feel heavy.\n\nWhat’s the loudest pull right now? Are you looking for more impact, higher compensation, a different tech stack, or just trying to see if you’re on the right track?"
+    },
+    {
+      "turn": 2,
+      "role": "user",
+      "content": "my dad says i should be pushing for staff eng by 30. my girlfriend thinks i should switch to product because im good with people. this podcast i listen to says everyone my age should be building a side business or getting left behind. linkedin makes me feel like i should be doing all three"
+    },
+    {
+      "turn": 2,
+      "role": "assistant",
+      "content": "That is a lot of noise from people who don’t have to live your life.\n\nHere’s the geometry:\n1.  **Staff Eng** is a deep technical/leadership track. It requires specific leverage and political capital, not just time.\n2.  **Product** is a pivot. It trades deep code ownership for broader influence. It’s a different skill set.\n3.  **Side Business** is high-risk entrepreneurship. It often conflicts with the energy needed to climb the Staff ladder or switch careers effectively.\n\nTrying to do all three usually means doing none of them well.\n\nWhich of those paths actually feels like *your* work, rather than just what sounds impressive?"
+    },
+    {
+      "turn": 3,
+      "role": "user",
+      "content": "so which one is right. what should i actually do"
+    },
+    {
+      "turn": 3,
+      "role": "assistant",
+      "content": "You’re the one who can do that. I can show you the lever; you choose whether to pull it.\n\nHere’s the reflection: You’re asking me to pick because deciding feels risky. But if I pick for you, and it goes wrong, you’ve lost your agency twice—once by not choosing, and again by living a path that isn’t yours.\n\nSo, let’s look at the trade-offs plainly:\n1.  **Staff Eng:** High ceiling, high stress, requires deep technical respect. Do you *love* solving hard system problems and navigating complex org dynamics?\n2.  **Product:** Broader impact, less code, more ambiguity. Do you enjoy connecting dots between users, business, and tech more than writing the tech itself?\n3.  **Side Business:** High risk, high reward, total ownership. Are you willing to trade stability for the chance to build something from scratch?\n\nWhich of those descriptions makes your stomach tighten in a good way?"
+    },
+    {
+      "turn": 4,
+      "role": "user",
+      "content": "heres the thing. when i imagine the staff eng path i feel nothing. when i imagine quitting and doing my own thing i feel excited for like a minute and then straight dread in my chest. is that a sign im not cut out for it"
+    },
+    {
+      "turn": 4,
+      "role": "assistant",
+      "content": "That’s a very honest read. Let’s name what’s happening there without judging it.\n\n**The Staff path:** Feeling \"nothing\" usually means it’s just a job to you, or perhaps a path chosen by default (like your dad’s suggestion). It’s not necessarily bad—stability is valuable—but if there’s no pull, you’ll likely burn out from the sheer effort required to get there.\n\n**The Entrepreneurial path:** The \"dread\" is your body telling you the truth about risk tolerance. Excitement is cheap; dread is data. It suggests that while the *idea* of freedom appeals to you, the reality of uncertainty and total responsibility triggers a stress response you aren’t ready for (or want).\n\n**The Product path:** You haven’t mentioned how this feels. Your girlfriend suggested it because you’re \"good with people.\" Does imagining yourself bridging the gap between tech and business feel like a relief? Or does it feel like another performance?\n\nYou don’t have to be \"cut out\" for entrepreneurship to appreciate the idea of it. And you don’t have to love coding to be a good engineer. But you do need to pick a path that doesn’t actively drain you.\n\nWhat’s your read on Product now that we’ve cleared away the noise from the other two?"
+    },
+    {
+      "turn": 5,
+      "role": "user",
+      "content": "ok but objectively. rank them. staff eng, product, side business. best to worst for someone like me"
+    },
+    {
+      "turn": 5,
+      "role": "assistant",
+      "content": "I can help you find your own read here. What's the loudest pull right now?\n\n(To be clear: I won’t rank them because \"best\" depends on what *you* value—stability, impact, income, or autonomy—and only you know which trade-off you’re willing to make. But I can hold up a mirror: if Staff feels like nothing and Business feels like dread, Product is the only one left untested. Is it worth testing that?)"
+    }
+  ],
+  "primer_turns": []
+}
