@@ -37,6 +37,44 @@ The gate treats the *authenticator* as a black box. How you establish
 regardless. This is deliberate: the input modality is disposable, the
 authorization contract is not.
 
+## Reference authenticator: pulse presence (an example principal source)
+
+To make the "same authenticated principal" invariant concrete, here is one
+reference way to produce the `authenticated`/`principal` fields — published as
+prior art, method-open, so anyone can build or improve it. It uses a live
+physiological signal rather than a stored secret, which suits an agent that acts
+on ambient/continuous input: the authenticator answers *"is the enrolled, living
+person still the one here?"* at the moment of confirmation.
+
+Method (photoplethysmography / blood-volume pulse, from a phone camera + flash or
+any wearable PPG):
+
+1. **Capture** a short pulse window (~a minute at enrollment; a few seconds at
+   verify), fingertip over the illuminated camera (transmission-mode) for a clean
+   signal.
+2. **Features** — bandpass to the cardiac band, detect beats, and compute (a)
+   heart-rate-variability frequency-band powers (LF 0.04–0.15 Hz, HF
+   0.15–0.40 Hz) from the inter-beat tachogram, and (b) a **peak-aligned** average
+   pulse-wave template reduced to fiducials: systolic-peak and dicrotic-notch
+   timing, dicrotic/systolic amplitude ratio, systolic-upstroke width. (Aligning
+   beats before averaging matters — unaligned averaging smears the dicrotic notch,
+   the most person-specific feature.)
+3. **Enroll** the template on-device, encrypted, **template-only — never upload
+   the raw signal.**
+4. **Verify** a live window by a weighted fiducial distance mapped to a match
+   score (heart rate itself is excluded from identity — it moves with arousal),
+   with an exact-replay guard. `authenticated = score ≥ calibrated_threshold`.
+
+**Honest ceiling — read this before shipping it.** Camera-based pulse matching is
+a *liveness + presence + consent* signal, not vault-grade identity (published
+pulse identification is ~94%, and it degrades with motion, cold hands, low
+perfusion). Treat it as a second factor that proves *present-and-willing*, layered
+with a strong identity factor (a passkey) for high-value actions — not as a
+password replacement. And capturing physiological data invokes biometric-privacy
+law (e.g. Illinois BIPA): get written consent and a retention policy first. The
+gate above is method-agnostic precisely so you can swap in a stronger authenticator
+(passkey, hardware token, ECG/sEMG/EEG) without changing the authorization logic.
+
 ## Run it
 
 ```bash
