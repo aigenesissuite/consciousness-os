@@ -2,6 +2,8 @@
 
 **An operating system for how AI behaves with a human — a stated model of mind, run all the way down to a scored, falsifiable behavioral contract.**
 
+**Shipping in production as Presence OS** — this contract is the safety spine that [aiOS](https://myaios.app) agents run on.
+
 > **If the name makes you wince, good — that's the correct prior.** The word "consciousness" buys no metaphysics anywhere below: what's in this repo is a behavioral contract short enough to inject into a system prompt, an eval that scores it with binary evidence-cited markers, and published measurements — including the two gate runs this project *failed*. You don't have to trust any of it: the **full harness, all raw transcripts, and every judge prompt are in [`eval/`](eval/)**. One command runs the whole pipeline hermetically (`python3 -m eval.framework_markers all --scoree-provider mock --judge-provider mock`); one more re-judges our published transcripts with a judge model of your choosing.
 
 Formal spec name: **The Consciousness Substrate**. Authored and codified by **Gabe Campbell** (founder, [AI Genesis / aiOS](https://myaios.app)) from a decade of notebooks, reflection, and research — stripped of every piece of personal vocabulary until what remained was an operational core an engineer can build and a skeptic can test.
